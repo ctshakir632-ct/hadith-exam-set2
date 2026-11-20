@@ -1,0 +1,1827 @@
+<!DOCTYPE html>
+<html lang="ml">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TWS3 Ḥadīth Musābaqah (SET 2) — 120 Questions Bilingual Online Exam | Darul Huda Sibāq '26</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Noto+Naskh+Arabic:wght@400;600;700&family=Noto+Sans+Malayalam:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --primary: #0f4c3a;
+      --primary-dark: #093528;
+      --primary-light: #e6f2ee;
+      --gold: #c8962e;
+      --gold-light: #fbf4e4;
+      --bg: #f4f6f5;
+      --card: #ffffff;
+      --text: #18221f;
+      --muted: #5a6964;
+      --border: #dce4e1;
+      --danger: #c62828;
+      --danger-bg: #fdecec;
+      --success: #1b7a43;
+      --success-bg: #e7f7ee;
+      --warning: #b45309;
+      --warning-bg: #fef3c7;
+      --shadow: 0 8px 28px rgba(15, 76, 58, 0.08);
+      --radius: 14px;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Noto Sans Malayalam', 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+      min-height: 100vh;
+    }
+
+    .ar-text {
+      font-family: 'Noto Naskh Arabic', 'Amiri', 'Traditional Arabic', serif;
+      direction: rtl;
+      text-align: right;
+      font-size: 1.18rem;
+      line-height: 1.9;
+      color: #0e241d;
+    }
+
+    .ml-text {
+      font-family: 'Noto Sans Malayalam', sans-serif;
+      direction: ltr;
+      text-align: left;
+      font-size: 0.98rem;
+      line-height: 1.7;
+      color: #2c3e38;
+    }
+
+    body.lang-ar .ml-text { display: none !important; }
+    body.lang-ml .ar-text { display: none !important; }
+
+    .container {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 20px 16px 60px;
+    }
+
+    /* Header Banner */
+    .hero-banner {
+      background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 65%, #16654e 100%);
+      color: #fff;
+      border-radius: 18px;
+      padding: 28px 28px 24px;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 12px 32px rgba(9, 53, 40, 0.22);
+      border-bottom: 4px solid var(--gold);
+      margin-bottom: 22px;
+    }
+
+    .hero-banner::after {
+      content: "﷽";
+      position: absolute;
+      top: 16px;
+      left: 24px;
+      font-family: 'Amiri', serif;
+      font-size: 2.2rem;
+      opacity: 0.12;
+      pointer-events: none;
+    }
+
+    .hero-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .badge-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(200, 150, 46, 0.22);
+      border: 1px solid rgba(200, 150, 46, 0.6);
+      color: #f9df9b;
+      padding: 4px 12px;
+      border-radius: 999px;
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: 0.4px;
+    }
+
+    .hero-title {
+      font-size: 1.75rem;
+      font-weight: 800;
+      margin-top: 10px;
+      line-height: 1.3;
+    }
+
+    .hero-sub {
+      color: #cfe6de;
+      font-size: 0.95rem;
+      margin-top: 6px;
+    }
+
+    .hero-stats {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 18px;
+    }
+
+    .hero-stat {
+      background: rgba(255, 255, 255, 0.12);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      padding: 6px 14px;
+      border-radius: 10px;
+      font-size: 0.85rem;
+      font-weight: 600;
+    }
+
+    .btn-ghost {
+      background: rgba(255, 255, 255, 0.14);
+      color: #fff;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      padding: 7px 14px;
+      border-radius: 10px;
+      cursor: pointer;
+      font-size: 0.84rem;
+      font-weight: 600;
+      font-family: inherit;
+      transition: 0.2s;
+    }
+
+    .btn-ghost:hover { background: rgba(255, 255, 255, 0.24); }
+
+    /* Cards */
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 24px;
+      box-shadow: var(--shadow);
+      margin-bottom: 18px;
+    }
+
+    .card-title {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--primary);
+      margin-bottom: 14px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    /* Warning Box */
+    .alert-box {
+      background: var(--danger-bg);
+      border: 1px solid #f5bcbc;
+      border-left: 5px solid var(--danger);
+      border-radius: 12px;
+      padding: 16px 18px;
+      margin-bottom: 20px;
+      color: #6b1414;
+    }
+
+    .alert-box h4 {
+      font-size: 0.98rem;
+      margin-bottom: 8px;
+      color: var(--danger);
+    }
+
+    .alert-box ul {
+      padding-left: 20px;
+      font-size: 0.9rem;
+    }
+
+    .alert-box li { margin-bottom: 5px; }
+
+    /* Form Grid */
+    .form-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 14px;
+      margin-bottom: 18px;
+    }
+
+    .form-group label {
+      display: block;
+      font-size: 0.86rem;
+      font-weight: 700;
+      color: var(--primary-dark);
+      margin-bottom: 5px;
+    }
+
+    .form-group input, .form-group select {
+      width: 100%;
+      padding: 11px 13px;
+      border: 1.5px solid var(--border);
+      border-radius: 10px;
+      font-size: 0.95rem;
+      font-family: inherit;
+      outline: none;
+      transition: border-color 0.2s, box-shadow 0.2s;
+    }
+
+    .form-group input:focus {
+      border-color: var(--primary);
+      box-shadow: 0 0 0 3px rgba(15, 76, 58, 0.12);
+    }
+
+    /* Buttons */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 12px 22px;
+      border-radius: 11px;
+      font-size: 0.96rem;
+      font-weight: 700;
+      font-family: inherit;
+      border: none;
+      cursor: pointer;
+      transition: transform 0.15s, background 0.2s, box-shadow 0.2s;
+    }
+
+    .btn:active { transform: scale(0.98); }
+
+    .btn-primary {
+      background: var(--primary);
+      color: #fff;
+      box-shadow: 0 6px 16px rgba(15, 76, 58, 0.24);
+    }
+
+    .btn-primary:hover { background: var(--primary-dark); }
+
+    .btn-gold {
+      background: var(--gold);
+      color: #fff;
+    }
+
+    .btn-gold:hover { background: #b18120; }
+
+    .btn-danger {
+      background: var(--danger);
+      color: #fff;
+    }
+
+    .btn-danger:hover { background: #a61e1e; }
+
+    .btn-outline {
+      background: #fff;
+      color: var(--primary);
+      border: 1.5px solid var(--primary);
+    }
+
+    .btn-outline:hover { background: var(--primary-light); }
+
+    .btn-sm { padding: 7px 13px; font-size: 0.84rem; border-radius: 8px; }
+
+    /* Sticky Exam Topbar */
+    .exam-topbar {
+      position: sticky;
+      top: 0;
+      z-index: 900;
+      background: rgba(9, 53, 40, 0.97);
+      backdrop-filter: blur(8px);
+      color: #fff;
+      padding: 10px 16px;
+      box-shadow: 0 4px 18px rgba(0, 0, 0, 0.16);
+      border-bottom: 3px solid var(--gold);
+    }
+
+    .topbar-inner {
+      max-width: 1040px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .timer-box {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(255, 255, 255, 0.14);
+      padding: 6px 14px;
+      border-radius: 10px;
+      font-weight: 800;
+      font-size: 1.15rem;
+      font-variant-numeric: tabular-nums;
+      border: 1px solid rgba(255, 255, 255, 0.25);
+    }
+
+    .timer-box.warn { background: #b45309; border-color: #fde68a; }
+    .timer-box.critical { background: #c62828; animation: pulse 1s infinite; }
+
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.04); }
+    }
+
+    .proctor-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(239, 68, 68, 0.22);
+      border: 1px solid rgba(252, 165, 165, 0.55);
+      color: #fecaca;
+      padding: 5px 11px;
+      border-radius: 999px;
+      font-size: 0.78rem;
+      font-weight: 700;
+    }
+
+    .lang-switcher {
+      display: inline-flex;
+      background: rgba(255, 255, 255, 0.12);
+      border-radius: 9px;
+      padding: 3px;
+      gap: 3px;
+    }
+
+    .lang-btn {
+      background: transparent;
+      color: #d7ebe4;
+      border: none;
+      padding: 5px 10px;
+      border-radius: 7px;
+      cursor: pointer;
+      font-size: 0.78rem;
+      font-weight: 700;
+      font-family: inherit;
+    }
+
+    .lang-btn.active { background: var(--gold); color: #fff; }
+
+    /* Section & Pagination Controls */
+    .exam-controls-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 16px;
+      background: #fff;
+      padding: 12px 16px;
+      border-radius: 12px;
+      border: 1px solid var(--border);
+    }
+
+    .section-tabs {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .sec-tab {
+      padding: 8px 14px;
+      border-radius: 9px;
+      border: 1.5px solid var(--border);
+      background: #f8faf9;
+      color: var(--text);
+      font-weight: 700;
+      font-size: 0.85rem;
+      cursor: pointer;
+      font-family: inherit;
+    }
+
+    .sec-tab.active {
+      background: var(--primary);
+      color: #fff;
+      border-color: var(--primary);
+    }
+
+    /* Question Card */
+    .q-card {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 20px 22px;
+      margin-bottom: 16px;
+      box-shadow: 0 3px 12px rgba(15, 76, 58, 0.04);
+      transition: border-color 0.2s;
+    }
+
+    .q-card.answered { border-left: 4px solid var(--primary); }
+
+    .q-meta {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 12px;
+      padding-bottom: 10px;
+      border-bottom: 1px dashed var(--border);
+    }
+
+    .q-num-badge {
+      background: var(--primary);
+      color: #fff;
+      padding: 3px 11px;
+      border-radius: 8px;
+      font-weight: 800;
+      font-size: 0.86rem;
+    }
+
+    .q-tags { display: flex; gap: 6px; flex-wrap: wrap; align-items: center; }
+
+    .tag {
+      padding: 3px 10px;
+      border-radius: 999px;
+      font-size: 0.75rem;
+      font-weight: 700;
+    }
+
+    .tag-topic { background: var(--primary-light); color: var(--primary-dark); }
+    .tag-medium { background: var(--warning-bg); color: var(--warning); }
+    .tag-tight { background: var(--danger-bg); color: var(--danger); }
+    .tag-written { background: #ede9fe; color: #5b21b6; }
+    .tag-mcq { background: #e0f2fe; color: #0369a1; }
+
+    .q-prompt-box {
+      background: #fafcfb;
+      border: 1px solid #e6eeeb;
+      border-radius: 10px;
+      padding: 14px 16px;
+      margin-bottom: 14px;
+    }
+
+    .q-prompt-box .ml-text {
+      margin-top: 8px;
+      padding-top: 8px;
+      border-top: 1px solid #e6eeeb;
+    }
+
+    body.lang-ml .q-prompt-box .ml-text {
+      margin-top: 0;
+      padding-top: 0;
+      border-top: none;
+    }
+
+    /* Options */
+    .options-list {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 9px;
+    }
+
+    .opt-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      padding: 12px 14px;
+      border: 1.5px solid var(--border);
+      border-radius: 11px;
+      cursor: pointer;
+      transition: all 0.15s;
+      background: #fff;
+    }
+
+    .opt-item:hover {
+      border-color: var(--primary);
+      background: #f5fbf8;
+    }
+
+    .opt-item.selected {
+      border-color: var(--primary);
+      background: var(--primary-light);
+      box-shadow: 0 0 0 2px rgba(15, 76, 58, 0.14);
+    }
+
+    .opt-letter {
+      flex-shrink: 0;
+      width: 28px;
+      height: 28px;
+      border-radius: 8px;
+      background: #eef3f1;
+      color: var(--primary-dark);
+      font-weight: 800;
+      font-size: 0.85rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 2px;
+    }
+
+    .opt-item.selected .opt-letter {
+      background: var(--primary);
+      color: #fff;
+    }
+
+    .opt-content { flex: 1; }
+    .opt-content .ar-text { font-size: 1.06rem; line-height: 1.65; }
+    .opt-content .ml-text { font-size: 0.9rem; color: #3b4f48; margin-top: 3px; }
+
+    /* Written Textarea */
+    .written-input {
+      width: 100%;
+      min-height: 110px;
+      padding: 13px 15px;
+      border: 1.5px solid var(--border);
+      border-radius: 11px;
+      font-family: 'Noto Sans Malayalam', 'Noto Naskh Arabic', sans-serif;
+      font-size: 0.98rem;
+      line-height: 1.65;
+      resize: vertical;
+      outline: none;
+      background: #fcfdfd;
+    }
+
+    .written-input:focus {
+      border-color: var(--primary);
+      background: #fff;
+      box-shadow: 0 0 0 3px rgba(15, 76, 58, 0.12);
+    }
+
+    .written-hint {
+      font-size: 0.8rem;
+      color: var(--muted);
+      margin-top: 6px;
+    }
+
+    /* Pagination */
+    .pagination-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 18px;
+      padding: 14px 16px;
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+    }
+
+    /* Question Palette Drawer */
+    .palette-panel {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 16px;
+      margin-bottom: 18px;
+    }
+
+    .palette-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(38px, 1fr));
+      gap: 6px;
+      margin-top: 10px;
+      max-height: 240px;
+      overflow-y: auto;
+      padding-right: 4px;
+    }
+
+    .pal-btn {
+      height: 34px;
+      border-radius: 7px;
+      border: 1px solid var(--border);
+      background: #f6f8f7;
+      color: var(--text);
+      font-weight: 700;
+      font-size: 0.78rem;
+      cursor: pointer;
+    }
+
+    .pal-btn.done { background: var(--primary); color: #fff; border-color: var(--primary); }
+    .pal-btn.written-slot { border-color: #c4b5fd; }
+    .pal-btn.written-slot.done { background: #6d28d9; border-color: #6d28d9; color: #fff; }
+
+    /* Result Dashboard */
+    .result-banner {
+      border-radius: 16px;
+      padding: 22px 24px;
+      margin-bottom: 18px;
+      color: #fff;
+    }
+
+    .result-banner.normal { background: linear-gradient(135deg, #0f4c3a, #1d7a5c); }
+    .result-banner.violation { background: linear-gradient(135deg, #991b1b, #dc2626); }
+    .result-banner.timeout { background: linear-gradient(135deg, #92400e, #d97706); }
+
+    .score-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 12px;
+      margin-bottom: 18px;
+    }
+
+    .score-card {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 13px;
+      padding: 16px;
+      text-align: center;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.03);
+    }
+
+    .score-card .val {
+      font-size: 1.75rem;
+      font-weight: 800;
+      color: var(--primary);
+      line-height: 1.2;
+    }
+
+    .score-card .lbl {
+      font-size: 0.82rem;
+      color: var(--muted);
+      margin-top: 4px;
+      font-weight: 600;
+    }
+
+    .score-card.green .val { color: var(--success); }
+    .score-card.red .val { color: var(--danger); }
+    .score-card.purple .val { color: #6d28d9; }
+
+    .email-status-bar {
+      padding: 14px 18px;
+      border-radius: 12px;
+      margin-bottom: 18px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      flex-wrap: wrap;
+      font-weight: 600;
+      font-size: 0.92rem;
+    }
+
+    .email-sending { background: #e0f2fe; color: #075985; border: 1px solid #bae6fd; }
+    .email-ok { background: var(--success-bg); color: #14532d; border: 1px solid #bbf7d0; }
+    .email-warn { background: var(--warning-bg); color: #78350f; border: 1px solid #fde68a; }
+
+    /* Review Cards */
+    .rev-opt {
+      padding: 10px 13px;
+      border-radius: 9px;
+      border: 1.5px solid var(--border);
+      margin-bottom: 7px;
+      display: flex;
+      gap: 10px;
+      align-items: flex-start;
+    }
+
+    .rev-opt.correct-opt {
+      background: var(--success-bg);
+      border-color: var(--success);
+    }
+
+    .rev-opt.wrong-opt {
+      background: var(--danger-bg);
+      border-color: var(--danger);
+    }
+
+    .exp-box {
+      margin-top: 10px;
+      padding: 11px 14px;
+      border-radius: 9px;
+      background: var(--gold-light);
+      border-left: 4px solid var(--gold);
+      font-size: 0.9rem;
+    }
+
+    .model-ans-box {
+      margin-top: 10px;
+      padding: 13px 15px;
+      border-radius: 10px;
+      background: #f0fdf4;
+      border: 1px solid #bbf7d0;
+    }
+
+    .student-ans-box {
+      margin-top: 8px;
+      padding: 12px 14px;
+      border-radius: 10px;
+      background: #f8fafc;
+      border: 1px solid #cbd5e1;
+      white-space: pre-wrap;
+    }
+
+    /* Modals */
+    .modal-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(9, 25, 20, 0.65);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      z-index: 2000;
+      padding: 16px;
+    }
+
+    .modal-overlay.show { display: flex; }
+
+    .modal-box {
+      background: #fff;
+      border-radius: 16px;
+      max-width: 520px;
+      width: 100%;
+      padding: 24px;
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.28);
+    }
+
+    .modal-box h3 { color: var(--primary); margin-bottom: 10px; }
+
+    .hidden { display: none !important; }
+
+    .no-select {
+      user-select: none;
+      -webkit-user-select: none;
+    }
+
+    @media print {
+      .exam-topbar, .no-print, .exam-controls-bar, .pagination-bar { display: none !important; }
+      body { background: #fff; }
+      .card, .q-card { box-shadow: none; break-inside: avoid; }
+    }
+
+    @media (max-width: 640px) {
+      .hero-title { font-size: 1.35rem; }
+      .card { padding: 16px; }
+      .q-card { padding: 15px; }
+      .ar-text { font-size: 1.08rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ================= STICKY EXAM TOPBAR ================= -->
+  <div id="examTopbar" class="exam-topbar hidden">
+    <div class="topbar-inner">
+      <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap;">
+        <div id="timerBox" class="timer-box">⏱️ <span id="timerDisplay">90:00</span></div>
+        <span class="proctor-badge">🔒 Anti-Cheat ON (Tab Switch = Auto-Submit)</span>
+      </div>
+      <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;">
+        <div class="lang-switcher" title="Language View">
+          <button type="button" class="lang-btn active" onclick="setLangMode('both', this)">AR + ML</button>
+          <button type="button" class="lang-btn" onclick="setLangMode('ar', this)">العربية</button>
+          <button type="button" class="lang-btn" onclick="setLangMode('ml', this)">മലയാളം</button>
+        </div>
+        <span id="progressPill" style="font-size:0.84rem;font-weight:700;background:rgba(255,255,255,0.14);padding:6px 11px;border-radius:8px;">0 / 120</span>
+        <button type="button" class="btn btn-gold btn-sm" onclick="togglePalette()">📋 Grid</button>
+        <button type="button" class="btn btn-danger btn-sm" onclick="openSubmitModal()">Submit Exam</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+
+    <!-- ================= SCREEN 1: START / REGISTRATION ================= -->
+    <div id="startScreen">
+      <div class="hero-banner">
+        <div class="hero-top">
+          <span class="badge-pill">DARUL HUDA SIBĀQ '26 • CATEGORY S (ACADEMIC)</span>
+          <button type="button" id="teacherSetupBtn" class="btn-ghost" onclick="openTeacherModal()">⚙️ Teacher Email Setup</button>
+        </div>
+        <h1 class="hero-title">TWS3 ḤADĪTH MUSĀBAQAH — Online Exam (SET 2)</h1>
+        <p class="hero-sub">
+          مشكاة المصابيح (الأحاديث المختارة وشروحها) • مقدمة المشكاة • مصطلح الحديث • الكتب الستة والمعرفة العامة بالحديث
+        </p>
+        <div class="hero-stats">
+          <span class="hero-stat">📝 120 Questions (96 MCQ + 24 Written)</span>
+          <span class="hero-stat">⏱️ Time: 90 Minutes</span>
+          <span class="hero-stat">🎯 Level: Medium (60) &amp; Tight (60)</span>
+          <span class="hero-stat">🌐 Arabic &amp; Malayalam</span>
+        </div>
+      </div>
+
+      <div class="alert-box">
+        <h4>⚠️ പരീക്ഷാ നിബന്ധനകൾ — ശ്രദ്ധയോടെ വായിക്കുക (Strict Exam Rules)</h4>
+        <ul>
+          <li><strong>ഓട്ടോ-സബ്മിറ്റ് മുന്നറിയിപ്പ് (Anti-Cheat):</strong> പരീക്ഷ ആരംഭിച്ച ശേഷം <strong>വേറെ ടാബ് തുറക്കുകയോ, ബ്രൗസർ മിനിമൈസ് ചെയ്യുകയോ, മറ്റൊരു ആപ്പിലേക്ക് മാറുകയോ</strong> ചെയ്താൽ പരീക്ഷ യാതൊരു മുന്നറിയിപ്പുമില്ലാതെ <strong>ഓട്ടോമാറ്റിക്കായി സബ്മിറ്റ് (Auto-Submit)</strong> ആകുന്നതാണ്.</li>
+          <li><strong>സമയപരിധി (90 Minutes):</strong> 90 മിനിറ്റ് പൂർത്തിയായാൽ ആ നിമിഷം തന്നെ പരീക്ഷ ഓട്ടോമാറ്റിക്കായി സബ്മിറ്റ് ആകും.</li>
+          <li><strong>ചോദ്യഘടന:</strong> 1 മുതൽ 96 വരെ MCQ ചോദ്യങ്ങളും, 97 മുതൽ 120 വരെ എഴുതാനുള്ള (Written) ചോദ്യങ്ങളുമാണ്. എല്ലാ ചോദ്യങ്ങളും അറബിയിലും മലയാളത്തിലും ലഭ്യമാണ്.</li>
+          <li><strong>ഫലവും ഇമെയിലും:</strong> സബ്മിറ്റ് ചെയ്ത ഉടൻ തന്നെ ഏതൊക്കെ ശരിയായി, ഏതൊക്കെ തെറ്റി എന്ന് ശരിയുത്തരങ്ങളും വിശദീകരണവും സഹിതം സ്ക്രീനിൽ കാണാനും, ഉത്തരം ഓട്ടോമാറ്റിക്കായി അധ്യാപകന്റെ ഇമെയിലിലേക്ക് അയക്കപ്പെടാനും സംവിധാനമുണ്ട്.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <div class="card-title">👤 പരീക്ഷാർത്ഥിയുടെ വിവരങ്ങൾ (Candidate Details)</div>
+        <div class="form-grid">
+          <div class="form-group">
+            <label for="candName">പേര് / Full Name *</label>
+            <input type="text" id="candName" placeholder="ഉദാ: മുഹമ്മദ് അമീൻ" required />
+          </div>
+          <div class="form-group">
+            <label for="candChest">ചെസ്റ്റ് / റോൾ നമ്പർ (Chest / Roll No) *</label>
+            <input type="text" id="candChest" placeholder="ഉദാ: DH-204" required />
+          </div>
+          <div class="form-group">
+            <label for="candInst">സ്ഥാപനം / ക്ലാസ് / പൂൾ (Institution / Class) *</label>
+            <input type="text" id="candInst" placeholder="ഉദാ: Darul Huda Senior Secondary" required />
+          </div>
+          <div class="form-group">
+            <label for="candEmail">വിദ്യാർത്ഥിയുടെ ഇമെയിൽ (Optional)</label>
+            <input type="email" id="candEmail" placeholder="student@email.com" />
+          </div>
+        </div>
+
+        <div id="emailConfigPreview" style="font-size:0.84rem;color:var(--muted);margin-bottom:16px;padding:10px 13px;background:#f4f8f6;border-radius:9px;border:1px solid var(--border);"></div>
+
+        <label style="display:flex;align-items:flex-start;gap:10px;margin-bottom:18px;cursor:pointer;font-size:0.9rem;">
+          <input type="checkbox" id="agreeRules" style="margin-top:4px;width:18px;height:18px;accent-color:var(--primary);" />
+          <span>വേറെ ടാബ് തുറക്കുകയോ വിൻഡോ മിനിമൈസ് ചെയ്യുകയോ ചെയ്താൽ പരീക്ഷ ഉടൻ ഓട്ടോമാറ്റിക്കായി സബ്മിറ്റ് ആകുമെന്ന് ഞാൻ മനസ്സിലാക്കുകയും സമ്മതിക്കുകയും ചെയ്യുന്നു.</span>
+        </label>
+
+        <button type="button" class="btn btn-primary" style="width:100%;padding:14px;font-size:1.05rem;" onclick="startExam()">
+          🚀 പരീക്ഷ ആരംഭിക്കുക (Start 90-Minute Exam)
+        </button>
+      </div>
+    </div>
+
+    <!-- ================= SCREEN 2: ACTIVE EXAM ================= -->
+    <div id="examScreen" class="hidden no-select">
+      <div id="palettePanel" class="palette-panel hidden">
+        <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px;">
+          <strong style="color:var(--primary);">📋 ചോദ്യ സൂചിക (Question Navigator: 1–120)</strong>
+          <div style="font-size:0.78rem;color:var(--muted);display:flex;gap:10px;">
+            <span>🟩 Answered MCQ</span>
+            <span>🟪 Answered Written</span>
+            <span>⬜ Unanswered</span>
+          </div>
+        </div>
+        <div id="paletteGrid" class="palette-grid"></div>
+      </div>
+
+      <div class="exam-controls-bar">
+        <div class="section-tabs">
+          <button type="button" id="tabMCQ" class="sec-tab active" onclick="switchSection('mcq')">Section A: MCQ (1–96)</button>
+          <button type="button" id="tabWritten" class="sec-tab" onclick="switchSection('written')">Section B: എഴുത്ത് / Written (97–120)</button>
+        </div>
+        <div style="display:flex;align-items:center;gap:8px;flex-wrap:wrap;">
+          <select id="pageSizeSelect" onchange="changePageSize(this.value)" style="padding:7px 10px;border-radius:8px;border:1px solid var(--border);font-family:inherit;font-size:0.84rem;">
+            <option value="10" selected>10 ചോദ്യങ്ങൾ / പേജ്</option>
+            <option value="20">20 ചോദ്യങ്ങൾ / പേജ്</option>
+            <option value="120">എല്ലാം ഒരു പേജിൽ</option>
+          </select>
+          <span id="pageInfo" style="font-size:0.85rem;font-weight:700;color:var(--primary);"></span>
+        </div>
+      </div>
+
+      <div id="questionsContainer"></div>
+
+      <div class="pagination-bar">
+        <button type="button" id="prevPageBtn" class="btn btn-outline btn-sm" onclick="prevPage()">⬅️ മുമ്പത്തെ പേജ് (Prev)</button>
+        <div id="pageNumbersInfo" style="font-weight:700;font-size:0.9rem;color:var(--primary-dark);"></div>
+        <div style="display:flex;gap:8px;">
+          <button type="button" id="nextPageBtn" class="btn btn-primary btn-sm" onclick="nextPage()">അടുത്ത പേജ് (Next) ➡️</button>
+          <button type="button" class="btn btn-danger btn-sm" onclick="openSubmitModal()">✅ Submit Exam</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ================= SCREEN 3: RESULTS & RIGHT/WRONG REVIEW ================= -->
+    <div id="resultScreen" class="hidden">
+      <div id="resultBanner" class="result-banner normal">
+        <h2 id="resultHeading" style="font-size:1.5rem;margin-bottom:6px;"></h2>
+        <p id="resultSubheading" style="opacity:0.92;font-size:0.94rem;"></p>
+        <div id="resultMetaLine" style="margin-top:12px;font-size:0.86rem;background:rgba(255,255,255,0.14);padding:8px 12px;border-radius:9px;display:inline-block;"></div>
+      </div>
+
+      <div id="emailStatusBar" class="email-status-bar email-sending no-print">
+        <span id="emailStatusText">📧 അധ്യാപകന്റെ ഇമെയിലിലേക്ക് ഉത്തരം അയച്ചുകൊണ്ടിരിക്കുന്നു...</span>
+        <div style="display:flex;gap:8px;flex-wrap:wrap;">
+          <button type="button" class="btn btn-outline btn-sm" onclick="sendViaMailtoFallback()">📨 Mail App</button>
+          <button type="button" class="btn btn-primary btn-sm" onclick="downloadReport()">📥 Download Report</button>
+          <button type="button" class="btn btn-gold btn-sm" onclick="window.print()">🖨️ Print / PDF</button>
+        </div>
+      </div>
+
+      <div class="score-grid">
+        <div class="score-card">
+          <div class="val" id="resMcqScore">0 / 96</div>
+          <div class="lbl">MCQ സ്കോർ (Score)</div>
+        </div>
+        <div class="score-card green">
+          <div class="val" id="resCorrect">0</div>
+          <div class="lbl">ശരിയായവ (Correct ✅)</div>
+        </div>
+        <div class="score-card red">
+          <div class="val" id="resWrong">0</div>
+          <div class="lbl">തെറ്റായവ (Wrong ❌)</div>
+        </div>
+        <div class="score-card">
+          <div class="val" id="resUnans">0</div>
+          <div class="lbl">ഉത്തരം നൽകാത്തവ (Skipped)</div>
+        </div>
+        <div class="score-card purple">
+          <div class="val" id="resWritten">0 / 24</div>
+          <div class="lbl">എഴുത്ത് ചോദ്യങ്ങൾ (Written)</div>
+        </div>
+        <div class="score-card">
+          <div class="val" id="resAccuracy">0%</div>
+          <div class="lbl">MCQ കൃത്യത (Accuracy)</div>
+        </div>
+      </div>
+
+      <div class="card" style="padding:16px 20px;">
+        <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;">
+          <div>
+            <strong style="color:var(--primary);">📊 നിലവാര വിശകലനം (Difficulty Analysis):</strong>
+            <span id="diffBreakdownText" style="margin-left:8px;font-size:0.9rem;color:var(--muted);"></span>
+          </div>
+          <div class="lang-switcher no-print" style="background:#e9efec;">
+            <button type="button" class="lang-btn active" style="color:#18221f;" onclick="setLangMode('both', this)">AR + ML</button>
+            <button type="button" class="lang-btn" style="color:#18221f;" onclick="setLangMode('ar', this)">العربية</button>
+            <button type="button" class="lang-btn" style="color:#18221f;" onclick="setLangMode('ml', this)">മലയാളം</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="exam-controls-bar no-print">
+        <div class="section-tabs" id="reviewFilterTabs">
+          <button type="button" class="sec-tab active" onclick="renderReview('all', this)">എല്ലാം (All 120)</button>
+          <button type="button" class="sec-tab" onclick="renderReview('correct', this)">✅ ശരിയായവ (Correct)</button>
+          <button type="button" class="sec-tab" onclick="renderReview('wrong', this)">❌ തെറ്റായവ (Wrong)</button>
+          <button type="button" class="sec-tab" onclick="renderReview('unanswered', this)">⚪ വിട്ടുപോയവ (Skipped)</button>
+          <button type="button" class="sec-tab" onclick="renderReview('written', this)">✍️ എഴുത്ത് ചോദ്യങ്ങൾ (Written 24)</button>
+        </div>
+      </div>
+
+      <div id="reviewContainer"></div>
+    </div>
+
+  </div>
+
+  <!-- ================= CUSTOM SUBMIT CONFIRM MODAL (No window.confirm!) ================= -->
+  <div id="submitModal" class="modal-overlay">
+    <div class="modal-box">
+      <h3>✅ പരീക്ഷ സബ്മിറ്റ് ചെയ്യട്ടെ? (Confirm Submission)</h3>
+      <p id="submitModalSummary" style="font-size:0.94rem;color:var(--muted);margin-bottom:18px;"></p>
+      <div style="display:flex;justify-content:flex-end;gap:10px;">
+        <button type="button" class="btn btn-outline btn-sm" onclick="closeSubmitModal()">തിരികെ പോവുക (Cancel)</button>
+        <button type="button" class="btn btn-danger btn-sm" onclick="confirmManualSubmit()">ഉറപ്പായും സബ്മിറ്റ് ചെയ്യുക</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= TEACHER EMAIL CONFIG MODAL ================= -->
+  <div id="teacherModal" class="modal-overlay">
+    <div class="modal-box">
+      <h3>⚙️ അധ്യാപകന്റെ ഇമെയിൽ സെറ്റിംഗ്സ് (Teacher Email Setup)</h3>
+      <p style="font-size:0.86rem;color:var(--muted);margin-bottom:14px;">
+        കുട്ടികൾ പരീക്ഷ സബ്മിറ്റ് ചെയ്യുമ്പോൾ ഫലം ഓട്ടോമാറ്റിക്കായി ലഭിക്കേണ്ട നിങ്ങളുടെ ഇമെയിൽ ഐഡി താഴെ നൽകുക.
+        (സ്ഥിരമായി സെറ്റ് ചെയ്യാൻ HTML ഫയലിലെ <code>DEFAULT_TEACHER_EMAIL</code> എന്ന വരി എഡിറ്റ് ചെയ്യാം.)
+      </p>
+      <div class="form-group" style="margin-bottom:12px;">
+        <label for="teacherEmailInput">Teacher Email (FormSubmit വഴി ഓട്ടോ ഇമെയിൽ):</label>
+        <input type="email" id="teacherEmailInput" placeholder="teacher@gmail.com" />
+      </div>
+      <div class="form-group" style="margin-bottom:14px;">
+        <label for="gasUrlInput">Google Apps Script Web App URL (ഓപ്ഷണൽ):</label>
+        <input type="url" id="gasUrlInput" placeholder="https://script.google.com/macros/s/.../exec" />
+      </div>
+      <p style="font-size:0.78rem;color:var(--warning);background:var(--warning-bg);padding:9px 11px;border-radius:8px;margin-bottom:16px;">
+        💡 <strong>FormSubmit ശ്രദ്ധയ്ക്ക്:</strong> ആദ്യമായി ഒരു ടെസ്റ്റ് സബ്മിഷൻ നടത്തുമ്പോൾ <code>formsubmit.co</code>-ൽ നിന്ന് നിങ്ങളുടെ ഇമെയിലിലേക്ക് ഒരു <strong>Activate Form</strong> ലിങ്ക് വരും. അതിൽ ഒരു തവണ ക്ലിക്ക് ചെയ്താൽ തുടർന്നുള്ള എല്ലാ കുട്ടികളുടെയും ഉത്തരങ്ങൾ ഓട്ടോമാറ്റിക്കായി ഇൻബോക്സിൽ എത്തും!
+      </p>
+      <div style="display:flex;justify-content:flex-end;gap:10px;">
+        <button type="button" class="btn btn-outline btn-sm" onclick="closeTeacherModal()">Close</button>
+        <button type="button" class="btn btn-primary btn-sm" onclick="saveTeacherConfig()">Save Settings</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // =========================================================================
+    //  TEACHER CONFIGURATION — നിങ്ങളുടെ ഇമെയിൽ ഐഡി താഴെ നൽകുക
+    // =========================================================================
+    const DEFAULT_TEACHER_EMAIL = "YOUR_EMAIL@gmail.com"; // <--- ഇവിടെ നിങ്ങളുടെ യഥാർത്ഥ ഇമെയിൽ നൽകുക
+    const DEFAULT_GOOGLE_SCRIPT_URL = "";                 // <--- (ഓപ്ഷണൽ) Google Apps Script URL
+    const EXAM_DURATION_SECONDS = 90 * 60;                // 90 Minutes (5400 seconds)
+
+    // =========================================================================
+    //  COMPLETE 120-QUESTION BILINGUAL BANK — SET 2 (96 MCQ + 24 WRITTEN)
+    // =========================================================================
+    const QUESTIONS = [{"id": 1, "type": "mcq", "diff": "medium", "topic": "كتاب الإيمان - الفصل الأول", "ar": "في الحديث رقم (5): «الإيمان بضع وسبعون شعبة... والحياء شعبة من الإيمان»، ما العدد الذي يُطلق عليه لفظ (البِضْع) في اللغة العربية وشروح الحديث؟", "ml": "ഹദീസ് നമ്പർ 5-ലെ 'അൽ-ഈമാനു ബിള്ഉൻ വസബ്ഊന ശുഅബതൻ' എന്നതിൽ 'ബിള്അ്' (بِضْع) എന്ന അറബി പദം ഏത് സംഖ്യാ പരിധിയെയാണ് കുറിക്കുന്നത്?", "options": [{"ar": "من واحد إلى خمسة", "ml": "ഒന്നു മുതൽ അഞ്ചു വരെ"}, {"ar": "من ثلاث إلى تسع", "ml": "മൂന്നു മുതൽ ഒമ്പതു വരെ"}, {"ar": "من عشر إلى عشرين", "ml": "പത്തു മുതൽ ഇരുപതു വരെ"}, {"ar": "اثنان فقط", "ml": "രണ്ട് മാത്രം"}], "ans": 1, "exp": "البِضْع في اللغة وشروح المشكاة (كالمرقاة): العدد ما بين الثلاث إلى التسع، أي من 73 إلى 79 شعبة."}, {"id": 2, "type": "mcq", "diff": "tight", "topic": "كتاب الإيمان - الفصل الأول", "ar": "في الحديث رقم (4) عن ابن عمر رضي الله عنهما: «بني الإسلام على خمس...»، لماذا أفرد الحديث بالذكر «شهادة أن لا إله إلا الله وأن محمداً عبده ورسوله» أولاً قبل سائر الأركان؟", "ml": "ഇബ്നു ഉമർ (റ) റിപ്പോർട്ട് ചെയ്ത ഹദീസ് നമ്പർ 4-ൽ മറ്റ് സ്തംഭങ്ങൾക്ക് മുമ്പായി 'ശഹാദത്ത്' ആദ്യം എടുത്തുപറയാനുള്ള ശർഹ് (വ്യാഖ്യാന) കാരണമെന്ത്?", "options": [{"ar": "لأنها أسهل الأركان على اللسان فقط", "ml": "അത് നാവുകൊണ്ട് പറയാൻ ഏറ്റവും എളുപ്പമായതിനാൽ മാത്രം"}, {"ar": "لأنها الأصل والأساس الذي لا يُقبل ولا يصح شيء من بقية الأركان بدونها", "ml": "അതാണ് ഇസ്ലാമിന്റെ അടിത്തറ; അത് കൂടാതെ മറ്റ് നാല് സ്തംഭങ്ങളിൽ ഒന്നും തന്നെ സ്വീകാര്യമോ സാധുവോ ആകില്ല എന്നതിനാൽ"}, {"ar": "لأن الصلاة والزكاة فُرضتا قبلها", "ml": "നിസ്കാരവും സകാത്തും അതിന് മുമ്പ് നിർബന്ധമായതിനാൽ"}, {"ar": "لأنها خاصة بأهل مكة فقط", "ml": "അത് മക്കക്കാർക്ക് മാത്രമുള്ളതായതിനാൽ"}], "ans": 1, "exp": "الشهادتان هما أصل الإسلام وأساسه الذي يُبنى عليه غيره، ولا تصح الصلاة ولا الزكاة ولا الصوم ولا الحج إلا بهما."}, {"id": 3, "type": "mcq", "diff": "tight", "topic": "كتاب الإيمان - الفصل الأول", "ar": "ما الفرق اللفظي في تعريف «المهاجر» بين حديث عبد الله بن عمرو عند البخاري (رقم 6) وبين زيادة البيهقي برواية فضالة (رقم 34)؟", "ml": "'മുഹാജിർ' എന്നതിന്റെ നിർവ്വചനത്തിൽ ഹദീസ് നമ്പർ 6-ലും (ബുഖാരി) ഹദീസ് നമ്പർ 34-ലും (ബൈഹഖി - ഫുദാലയുടെ റിപ്പോർട്ട്) വന്ന പദവ്യത്യാസം ഏതാണ്?", "options": [{"ar": "في (6): «من هجر ما نهى الله عنه»، وفي (34): «من هجر الخطايا والذنوب»", "ml": "നമ്പർ 6-ൽ 'അല്ലാഹു വിരോധിച്ചത് വെടിഞ്ഞവൻ' എന്നും നമ്പർ 34-ൽ 'തെറ്റുകളും പാപങ്ങളും വെടിഞ്ഞവൻ' എന്നുമാണ്"}, {"ar": "في (6): «من هاجر من مكة»، وفي (34): «من هجر المعاصي»", "ml": "നമ്പർ 6-ൽ 'മക്കയിൽ നിന്ന് പലായനം ചെയ്തവൻ' എന്നാണ്"}, {"ar": "اللفظان متطابقان تماماً بلا أي فرق", "ml": "രണ്ട് ഹദീസുകളിലും ഒരൊറ്റ പദവ്യത്യാസവുമില്ല"}, {"ar": "في (6) لم يُذكر المهاجر أصلاً", "ml": "നമ്പർ 6-ൽ മുഹാജിറിനെക്കുറിച്ച് പരാമർശമില്ല"}], "ans": 0, "exp": "في حديث 6 (البخاري): «والمهاجر من هجر ما نهى الله عنه». وفي حديث 34 (البيهقي عن فضالة): «والمهاجر من هجر الخطايا والذنوب»."}, {"id": 4, "type": "mcq", "diff": "medium", "topic": "كتاب الإيمان - الفصل الأول", "ar": "في الحديث رقم (8) عن أنس: «ثلاث من كن فيه وجد بهن حلاوة الإيمان...»، ما التشبيه النبوي الذي ضُرب في الخصلة الثالثة لكراهة العودة في الكفر؟", "ml": "ഹദീസ് നമ്പർ 8-ലെ ('ഈമാനിന്റെ മാധുര്യം') മൂന്നാമത്തെ ഗുണത്തിൽ, കുഫ്റിലേക്ക് മടങ്ങുന്നതിനോടുള്ള വെറുപ്പിനെ നബി ﷺ എന്തിനോടാണ് ഉപമിച്ചത്?", "options": [{"ar": "كما يكره أن يفقد ماله", "ml": "തന്റെ സമ്പത്ത് നഷ്ടപ്പെടുന്നതിനെ വെറുക്കുന്നത് പോലെ"}, {"ar": "كما يكره أن يُلقى في النار", "ml": "തീയിൽ എറിയപ്പെടുന്നതിനെ വെറുക്കുന്നത് പോലെ"}, {"ar": "كما يكره أن يُسجن في الظلام", "ml": "ഇരുട്ടിൽ തടവിലാക്കപ്പെടുന്നതിനെ വെറുക്കുന്നത് പോലെ"}, {"ar": "كما يكره أن يمرض مرضاً شديداً", "ml": "കഠിന രോഗം വരുന്നതിനെ വെറുക്കുന്നത് പോലെ"}], "ans": 1, "exp": "حديث رقم 8 (متفق عليه): «ومن يكره أن يعود في الكفر بعد أن أنقذه الله منه كما يكره أن يلقى في النار»."}, {"id": 5, "type": "mcq", "diff": "medium", "topic": "كتاب الإيمان - الفصل الثاني", "ar": "في الحديث رقم (30) عن أبي أمامة رضي الله عنه: «من أحب لله، وأبغض لله... فقد استكمل الإيمان»، ما الفعلان الآخران المذكوران بعد الحب والبغض في الله؟", "ml": "അബൂ ഉമാമ (റ) റിപ്പോർട്ട് ചെയ്ത ഹദീസ് നമ്പർ 30-ൽ അല്ലാഹുവിന് വേണ്ടിയുള്ള സ്നേഹത്തിനും വെറുപ്പിനും ശേഷം പറഞ്ഞിട്ടുള്ള മറ്റു രണ്ട് കാര്യങ്ങൾ ഏതെല്ലാമാണ്?", "options": [{"ar": "وصلى لله وصام لله", "ml": "അല്ലാഹുവിന് വേണ്ടി നിസ്കരിക്കുകയും നോമ്പെടുക്കുകയും ചെയ്തു"}, {"ar": "وأعطى لله ومنع لله", "ml": "അല്ലാഹുവിന് വേണ്ടി നൽകുകയും അല്ലാഹുവിന് വേണ്ടി തടയുകയും ചെയ്തു"}, {"ar": "وقال لله وسكت لله", "ml": "അല്ലാഹുവിന് വേണ്ടി സംസാരിക്കുകയും മൗനം പാലിക്കുകയും ചെയ്തു"}, {"ar": "وهاجر لله وجاهد لله", "ml": "അല്ലാഹുവിന് വേണ്ടി ഹിജ്റയും ജിഹാദും ചെയ്തു"}], "ans": 1, "exp": "حديث رقم 30 (رواه أبو داود): «من أحب لله، وأبغض لله، وأعطى لله، ومنع لله؛ فقد استكمل الإيمان»."}, {"id": 6, "type": "mcq", "diff": "medium", "topic": "كتاب الإيمان - الفصل الثاني", "ar": "من الإمامان اللذان عزى إليهما الخطيب التبريزي الحديث رقم (33) عن أبي هريرة: «المسلم من سلم المسلمون من لسانه ويده، والمؤمن من أمنه الناس على دمائهم وأموالهم»؟", "ml": "അബൂഹുറൈറ (റ) നിവേദനം ചെയ്ത ഹദീസ് നമ്പർ 33 ('അൽ-മുഅ്മിനു മൻ അമിനഹുന്നാസു അലാ ദിമാഇഹിം വ അംവാലിഹിം') ഏതെല്ലാം രണ്ട് ഇമാമുമാരിലേക്കാണ് മിശ്കാത്തിൽ ചേർത്തിട്ടുള്ളത്?", "options": [{"ar": "البخاري ومسلم", "ml": "ബുഖാരിയും മുസ്ലിമും"}, {"ar": "الترمذي والنسائي", "ml": "തിർമിദിയും നസാഈയും"}, {"ar": "أبو داود وابن ماجه", "ml": "അബൂദാവൂദും ഇബ്നു മാജയും"}, {"ar": "مالك وأحمد", "ml": "മാലികും അഹ്മദും"}], "ans": 1, "exp": "حديث رقم 33 عن أبي هريرة: «رواه الترمذي، والنسائي»."}, {"id": 7, "type": "mcq", "diff": "tight", "topic": "كتاب الإيمان - الفصل الثاني", "ar": "في الحديث رقم (35) عن أنس رضي الله عنه: «قلما خطبنا رسول الله ﷺ إلا قال: لا إيمان لمن لا أمانة له، ولا دين لمن لا عهد له»، علامَ تدل عبارة «قلما خطبنا... إلا قال» في شرح الحديث؟", "ml": "ഹദീസ് നമ്പർ 35-ലെ 'ഖല്ലമാ ഖത്വബനാ റസൂലുല്ലാഹി ﷺ ഇല്ലാ ഖാല' (നബി ﷺ ഞങ്ങളോട് പ്രസംഗിക്കുമ്പോഴെല്ലാം ഇത് പറയാതിരിക്കാറില്ല) എന്ന അനസ് (റ) വിന്റെ പ്രയോഗം എന്തിനെയാണ് സൂചിപ്പിക്കുന്നത്?", "options": [{"ar": "أن النبي ﷺ قال هذا الحديث مرة واحدة فقط في حجة الوداع", "ml": "നബി ﷺ ഇത് ഹജ്ജത്തുൽ വിദാഇൽ ഒരിക്കൽ മാത്രമാണ് പറഞ്ഞത്"}, {"ar": "شدة اهتمام النبي ﷺ وتكراره التنبيه على وجوب الأمانة والوفاء بالعهد في معظم خطبه", "ml": "വിശ്വസ്തതയുടെയും കരാർ പാലനത്തിന്റെയും ഗൗരവം കാരണം നബി ﷺ മിക്ക ഖുതുബകളിലും ഇത് ആവർത്തിച്ച് ഓർമ്മിപ്പിക്കാറുണ്ടായിരുന്നു"}, {"ar": "أن هذا الكلام كان خاصاً بخطبة الاستسقاء", "ml": "ഇത് മഴയ്ക്ക് വേണ്ടിയുള്ള പ്രാർത്ഥനയിൽ മാത്രമായിരുന്നു"}, {"ar": "أن الخطبة لا تصح بدونه شرعاً", "ml": "ഇതില്ലാതെ ജുമുഅ ഖുതുബ സ്വഹീഹാവില്ല"}], "ans": 1, "exp": "عبارة «قلما خطبنا إلا قال» تدل على المواظبة وكثرة التكرار لعظم شأن الأمانة والعهد في الإسلام."}, {"id": 8, "type": "mcq", "diff": "tight", "topic": "كتاب الإيمان - الفصل الثاني", "ar": "في الحاشية رقم (2) على الحديث (35)، إلى أي كتاب للإمام الضياء المقدسي أشار المحقق في تخريج هذا الحديث من طريقين عن أنس؟", "ml": "ഹദീസ് നമ്പർ 35-ന്റെ അടിക്കുറിപ്പ് (2)-ൽ, അനസ് (റ) വിൽ നിന്ന് രണ്ട് വഴികളിലൂടെ ഈ ഹദീസ് ഉദ്ധരിച്ചതായി പറയുന്ന ഇമാം ളിയാഉൽ മഖ്ദിസിയുടെ ഗ്രന്ഥം ഏതാണ്?", "options": [{"ar": "رياض الصالحين", "ml": "രിയാളുസ്സ്വാലിഹീൻ"}, {"ar": "الأحاديث المختارة", "ml": "അൽ-അഹാദീസുൽ മുഖ്താര"}, {"ar": "الجامع الصغير", "ml": "അൽ-ജാമിഉസ്സ്വഗീർ"}, {"ar": "مجمع الزوائد", "ml": "മജ്മഉസ്സവാഇദ്"}], "ans": 1, "exp": "حاشية (2) على حديث 35: «ورواه الضياء في الأحاديث المختارة (ق 2/234) من طريقين عن أنس. وهو حديث جيد، أحد إسناديه حسن، وله شواهد»."}, {"id": 9, "type": "mcq", "diff": "tight", "topic": "كتاب الإيمان - الفصل الثالث", "ar": "في نهاية الحديث رقم (42) عن المقداد: «إما يعزهم الله فيجعلهم من أهلها، أو يذلهم فيدينون لها. قلت: فيكون الدين كله لله»، مَن قائل عبارة «قلت: فيكون الدين كله لله»؟", "ml": "ഹദീസ് നമ്പർ 42-ന്റെ അവസാനത്തിലുള്ള 'ഖുൽതു: ഫയകൂനുദ്ദീനു കുല്ലുഹു ലില്ലാഹ്' (ഞാൻ പറഞ്ഞു: അപ്പോൾ മതം പൂർണ്ണമായും അല്ലാഹുവിന്റേതാകും) എന്ന് പറഞ്ഞത് ആരാണ്?", "options": [{"ar": "الإمام أحمد بن حنبل", "ml": "ഇമാം അഹ്മദ് ബ്നു ഹൻബൽ"}, {"ar": "الصحابي المقداد بن الأسود رضي الله عنه تعقيباً واستنباطاً من الحديث", "ml": "സ്വഹാബി മിഖ്ദാദ് ബ്നുൽ അസ്‌വദ് (റ) ഹദീസിനോടുള്ള പ്രതികരണമായി പറഞ്ഞത്"}, {"ar": "الخطيب التبريزي صاحب المشكاة", "ml": "മിശ്കാത്തിന്റെ കർത്താവ് ഖത്വീബ് തബ്രീസി"}, {"ar": "المحقق الألباني", "ml": "മുഹഖിഖ് അൽബാനി"}], "ans": 1, "exp": "القائل هو المقداد رضي الله عنه (راوي الحديث عن النبي ﷺ)، استشهد بآية الأنفال (39) فهماً منه للبشارة النبوية."}, {"id": 10, "type": "mcq", "diff": "tight", "topic": "كتاب الإيمان - الفصل الثالث", "ar": "في الحاشية رقم (2) على الحديث (42)، ذكر المحقق أنه أورد جماعة آخرين رووا هذا الحديث في كتاب له، ما عنوان ذلك الكتاب؟", "ml": "ഹദീസ് നമ്പർ 42-ന്റെ അടിക്കുറിപ്പ് (2)-ൽ, ഈ ഹദീസ് ഉദ്ധരിച്ച മറ്റു പല ഇമാമുമാരെയും താൻ പരാമർശിച്ചിട്ടുണ്ടെന്ന് മുഹഖിഖ് എഴുതിയ ഗ്രന്ഥത്തിന്റെ പേരെന്ത്?", "options": [{"ar": "إرواء الغليل", "ml": "ഇർവാഉൽ ഗലീൽ"}, {"ar": "تحذير الساجد من اتخاذ القبور مساجد", "ml": "തഹ്ദീറുസ്സാജിദ് മിൻ ഇത്തിഖാദിൽ ഖുബൂരി മസാജിദ്"}, {"ar": "صفة صلاة النبي ﷺ", "ml": "സ്വിഫത്തു സ്വലാത്തിന്നബി ﷺ"}, {"ar": "صحيح الترغيب والترهيب", "ml": "സ്വഹീഹുത്തർഗീബ് വത്തർഹീബ്"}], "ans": 1, "exp": "حاشية (2) على حديث 42: «وقد رواه جماعة آخرون ذكرتهم في كتابي تحذير الساجد من اتخاذ القبور مساجد (ص 121)»."}, {"id": 11, "type": "mcq", "diff": "tight", "topic": "كتاب الإيمان - الفصل الثالث", "ar": "بحسب قواعد مصطلح الحديث، ما نوع الأثر رقم (43) المروي عن وهب بن منبه («أليس لا إله إلا الله مفتاح الجنة...») بالنظر إلى من أُضيف إليه؟", "ml": "മുസ്ത്വലഹുൽ ഹദീസിന്റെ നിയമപ്രകാരം, വഹ്ബ് ബ്നു മുനബ്ബിഹ് എന്ന താബിഈയിലേക്ക് ചേർക്കപ്പെട്ട ഹദീസ് നമ്പർ 43 ('അലൈസ ലാ ഇലാഹ ഇല്ലല്ലാഹു മിഫ്താഹുൽ ജന്ന...') ഏത് വിഭാഗത്തിലാണ് പെടുന്നത്?", "options": [{"ar": "مرفوع", "ml": "മർഫൂഅ്"}, {"ar": "موقوف", "ml": "മൗഖൂഫ്"}, {"ar": "مقطوع (لأنه من قول تابعي)", "ml": "മഖ്ത്വൂഅ് (താബിഈയുടെ വചനമായതിനാൽ)"}, {"ar": "قدسي", "ml": "ഖുദ്സി"}], "ans": 2, "exp": "وهب بن منبه (ت 114هـ) من التابعين، وما أُضيف إلى التابعي من قول أو فعل يُسمى في المصطلح «مقطوعاً»."}, {"id": 12, "type": "mcq", "diff": "medium", "topic": "كتاب الإيمان - الفصل الثالث", "ar": "في الحديث رقم (44) عن أبي هريرة: «إذا أحسن أحدكم إسلامه، فكل حسنة يعملها تكتب له بعشر أمثالها إلى سبعمائة ضعف...»، كيف تُكتب السيئة بحسب نص الحديث؟", "ml": "ഹദീസ് നമ്പർ 44 പ്രകാരം നന്മകൾക്ക് പത്ത് മുതൽ എഴുന്നൂറ് ഇരട്ടി വരെ പ്രതിഫലം രേഖപ്പെടുത്തുമ്പോൾ, തിന്മ (സയ്യിഅത്ത്) എങ്ങനെയാണ് രേഖപ്പെടുത്തപ്പെടുക?", "options": [{"ar": "لا تُكتب أبداً", "ml": "ഒരിക്കലും രേഖപ്പെടുത്തില്ല"}, {"ar": "تُكتب بمثلها (واحدة فقط) حتى يلقى الله", "ml": "അല്ലാഹുവിനെ കണ്ടുമുട്ടുന്നത് വരെ അതിന് തുല്യമായി (ഒന്ന് മാത്രം) രേഖപ്പെടുത്തപ്പെടും"}, {"ar": "تُكتب بعشر أمثالها", "ml": "പത്ത് ഇരട്ടിയായി രേഖപ്പെടുത്തും"}, {"ar": "تُكتب بضعفين", "ml": "രണ്ടിരട്ടിയായി രേഖപ്പെടുത്തും"}], "ans": 1, "exp": "حديث رقم 44 (متفق عليه): «وكل سيئة يعملها تكتب بمثلها حتى يلقى الله»."}, {"id": 13, "type": "mcq", "diff": "medium", "topic": "كتاب الإيمان - الفصل الثالث", "ar": "في الحديث رقم (45) عن أبي أمامة، ما علامة المؤمن التي ذكرها النبي ﷺ حين سُئل: «ما الإيمان؟»", "ml": "അബൂ ഉമാമ (റ) റിപ്പോർട്ട് ചെയ്ത ഹദീസ് നമ്പർ 45-ൽ 'എന്താണ് ഈമാൻ?' എന്ന ചോദ്യത്തിന് നബി ﷺ നൽകിയ അടയാളം എന്താണ്?", "options": [{"ar": "إذا كثرت صلاتك وصيامك", "ml": "നിന്റെ നിസ്കാരവും നോമ്പും വർദ്ധിക്കുമ്പോൾ"}, {"ar": "إذا سرتك حسنتك، وساءتك سيئتك، فأنت مؤمن", "ml": "നിന്റെ നന്മ നിന്നെ സന്തോഷിപ്പിക്കുകയും നിന്റെ തിന്മ നിന്നെ ദുഃഖിപ്പിക്കുകയും ചെയ്താൽ നീ വിശ്വാസിയാണ്"}, {"ar": "إذا أنفقت مالك كله", "ml": "നിന്റെ സമ്പത്ത് മുഴുവൻ ചെലവഴിക്കുമ്പോൾ"}, {"ar": "إذا حفظت كتاب الله", "ml": "നീ ഖുർആൻ മനഃപാഠമാക്കുമ്പോൾ"}], "ans": 1, "exp": "حديث رقم 45 (رواه أحمد): «إذا سرتك حسنتك، وساءتك سيئتك، فأنت مؤمن»."}, {"id": 14, "type": "mcq", "diff": "medium", "topic": "كتاب الإيمان - الفصل الثالث", "ar": "في حديث عمرو بن عبسة (رقم 46)، بماذا أجاب النبي ﷺ عن سؤالي: «ما الإسلام؟» و«أي الهجرة أفضل؟» على الترتيب؟", "ml": "അംറ് ബ്നു അബസയുടെ ഹദീസിൽ (നമ്പർ 46) 'എന്താണ് ഇസ്ലാം?' എന്നതിനും 'ഏത് ഹിജ്റയാണ് ശ്രേഷ്ഠം?' എന്നതിനും നബി ﷺ നൽകിയ മറുപടികൾ ക്രമത്തിൽ ഏവ?", "options": [{"ar": "طيب الكلام وإطعام الطعام — أن تهجر ما كره ربك", "ml": "നല്ല സംസാരവും ഭക്ഷണം നൽകലും — നിന്റെ റബ്ബ് വെറുക്കുന്നത് ഉപേക്ഷിക്കുക"}, {"ar": "الصبر والسماحة — الخروج من مكة", "ml": "ക്ഷമയും ഉദാരതയും — മക്കയിൽ നിന്ന് പുറപ്പെടൽ"}, {"ar": "إقام الصلاة — هجر الدنيا", "ml": "നിസ്കാരം നിലനിർത്തൽ — ദുനിയാവ് വെടിയൽ"}, {"ar": "خلق حسن — طول القنوت", "ml": "സൽസ്വഭാവം — ദീർഘമായ ഖുനൂത്ത്"}], "ans": 0, "exp": "حديث رقم 46 (رواه أحمد): «ما الإسلام؟ قال: طيب الكلام، وإطعام الطعام»... «أي الهجرة أفضل؟ قال: أن تهجر ما كره ربك»."}, {"id": 15, "type": "mcq", "diff": "tight", "topic": "كتاب الإيمان - الفصل الثالث", "ar": "في حاشية الحديث رقم (46): «أي الساعات أفضل؟ قال: جوف الليل الآخر»، كيف فُسّر «جوف الليل» في الحاشية رقم (6)؟", "ml": "ഹദീസ് നമ്പർ 46-ലെ 'ജൗഫുല്ലൈൽ' (جوف الليل) എന്നതിന് അടിക്കുറിപ്പ് (6)-ൽ നൽകിയ അർത്ഥം എന്താണ്?", "options": [{"ar": "أول الليل بعد المغرب", "ml": "മഗ്‌രിബിന് ശേഷമുള്ള രാത്രിയുടെ ആദ്യഭാഗം"}, {"ar": "وسط الليل", "ml": "രാത്രിയുടെ മധ്യഭാഗം (വസ്വതുല്ലൈൽ)"}, {"ar": "بعد طلوع الفجر", "ml": "സുബ്ഹിക്ക് ശേഷം"}, {"ar": "قبل غروب الشمس", "ml": "സൂര്യാസ്തമയത്തിന് മുമ്പ്"}], "ans": 1, "exp": "حاشية (6) على حديث 46: «جوف الليل: أي وسط الليل» (والمراد بجوف الليل الآخر النصف أو الثلث الأخير منه)."}, {"id": 16, "type": "mcq", "diff": "tight", "topic": "كتاب الإيمان", "ar": "أي من الأحاديث التالية يحمل الرقم (32) في النسخة المعتمدة من مشكاة المصابيح؟", "ml": "അംഗീകൃത മിശ്കാത്തുൽ മസാബീഹ് പി.ഡി.എഫ് പ്രകാരം ഹദീസ് നമ്പർ 32 ഏതാണ്?", "options": [{"ar": "حديث أبي أمامة: «من أحب لله وأبغض لله...»", "ml": "അബൂ ഉമാമയുടെ ഹദീസ് (മൻ അഹബ്ബ ലില്ലാഹി...)"}, {"ar": "حديث أبي ذر: «أفضل الأعمال الحب في الله والبغض في الله»", "ml": "അബൂദർറിന്റെ ഹദീസ് (അഫ്‌ളലുൽ അഅ്മാലി അൽ-ഹുബ്ബു ഫില്ലാഹി...)"}, {"ar": "حديث أنس: «لا إيمان لمن لا أمانة له»", "ml": "അനസിന്റെ ഹദീസ് (ലാ ഈമാന ലിമൻ ലാ അമാനത്ത ലഹു)"}, {"ar": "حديث أبي هريرة: «المؤمن من أمنه الناس...»", "ml": "അബൂഹുറൈറയുടെ ഹദീസ് (അൽ-മുഅ്മിനു മൻ അമിനഹുന്നാസ്...)"}], "ans": 1, "exp": "أرقام الفصل الثاني: 30 (أبو أمامة)، 31 (معاذ بن أنس)، 32 (أبو ذر: أفضل الأعمال الحب في الله...)، 33 (أبو هريرة)، 34 (فضالة)، 35 (أنس)."}, {"id": 17, "type": "mcq", "diff": "medium", "topic": "باب الكبائر وعلامات النفاق", "ar": "في الحديث رقم (49) عن ابن مسعود: «أن تجعل لله نداً وهو خلقك»، ما معنى كلمة (نداً) كما جاء في الحاشية رقم (1)؟", "ml": "ഹദീസ് നമ്പർ 49-ലെ 'അൻ തജ്അല ലില്ലാഹി നിദ്ദൻ' എന്നതിൽ 'നിദ്ദ്' (نداً) എന്ന പദത്തിന് അടിക്കുറിപ്പ് (1)-ൽ നൽകിയ അർത്ഥം എന്താണ്?", "options": [{"ar": "عدواً ومحارباً", "ml": "ശത്രുവും പോരാളിയും"}, {"ar": "مثيلاً ونظيراً", "ml": "തുല്യനും സമാനനും (പങ്കാളി)"}, {"ar": "ولداً وصاحبةً", "ml": "സന്താനവും ഇണയും"}, {"ar": "رسولاً وملكاً", "ml": "ദൂതനും മലക്കും"}], "ans": 1, "exp": "حاشية (1) على حديث 49: «نداً: أي مثيلاً ونظيراً»."}, {"id": 18, "type": "mcq", "diff": "medium", "topic": "باب الكبائر وعلامات النفاق", "ar": "في الحديث رقم (49)، ما العلة التي ذكرها النبي ﷺ في وصف كبيرة قتل الولد في الجاهلية؟", "ml": "ഹദീസ് നമ്പർ 49-ൽ, സ്വന്തം കുഞ്ഞിനെ കൊല്ലുന്നതിന് കാരണമായി നബി ﷺ ഉദ്ധരിച്ച വാചകം ഏതാണ്?", "options": [{"ar": "خشية العار فقط", "ml": "അപമാനം ഭയന്ന് മാത്രം"}, {"ar": "خشية أن يطعم معك", "ml": "നിന്നോടൊപ്പം ഭക്ഷണം കഴിക്കുമെന്ന് ഭയന്ന് (ദാരിദ്ര്യ ഭയം)"}, {"ar": "خشية أن يعقك في الكبر", "ml": "വളർന്നാൽ ധിക്കരിക്കുമെന്ന് ഭയന്ന്"}, {"ar": "خشية الحسد", "ml": "അസൂയ ഭയന്ന്"}], "ans": 1, "exp": "حديث رقم 49: «أن تقتل ولدك خشية أن يطعم معك»."}, {"id": 19, "type": "mcq", "diff": "tight", "topic": "باب الكبائر وعلامات النفاق", "ar": "في الحديث رقم (49): «أن تزاني حليلة جارك»، ما معنى (حليلة الجار) ولماذا عُدّت هذه الجريمة من أعظم الذنوب في شروح الحديث؟", "ml": "ഹദീസ് നമ്പർ 49-ലെ 'ഹലീലത്തു ജാരിക' (حليلة جارك) എന്നതിന്റെ അർത്ഥവും, ഇത് ഏറ്റവും കടുത്ത പാപമായി എണ്ണപ്പെടാനുള്ള കാരണവും എന്ത്?", "options": [{"ar": "خادمة الجار — لأنها ضعيفة", "ml": "അയൽവാസിയുടെ വേലക്കാരി"}, {"ar": "زوجة الجار — لأن فيها جمعاً بين فاحشة الزنا وهتك حرمة الجوار والخيانة في الأمانة", "ml": "അയൽവാസിയുടെ ഭാര്യ — വ്യഭിചാരത്തോടൊപ്പം അയൽപക്ക അവകാശത്തിന്റെ ലംഘനവും വിശ്വാസവഞ്ചനയും ഇതിൽ ഒത്തുചേരുന്നതിനാൽ"}, {"ar": "أخت الجار — لأنها من المحارم", "ml": "അയൽവാസിയുടെ സഹോദരി"}, {"ar": "بنت الجار الصغيرة فقط", "ml": "അയൽവാസിയുടെ ചെറിയ മകൾ മാത്രം"}], "ans": 1, "exp": "الحليلة هي الزوجة (لأنها تحل له وتحل معه)، ومزاناة زوجة الجار أعظم إثماً لأن حق الجار الأمن والحفظ لا الخيانة."}, {"id": 20, "type": "mcq", "diff": "medium", "topic": "باب الكبائر وعلامات النفاق", "ar": "في حاشية الحديث (49) التي أوردت تمام الآيات (68-70) من سورة الفرقان، ما الجزاء العظيم لمن تاب وآمن وعمل عملاً صالحاً بعد تلك الكبائر؟", "ml": "ഹദീസ് നമ്പർ 49-ന്റെ അടിക്കുറിപ്പ് (4)-ൽ പൂർണ്ണമായി നൽകിയ സൂറത്തുൽ ഫുർഖാനിലെ (68-70) ആയത്തുകൾ പ്രകാരം, ആ വൻപാപങ്ങളിൽ നിന്ന് പശ്ചാത്തപിച്ച് വിശ്വസിച്ച് സൽകർമ്മം ചെയ്യുന്നവർക്കുള്ള പ്രതിഫലം എന്ത്?", "options": [{"ar": "يُخفف عنهم نصف العذاب فقط", "ml": "പകുതി ശിക്ഷ മാത്രം ഇളവ് ചെയ്യപ്പെടും"}, {"ar": "فأولئك يبدل الله سيئاتهم حسنات", "ml": "അവരുടെ തിന്മകളെ അല്ലാഹു നന്മകളാക്കി മാറ്റിക്കൊടുക്കും"}, {"ar": "لا يُحاسبون على الصلاة", "ml": "നിസ്കാരത്തിൽ വിചാരണയുണ്ടാവില്ല"}, {"ar": "يُعطون ضعف أجر الشهيد", "ml": "ശഹീദിന്റെ ഇരട്ടി പ്രതിഫലം ലഭിക്കും"}], "ans": 1, "exp": "حاشية (4) على حديث 49: ﴿إلا من تاب وآمن وعمل عملاً صالحاً فأولئك يبدل الله سيئاتهم حسنات﴾ (الفرقان: 70)."}, {"id": 21, "type": "mcq", "diff": "medium", "topic": "باب الكبائر وعلامات النفاق", "ar": "من الصحابي راوي الحديث رقم (50): «الكبائر: الإشراك بالله، وعقوق الوالدين، وقتل النفس، واليمين الغموس»، ومن أخرجه؟", "ml": "ഹദീസ് നമ്പർ 50-ന്റെ ('അൽ-കബാഇർ: അൽ-ഇശ്റാകു ബില്ലാഹി... വൽ-യമീനുൽ ഗമൂസ്') നിവേദകനായ സ്വഹാബിയും ഉദ്ധരിച്ച ഇമാമും ആരാണ്?", "options": [{"ar": "عبد الله بن مسعود — رواه مسلم", "ml": "ഇബ്നു മസ്ഊദ് (റ) — മുസ്ലിം"}, {"ar": "عبد الله بن عمرو — رواه البخاري", "ml": "അബ്ദുല്ലാഹിബ്നു അംറ് (റ) — ബുഖാരി"}, {"ar": "أنس بن مالك — رواه الترمذي", "ml": "അനസ് (റ) — തിർമിദി"}, {"ar": "أبو بكرة — متفق عليه", "ml": "അബൂബക്റ (റ) — മുത്തഫഖുൻ അലൈഹി"}], "ans": 1, "exp": "حديث رقم 50: عن عبد الله بن عمرو، رواه البخاري. (ورواية أنس هي رقم 51 وهي متفق عليها)."}, {"id": 22, "type": "mcq", "diff": "tight", "topic": "باب الكبائر وعلامات النفاق", "ar": "في الحديث رقم (52) في ذكر السبع الموبقات، ما الصفات الثلاث التي وُصفت بها النساء في الموبقة السابعة؟", "ml": "ഏഴ് വിനാശകരമായ പാപങ്ങളെക്കുറിച്ചുള്ള ഹദീസ് നമ്പർ 52-ൽ ഏഴാമത്തെ പാപത്തിൽ സ്ത്രീകളെ വിശേഷിപ്പിക്കാൻ ഉപയോഗിച്ച മൂന്ന് പദങ്ങൾ ഏതെല്ലാമാണ്?", "options": [{"ar": "المسلمات القانتات التائبات", "ml": "അൽ-മുസ്ലിമാത്ത് അൽ-ഖാനിതാത്ത് അത്താഇബാത്ത്"}, {"ar": "المحصنات المؤمنات الغافلات", "ml": "അൽ-മുഹ്സ്വനാത്ത് (പതിവ്രതകൾ) അൽ-മുഅ്മിനാത്ത് (വിശ്വാസിനികൾ) അൽ-ഗാഫിലാത്ത് (നിഷ്കളങ്കർ)"}, {"ar": "العفيفات الصالحات الحافظات", "ml": "അൽ-അഫീഫാത്ത് അസ്സ്വാലിഹാത്ത് അൽ-ഹാഫിളാത്ത്"}, {"ar": "المتزوجات الطاهرات العابدات", "ml": "അൽ-മുതസവ്വിജാത്ത് അത്ത്വാഹിറാത്ത്"}], "ans": 1, "exp": "حديث رقم 52 (متفق عليه): «وقذف المحصنات المؤمنات الغافلات» (أي الغافلات عن الفواحش)."}, {"id": 23, "type": "mcq", "diff": "medium", "topic": "باب الكبائر وعلامات النفاق", "ar": "في الحديث رقم (52)، ما المقصود بـ «التولي يوم الزحف» في شرح الحديث والفقه؟", "ml": "ഹദീസ് നമ്പർ 52-ലെ 'അത്തവല്ലീ യൗമസ്സഹ്ഫ്' (التولي يوم الزحف) എന്ന വൻപാപം കൊണ്ട് എന്താണ് ഉദ്ദേശിക്കുന്നത്?", "options": [{"ar": "التأخر عن صلاة الجمعة", "ml": "ജുമുഅ നിസ്കാരത്തിന് വൈകിയെത്തൽ"}, {"ar": "الفرار من ساحة القتال عند التقاء الجيشين لغير عذر شرعي", "ml": "ശത്രുസൈന്യവുമായി ഏറ്റുമുട്ടുമ്പോൾ മതിയായ ശറഈ കാരണമില്ലാതെ യുദ്ധക്കളത്തിൽ നിന്ന് പിന്തിരിഞ്ഞോടൽ"}, {"ar": "ترك الحج مع الاستطاعة", "ml": "കഴിവുണ്ടായിട്ടും ഹജ്ജ് ഉപേക്ഷിക്കൽ"}, {"ar": "الإعراض عن طلب العلم", "ml": "അറിവ് തേടുന്നതിൽ നിന്ന് പിന്തിരിയൽ"}], "ans": 1, "exp": "التولي يوم الزحف: الإدبار والفرار من قتال الكفار عند التقاء الصفوف، إلا متحرفاً لقتال أو متحيزاً إلى فئة (سورة الأنفال: 16)."}, {"id": 24, "type": "mcq", "diff": "tight", "topic": "باب الكبائر وعلامات النفاق", "ar": "بماذا ختم النبي ﷺ الحديث رقم (53) تحذيراً من تلك المعاصي الخمس، وما اللفظ البديل المذكور في الحاشية (7) عن المخطوطة؟", "ml": "ഹദീസ് നമ്പർ 53-ന്റെ അവസാനം നബി ﷺ നൽകിയ മുന്നറിയിപ്പ് വാചകവും, കയ്യെഴുത്തുപ്രതിയിൽ (മഖ്ത്വൂത്വ - ഹാശിയ 7) വന്ന അതിന്റെ രൂപവും ഏതാണ്?", "options": [{"ar": "«فإياكم إياكم» — وفي المخطوطة: «وإياكم وإياكم»", "ml": "'ഫ ഇയ്യാകും ഇയ്യാകും' — മഖ്ത്വൂത്വയിൽ 'വ ഇയ്യാകും വ ഇയ്യാകും'"}, {"ar": "«فاحذروا احذروا» — وفي المخطوطة: «واتقوا الله»", "ml": "'ഫഹ്ദറൂ ഇഹ്ദറൂ' — മഖ്ത്വൂത്വയിൽ 'വത്തഖുല്ലാഹ്'"}, {"ar": "«فتوبوا إلى الله» — وفي المخطوطة: «واستغفروا الله»", "ml": "'ഫതൂബൂ ഇലല്ലാഹ്' — മഖ്ത്വൂത്വയിൽ 'വസ്തഗ്ഫിറുല്ലാഹ്'"}, {"ar": "«فاجتنبوها» — وفي المخطوطة: «فدعوها»", "ml": "'ഫജ്തനിബൂഹാ' — മഖ്ത്വൂത്വയിൽ 'ഫദഊഹാ'"}], "ans": 0, "exp": "حديث رقم 53: «فإياكم إياكم»، والحاشية (7): «في المخطوطة: وإياكم وإياكم»."}, {"id": 25, "type": "mcq", "diff": "medium", "topic": "باب الكبائر وعلامات النفاق", "ar": "في الحديث رقم (54)، ما المعصية التي زادتها رواية ابن عباس رضي الله عنهما على رواية أبي هريرة (53)؟", "ml": "ഹദീസ് നമ്പർ 53-ൽ (അബൂഹുറൈറ റ) ഇല്ലാതിരുന്നതും, ഹദീസ് നമ്പർ 54-ൽ (ഇബ്നു അബ്ബാസ് റ) അധികമായി വന്നതുമായ വൻപാപം ഏതാണ്?", "options": [{"ar": "ولا يشهد بالزور حين يشهد وهو مؤمن", "ml": "കള്ളസാക്ഷ്യം പറയൽ"}, {"ar": "ولا يقتل حين يقتل وهو مؤمن", "ml": "കൊലപാതകം ചെയ്യൽ ('വലാ യഖ്തുലു ഹീന യഖ്തുലു വഹുവ മുഅ്മിൻ')"}, {"ar": "ولا يأكل الربا حين يأكله وهو مؤمن", "ml": "പലിശ തിന്നൽ"}, {"ar": "ولا يكذب حين يكذب وهو مؤمن", "ml": "കളവ് പറയൽ"}], "ans": 1, "exp": "حديث رقم 54: «وفي رواية ابن عباس: ولا يقتل حين يقتل وهو مؤمن»."}, {"id": 26, "type": "mcq", "diff": "tight", "topic": "باب الكبائر وعلامات النفاق", "ar": "في نهاية الحديث رقم (54) عن ابن عباس وعكرمة، إلى أي من الصحيحين نسب التبريزي هذا اللفظ؟", "ml": "ഇബ്നു അബ്ബാസിന്റെയും ഇക്രിമയുടെയും സംഭാഷണമടങ്ങിയ ഹദീസ് നമ്പർ 54-ന്റെ അവസാനം ഏത് ഇമാമിന്റെ പദപ്രയോഗമാണെന്നാണ് മിശ്കാത്തിൽ രേഖപ്പെടുത്തിയിട്ടുള്ളത്?", "options": [{"ar": "هذا لفظ مسلم", "ml": "ഇത് ഇമാം മുസ്ലിമിന്റെ പദമാണ്"}, {"ar": "هذا لفظ البخاري", "ml": "ഇത് ഇമാം ബുഖാരിയുടെ പദമാണ് (هذا لفظ البخاري)"}, {"ar": "هذا لفظ الترمذي", "ml": "ഇത് ഇമാം തിർമിദിയുടെ പദമാണ്"}, {"ar": "هذا لفظ أبي داود", "ml": "ഇത് ഇമാം അബൂദാവൂദിന്റെ പദമാണ്"}], "ans": 1, "exp": "نهاية حديث رقم 54: «وقال أبو عبد الله: لا يكون هذا مؤمناً تاماً، ولا يكون له نور الإيمان. هذا لفظ البخاري»."}, {"id": 27, "type": "mcq", "diff": "medium", "topic": "باب الكبائر وعلامات النفاق", "ar": "بالمقارنة بين الأحاديث الأربعة الأولى في باب الكبائر (49، 50، 51، 52)، ما الذنب الأكبر الذي تصدّر القائمة في جميعها؟", "ml": "ബാബുൽ കബാഇറിലെ ആദ്യ നാല് ഹദീസുകളിലും (49, 50, 51, 52) ഒന്നാമതായി എണ്ണിപ്പറഞ്ഞ വൻപാപം ഏതാണ്?", "options": [{"ar": "عقوق الوالدين", "ml": "മാതാപിതാക്കളെ ധിക്കരിക്കൽ"}, {"ar": "الشرك / الإشراك بالله", "ml": "അല്ലാഹുവിൽ പങ്കുചേർക്കൽ (ശിർക്ക്)"}, {"ar": "قتل النفس", "ml": "കൊലപാതകം"}, {"ar": "شهادة الزور", "ml": "കള്ളസാക്ഷ്യം"}], "ans": 1, "exp": "الشرك بالله جاء في مقدمة الكبائر في الأحاديث 49 و50 و51 و52 جميعاً."}, {"id": 28, "type": "mcq", "diff": "tight", "topic": "باب الكبائر وعلامات النفاق", "ar": "هل تقتصر الكبائر على السبع الواردة في حديث أبي هريرة (52) أم تزيد عليها عند أهل العلم؟ وما الدليل من نفس الصفحة في الملف؟", "ml": "വൻപാപങ്ങൾ ഹദീസ് നമ്പർ 52-ൽ പറഞ്ഞ ഏഴെണ്ണത്തിൽ മാത്രം പരിമിതമാണോ? അനുബന്ധ പി.ഡി.എഫിലെ അതേ പേജിൽ നിന്നുള്ള തെളിവെന്ത്?", "options": [{"ar": "نعم، لا توجد كبيرة غير السبع الموبقات", "ml": "അതെ, ആ ഏഴെണ്ണം മാത്രമേ വൻപാപങ്ങളുള്ളൂ"}, {"ar": "لا تقتصر على السبع؛ بدليل ذكر عقوق الوالدين وشهادة الزور واليمين الغموس والزنا والسرقة وشرب الخمر في الأحاديث (49-53)", "ml": "ഏഴിൽ പരിമിതമല്ല; കാരണം അതേ പേജിലെ 49-53 ഹദീസുകളിൽ മാതാപിതാക്കളെ ധിക്കരിക്കൽ, കള്ളസാക്ഷ്യം, കള്ളസത്യം, വ്യഭിചാരം, മോഷണം, മദ്യപാനം എന്നിവയും വൻപാപങ്ങളായി എണ്ണിയിട്ടുണ്ട്"}, {"ar": "الكبائر أربع فقط كما في حديث (50)", "ml": "ഹദീസ് 50 പ്രകാരം നാലെണ്ണം മാത്രമാണ്"}, {"ar": "لا يوجد فرق بين الكبائر والصغائر", "ml": "വൻപാപങ്ങളും ചെറുപാപങ്ങളും തമ്മിൽ വ്യത്യാസമില്ല"}], "ans": 1, "exp": "العدد في حديث «السبع الموبقات» لا يفيد الحصر، بل لبيان أشدها هلاكاً، وقد جاء في نفس الصفحة ذكر كبائر أخرى كعقوق الوالدين والزنا والخمر وشهادة الزور."}, {"id": 29, "type": "mcq", "diff": "medium", "topic": "كتاب فضائل القرآن - الفصل الأول", "ar": "في الحديث رقم (2110) عن عقبة بن عامر: «...فيأتي بناقتين كوماوين في غير إثم ولا قطع رحم»، لماذا قيّد النبي ﷺ ذلك بقوله «في غير إثم ولا قطع رحم»؟", "ml": "ഉഖ്ബ ബ്നു ആമിർ (റ) റിപ്പോർട്ട് ചെയ്ത ഹദീസ് നമ്പർ 2110-ൽ രണ്ട് ഒട്ടകങ്ങളെ ലഭിക്കുന്ന കാര്യം 'കുറ്റകൃത്യമോ കുടുംബബന്ധ വിച്ഛേദനമോ ഇല്ലാതെ' (في غير إثم ولا قطع رحم) എന്ന് നബി ﷺ ഉപാധി വെച്ചതെന്തുകൊണ്ട്?", "options": [{"ar": "لأن العرب لم يكونوا يحبون الإبل", "ml": "അറബികൾക്ക് ഒട്ടകങ്ങളെ ഇഷ്ടമില്ലായിരുന്നതിനാൽ"}, {"ar": "لأن النفس المؤمنة لا تحب الحصول على المال الحرام أو بظلم الأقارب، فالمراد نيلها حلالاً صافياً بلا تعب ولا ذنب", "ml": "വിശ്വാസിക്ക് ഹറാമിലൂടെയോ ബന്ധുക്കളെ ദ്രോഹിച്ചോ ധനം ലഭിക്കുന്നത് ഇഷ്ടമാവില്ല; യാതൊരു പാപവുമില്ലാതെ ശുദ്ധമായ ഹലാലായി ലഭിക്കുന്നതിനേക്കാൾ ഉത്തമമാണ് ആയത്തുകൾ പഠിക്കൽ എന്ന് ബോധ്യപ്പെടുത്താൻ"}, {"ar": "لأن بطحان والعقيق كانا خارج الحجاز", "ml": "ബുത്ഹാനും അഖീഖും ഹിജാസിന് പുറത്തായിരുന്നതിനാൽ"}, {"ar": "لأن السفر إليهما محرم", "ml": "അവിടേക്കുള്ള യാത്ര ഹറാമായതിനാൽ"}], "ans": 1, "exp": "قيد «في غير إثم ولا قطع رحم» لإخراج أخذها بالسرقة أو الغصب أو ظلم ذي رحم، ليكون المثال في أطيب مال حلال محبوب للنفس."}, {"id": 30, "type": "mcq", "diff": "tight", "topic": "كتاب فضائل القرآن - الفصل الأول", "ar": "في الحديث رقم (2110)، ما الفعلان اللذان ذُكرا للذاهب إلى المسجد لنيل هذا الأجر العظيم؟", "ml": "ഹദീസ് നമ്പർ 2110-ൽ പ്രഭാതത്തിൽ പള്ളിയിലേക്ക് പോകുന്നവന് ഈ മഹത്തായ പ്രതിഫലം ലഭിക്കാൻ പറഞ്ഞ രണ്ട് പ്രവൃത്തികൾ ഏതെല്ലാമാണ്?", "options": [{"ar": "فيصلي أو يتصدق", "ml": "നിസ്കരിക്കുകയോ സ്വദഖ ചെയ്യുകയോ ചെയ്താൽ"}, {"ar": "فيعلم (أو يتعلم) أو يقرأ آيتين من كتاب الله", "ml": "അല്ലാഹുവിന്റെ ഗ്രന്ഥത്തിൽ നിന്ന് രണ്ട് ആയത്തുകൾ പഠിക്കുകയോ/പഠിപ്പിക്കുകയോ അല്ലെങ്കിൽ പാരായണം ചെയ്യുകയോ ചെയ്താൽ"}, {"ar": "فيعتكف أو يصوم", "ml": "ഇഅ്തികാഫ് ഇരിക്കുകയോ നോമ്പെടുക്കുകയോ ചെയ്താൽ"}, {"ar": "فيكتب أو يترجم", "ml": "എഴുതുകയോ പരിഭാഷപ്പെടുത്തുകയോ ചെയ്താൽ"}], "ans": 1, "exp": "حديث رقم 2110 (رواه مسلم): «أفلا يغدو أحدكم إلى المسجد فيعلم أو يقرأ آيتين من كتاب الله خير له من ناقتين...»."}, {"id": 31, "type": "mcq", "diff": "tight", "topic": "كتاب فضائل القرآن - الفصل الأول", "ar": "في حاشية الحديث (2110) رقم (4)، ما الفرق اللفظي الذي نقله المحقق من «مخطوطة الحاكم» في عبارة «كلنا يُحب ذلك»؟", "ml": "ഹദീസ് നമ്പർ 2110-ന്റെ അടിക്കുറിപ്പ് (4)-ൽ 'കുല്ലുനാ യുഹിബ്ബു ദാലിക' എന്നതിൽ 'മഖ്ത്വൂത്വത്തുൽ ഹാകിമിൽ' ഉള്ള വ്യത്യാസമായി രേഖപ്പെടുത്തിയത് എന്ത്?", "options": [{"ar": "في مخطوطة الحاكم: «نُحِبّ» أو «تُحِبّ» (بالتاء بدل الياء)", "ml": "മഖ്ത്വൂത്വത്തുൽ ഹാകിമിൽ 'തുഹിബ്ബ്' (تُحِبّ) എന്നാണ്"}, {"ar": "في مخطوطة الحاكم: «يريد ذلك»", "ml": "മഖ്ത്വൂത്വത്തുൽ ഹാകിമിൽ 'യുരീദു ദാലിക' എന്നാണ്"}, {"ar": "في مخطوطة الحاكم: «يكره ذلك»", "ml": "മഖ്ത്വൂത്വത്തുൽ ഹാകിമിൽ 'യക്റഹു ദാലിക' എന്നാണ്"}, {"ar": "في مخطوطة الحاكم حُذفت الجملة كاملة", "ml": "ആ വാചകം മുഴുവൻ ഒഴിവാക്കിയിരിക്കുന്നു"}], "ans": 0, "exp": "حاشية (4) على حديث 2110: «في مخطوطة الحاكم: تُحِبّ»."}, {"id": 32, "type": "mcq", "diff": "medium", "topic": "كتاب فضائل القرآن - الفصل الأول", "ar": "في الحديث رقم (2111) عن أبي هريرة، في أي موضع تحديداً تكون قراءة «ثلاث آيات» خيراً من ثلاث خلفات عظام سمان؟", "ml": "അബൂഹുറൈറ (റ) റിപ്പോർട്ട് ചെയ്ത ഹദീസ് നമ്പർ 2111-ൽ, മൂന്ന് ആയത്തുകൾ എവിടെ വെച്ച് ഓതുന്നതാണ് തടിച്ചുകൊഴുത്ത മൂന്ന് ഗർഭിണി ഒട്ടകങ്ങളേക്കാൾ ഉത്തമമാണെന്ന് പറഞ്ഞത്?", "options": [{"ar": "في السوق", "ml": "അങ്ങാടിയിൽ വെച്ച്"}, {"ar": "في صلاته", "ml": "തന്റെ നിസ്കാരത്തിൽ വെച്ച് (في صلاته)"}, {"ar": "في السفر فقط", "ml": "യാത്രയിൽ മാത്രം"}, {"ar": "عند النوم فقط", "ml": "ഉറങ്ങാൻ നേരത്ത് മാത്രം"}], "ans": 1, "exp": "حديث رقم 2111 (رواه مسلم): «فثلاث آيات يقرأ بهن أحدكم في صلاته خير له من ثلاث خلفات عظام سمان»."}, {"id": 33, "type": "mcq", "diff": "medium", "topic": "كتاب فضائل القرآن - الفصل الأول", "ar": "ما حكم تخريج حديث عائشة (2112): «الماهر بالقرآن...» وحديث ابن عمر (2113): «لا حسد إلا على اثنين...» في مشكاة المصابيح؟", "ml": "ആഇശ (റ) വിന്റെ ഹദീസ് (2112) ഉം ഇബ്നു ഉമർ (റ) വിന്റെ ഹദീസ് (2113) ഉം മിശ്കാത്തിൽ ഏത് തഖ്രീജ് പദവിയിലാണ് ഉള്ളത്?", "options": [{"ar": "رواهما الترمذي", "ml": "രണ്ടും തിർമിദി ഉദ്ധരിച്ചത്"}, {"ar": "كلاهما متفق عليه (رواه البخاري ومسلم)", "ml": "രണ്ടും മുത്തഫഖുൻ അലൈഹി (ബുഖാരി & മുസ്ലിം)"}, {"ar": "الأول للبخاري والثاني لمسلم", "ml": "ഒന്നാമത്തേത് ബുഖാരിയും രണ്ടാമത്തേത് മുസ്ലിമും"}, {"ar": "كلاهما رواه أبو داود", "ml": "രണ്ടും അബൂദാവൂദ് ഉദ്ധരിച്ചത്"}], "ans": 1, "exp": "الحديثان 2112 (عائشة) و2113 (ابن عمر) كلاهما متفق عليه."}, {"id": 34, "type": "mcq", "diff": "medium", "topic": "كتاب فضائل القرآن - الفصل الأول", "ar": "في الحديث رقم (2113): «فهو يقوم به آناء الليل وآناء النهار»، ما معنى «آناء الليل والنهار»؟", "ml": "ഹദീസ് നമ്പർ 2113-ലെ 'ആനാഅല്ലൈലി വ ആനാഅന്നഹാർ' (آناء الليل وآناء النهار) എന്നതിന്റെ അർത്ഥം എന്താണ്?", "options": [{"ar": "بداية الشهر ونهايته", "ml": "മാസത്തിന്റെ തുടക്കവും ഒടുക്കവും"}, {"ar": "ساعات الليل وساعات النهار وأوقاتهما", "ml": "രാത്രിയുടെയും പകലിന്റെയും വിവിധ സമയങ്ങൾ / മണിക്കൂറുകൾ"}, {"ar": "يوم الجمعة فقط", "ml": "വെള്ളിയാഴ്ച ദിവസം മാത്രം"}, {"ar": "شهر رمضان فقط", "ml": "റമദാൻ മാസം മാത്രം"}], "ans": 1, "exp": "الآناء جمع إنىً (أو إنيّ)، والمراد ساعات الليل والنهار وأوقاتهما."}, {"id": 35, "type": "mcq", "diff": "medium", "topic": "كتاب فضائل القرآن - الفصل الثاني", "ar": "في الحديث رقم (2133) عن عبد الرحمن بن عوف، بماذا تنادي «الرحم» وهي تحت العرش يوم القيامة؟", "ml": "ഹദീസ് നമ്പർ 2133 പ്രകാരം അന്ത്യനാളിൽ അർശിന് കീഴിൽ നിന്ന് 'റഹിം' (കുടുംബബന്ധം) വിളിച്ചുപറയുന്ന വാക്കുകൾ ഏതെല്ലാമാണ്?", "options": [{"ar": "يا رب أعطني الشفاعة", "ml": "റബ്ബേ, എനിക്ക് ശഫാഅത്ത് നൽകണമേ"}, {"ar": "ألا من وصلني وصله الله، ومن قطعني قطعه الله", "ml": "അറിയുക, എന്നെ ചേർത്തവനെ അല്ലാഹു ചേർക്കും; എന്നെ മുറിച്ചവനെ അല്ലാഹു മുറിച്ചുകളയും"}, {"ar": "ألا إن الله غفور رحيم", "ml": "അറിയുക, അല്ലാഹു ഏറെ പൊറുക്കുന്നവനാണ്"}, {"ar": "ألا من حفظني دخل الجنة", "ml": "എന്നെ സൂക്ഷിച്ചവൻ സ്വർഗ്ഗത്തിൽ കടക്കും"}], "ans": 1, "exp": "حديث رقم 2133 (رواه في شرح السنة): «والرحم تنادي: ألا من وصلني وصله الله، ومن قطعني قطعه الله»."}, {"id": 36, "type": "mcq", "diff": "medium", "topic": "كتاب فضائل القرآن - الفصل الثاني", "ar": "في الحديث رقم (2134) عن عبد الله بن عمرو، أين تكون منزلة صاحب القرآن في الجنة؟", "ml": "അബ്ദുല്ലാഹിബ്നു അംറ് (റ) റിപ്പോർട്ട് ചെയ്ത ഹദീസ് നമ്പർ 2134 പ്രകാരം ഖുർആനിന്റെ ആളുടെ സ്വർഗ്ഗത്തിലെ പദവി (മൻസിൽ) എവിടെയായിരിക്കും?", "options": [{"ar": "عند أول سورة يقرؤها", "ml": "അവൻ ഓതുന്ന ആദ്യ സൂറത്തിനടുത്ത്"}, {"ar": "عند آخر آية يقرؤها", "ml": "അവൻ ഓതുന്ന അവസാന ആയത്തിനടുത്ത് (عند آخر آية تقرؤها)"}, {"ar": "في الدرجة الأولى فقط", "ml": "ഒന്നാം പദവിയിൽ മാത്രം"}, {"ar": "بقدر عدد الختمات فقط", "ml": "ഖത്മുകളുടെ എണ്ണമനുസരിച്ച് മാത്രം"}], "ans": 1, "exp": "حديث رقم 2134: «يقال لصاحب القرآن: اقرأ وارتق، ورتل كما كنت ترتل في الدنيا، فإن منزلك عند آخر آية تقرؤها»."}, {"id": 37, "type": "mcq", "diff": "tight", "topic": "كتاب فضائل القرآن - الفصل الثاني", "ar": "ما الكتب الأربعة التي عزا إليها التبريزي حديث «يقال لصاحب القرآن: اقرأ وارتق...» (رقم 2134)، وما حكم المحقق عليه في الحاشية (3)؟", "ml": "ഹദീസ് നമ്പർ 2134 ('യുഖാലു ലിസ്വാഹിബിൽ ഖുർആൻ...') ഏതെല്ലാം നാല് ഇമാമുമാരിലേക്കാണ് മിശ്കാത്തിൽ ചേർത്തിട്ടുള്ളത്? അടിക്കുറിപ്പ് (3)-ൽ അതിന്റെ ഇസ്നാദിന് നൽകിയ പദവി എന്ത്?", "options": [{"ar": "أحمد، والترمذي، وأبو داود، والنسائي — وإسناده حسن", "ml": "അഹ്മദ്, തിർമിദി, അബൂദാവൂദ്, നസാഈ — ഇസ്നാദ് ഹസനാണ്"}, {"ar": "البخاري، ومسلم، ومالك، والدارمي — وإسناده صحيح", "ml": "ബുഖാരി, മുസ്ലിം, മാലിക്, ദാരിമി — സ്വഹീഹ്"}, {"ar": "ابن ماجه، والبيهقي، والدارمي، وأحمد — وإسناده ضعيف", "ml": "ഇബ്നു മാജ, ബൈഹഖി, ദാരിമി, അഹ്മദ് — ളഈഫ്"}, {"ar": "الترمذي والدارمي فقط — وإسناده غريب", "ml": "തിർമിദിയും ദാരിമിയും മാത്രം — ഗരീബ്"}], "ans": 0, "exp": "حديث 2134 وحاشية (3): «رواه أحمد، والترمذي، وأبو داود، والنسائي. وإسناده حسن»."}, {"id": 38, "type": "mcq", "diff": "medium", "topic": "كتاب فضائل القرآن - الفصل الثاني", "ar": "من الإمامان اللذان رويا حديث ابن عباس رقم (2135): «إن الذي ليس في جوفه شيء من القرآن كالبيت الخرب»، وما حكم الترمذي عليه؟", "ml": "ഇബ്നു അബ്ബാസ് (റ) വിന്റെ 'ഖുർആൻ ഉള്ളിലില്ലാത്തവൻ തകർന്ന വീട് പോലെയാണ്' എന്ന ഹദീസ് (2135) ഉദ്ധരിച്ച രണ്ട് ഇമാമുമാരും തിർമിദിയുടെ വിധിയും ഏതാണ്?", "options": [{"ar": "البخاري ومسلم — متفق عليه", "ml": "ബുഖാരിയും മുസ്ലിമും"}, {"ar": "الترمذي والدارمي — وقال الترمذي: هذا حديث صحيح", "ml": "തിർമിദിയും ദാരിമിയും — തിർമിദി ഇതിനെ 'സ്വഹീഹ്' എന്ന് വിശേഷിപ്പിച്ചു"}, {"ar": "أبو داود وابن ماجه — حسن", "ml": "അബൂദാവൂദും ഇബ്നു മാജയും — ഹസൻ"}, {"ar": "أحمد والبيهقي — ضعيف", "ml": "അഹ്മദും ബൈഹഖിയും — ളഈഫ്"}], "ans": 1, "exp": "حديث رقم 2135: «رواه الترمذي، والدارمي. وقال الترمذي: هذا حديث صحيح»."}, {"id": 39, "type": "mcq", "diff": "medium", "topic": "كتاب فضائل القرآن - الفصل الثاني", "ar": "في الحديث رقم (2136) عن أبي سعيد الخدري، ما العبارة الواردة في بيان فضل كلام الله على سائر الكلام؟", "ml": "അബൂസഈദുൽ ഖുദ്രി (റ) റിപ്പോർട്ട് ചെയ്ത ഹദീസ് നമ്പർ 2136-ൽ മറ്റു സംസാരങ്ങളെക്കാൾ അല്ലാഹുവിന്റെ വചനത്തിനുള്ള (ഖുർആൻ) ശ്രേഷ്ഠത എന്തിനോടാണ് ഉപമിച്ചിരിക്കുന്നത്?", "options": [{"ar": "كفضل الشمس على سائر الكواكب", "ml": "മറ്റു നക്ഷത്രങ്ങളെക്കാൾ സൂര്യനുള്ള ശ്രേഷ്ഠത പോലെ"}, {"ar": "كفضل الله على خلقه", "ml": "സൃഷ്ടികളേക്കാൾ അല്ലാഹുവിനുള്ള ശ്രേഷ്ഠത പോലെ (كفضل الله على خلقه)"}, {"ar": "كفضل الجنة على الدنيا", "ml": "ദുനിയാവിനേക്കാൾ സ്വർഗ്ഗത്തിനുള്ള ശ്രേഷ്ഠത പോലെ"}, {"ar": "كفضل الذهب على الحجارة", "ml": "കല്ലുകളേക്കാൾ സ്വർണ്ണത്തിനുള്ള ശ്രേഷ്ഠത പോലെ"}], "ans": 1, "exp": "حديث رقم 2136: «وفضل كلام الله على سائر الكلام كفضل الله على خلقه»."}, {"id": 40, "type": "mcq", "diff": "medium", "topic": "كتاب فضائل القرآن - الفصل الثاني", "ar": "بناءً على الحديث رقم (2137) عن ابن مسعود رضي الله عنه، كم حسنة على الأقل ينالها من قرأ كلمة ﴿الم﴾؟", "ml": "ഇബ്നു മസ്ഊദ് (റ) നിവേദനം ചെയ്ത ഹദീസ് നമ്പർ 2137 പ്രകാരം 'അലിഫ്-ലാം-മീം' (الم) ഓതുന്ന വ്യക്തിക്ക് കുറഞ്ഞത് എത്ര നന്മകൾ (ഹസനാത്ത്) ലഭിക്കും?", "options": [{"ar": "10 حسنات", "ml": "10 നന്മകൾ"}, {"ar": "20 حسنة", "ml": "20 നന്മകൾ"}, {"ar": "30 حسنة (ثلاثة أحرف × عشر حسنات)", "ml": "30 നന്മകൾ (3 അക്ഷരങ്ങൾ × 10 നന്മകൾ)"}, {"ar": "100 حسنة", "ml": "100 നന്മകൾ"}], "ans": 2, "exp": "حديث رقم 2137: كل حرف بحسنة والحسنة بعشر أمثالها، وألف حرف ولام حرف وميم حرف = 3 × 10 = 30 حسنة."}, {"id": 41, "type": "mcq", "diff": "tight", "topic": "كتاب فضائل القرآن - الفصل الأول", "ar": "في الحديث رقم (2109): «خيركم من تعلم القرآن وعلمه»، ما الملاحظة النصية الواردة في الحاشية رقم (1) على هذا الحديث؟", "ml": "ഹദീസ് നമ്പർ 2109-ന്റെ ('ഖൈറുകും മൻ തഅല്ലമൽ ഖുർആന വ അല്ലമഹു') അടിക്കുറിപ്പ് (1)-ൽ രേഖപ്പെടുത്തിയിട്ടുള്ള കുറിപ്പ് എന്താണ്?", "options": [{"ar": "«رضي الله عنه» زيادة من مخطوطة الحاكم", "ml": "ഉസ്മാൻ (റ) വിനോടൊപ്പമുള്ള 'റളിയല്ലാഹു അൻഹു' എന്നത് മഖ്ത്വൂത്വത്തുൽ ഹാകിമിൽ നിന്നുള്ള അധികപ്പെടുത്തലാണ്"}, {"ar": "الحديث رواه مسلم أيضاً", "ml": "ഈ ഹദീസ് മുസ്ലിമും ഉദ്ധരിച്ചിട്ടുണ്ട്"}, {"ar": "الحديث مرسل عن عثمان", "ml": "ഈ ഹദീസ് ഉസ്മാനിൽ നിന്ന് മുർസലാണ്"}, {"ar": "الحديث منسوخ", "ml": "ഈ ഹദീസ് മൻസൂഖാണ്"}], "ans": 0, "exp": "حديث 2109 وحاشية (1): «عن عثمان [رضي الله عنه] (1) — زيادة من مخطوطة الحاكم»."}, {"id": 42, "type": "mcq", "diff": "tight", "topic": "كتاب فضائل القرآن - الفصل الثاني", "ar": "في الحديث رقم (2136)، ما الكتب الثلاثة التي عزا إليها الخطيب التبريزي هذا الحديث؟", "ml": "ഹദീസ് നമ്പർ 2136 ('മൻ ശഗലഹുൽ ഖുർആനു അൻ ദിക്രീ...') ഏതെല്ലാം മൂന്ന് ഗ്രന്ഥങ്ങളിലേക്കാണ് മിശ്കാത്തിൽ ചേർത്തിട്ടുള്ളത്?", "options": [{"ar": "الترمذي، والدارمي، والبيهقي في «شعب الإيمان»", "ml": "തിർമിദി, ദാരിമി, ബൈഹഖി (ശുഅബുൽ ഈമാൻ)"}, {"ar": "أبو داود، والنسائي، وابن ماجه", "ml": "അബൂദാവൂദ്, നസാഈ, ഇബ്നു മാജ"}, {"ar": "أحمد، ومالك، والبغوي", "ml": "അഹ്മദ്, മാലിക്, ബഗവി"}, {"ar": "البخاري، ومسلم، وأبو داود", "ml": "ബുഖാരി, മുസ്ലിം, അബൂദാവൂദ്"}], "ans": 0, "exp": "حديث رقم 2136: «رواه الترمذي، والدارمي، والبيهقي في شعب الإيمان»."}, {"id": 43, "type": "mcq", "diff": "tight", "topic": "كتاب الدعوات - الفصل الأول", "ar": "في الحديث رقم (2223) عن أبي هريرة حول الدعوة المستجابة التي اختبأها النبي ﷺ شفاعةً لأمته، كيف بيّن التبريزي الفرق بين روايتي مسلم والبخاري؟", "ml": "ഹദീസ് നമ്പർ 2223-ൽ ('ലികുല്ലി നബിയ്യിൻ ദഅ്വതുൻ മുസ്തജാബ...') ഇമാം മുസ്ലിമിന്റെയും ഇമാം ബുഖാരിയുടെയും റിപ്പോർട്ടുകൾ തമ്മിലുള്ള വ്യത്യാസം മിശ്കാത്തിൽ എങ്ങനെയാണ് സൂചിപ്പിച്ചിരിക്കുന്നത്?", "options": [{"ar": "رواه البخاري، ولمسلم أقصر منه", "ml": "ബുഖാരി ഉദ്ധരിച്ചു, മുസ്ലിമിന്റേത് അതിനേക്കാൾ ചെറുതാണ്"}, {"ar": "رواه مسلم، وللبخاري أقصر منه", "ml": "മുസ്ലിം ഉദ്ധരിച്ചു, ബുഖാരിയുടേത് അതിനേക്കാൾ ചെറുതാണ് (رواه مسلم، وللبخاري أقصر منه)"}, {"ar": "انفرد به مسلم دون البخاري", "ml": "മുസ്ലിം മാത്രം ഒറ്റയ്ക്ക് ഉദ്ധരിച്ചതാണ്"}, {"ar": "انفرد به البخاري دون مسلم", "ml": "ബുഖാരി മാത്രം ഒറ്റയ്ക്ക് ഉദ്ധരിച്ചതാണ്"}], "ans": 1, "exp": "حديث رقم 2223: «رواه مسلم، وللبخاري أقصر منه»."}, {"id": 44, "type": "mcq", "diff": "medium", "topic": "كتاب الدعوات - الفصل الأول", "ar": "في الحديث رقم (2224) عن أبي هريرة: «اللهم إني اتخذت عندك عهداً لن تخلفنيه، فإنما أنا بشر، فأي المؤمنين آذيته...»، ما الصور الثلاث التي ذكرها النبي ﷺ تفصيلاً للأذى؟", "ml": "ഹദീസ് നമ്പർ 2224-ൽ ('ഫ അയ്യുൽ മുഅ്മിനീന ആദൈത്തുഹു...') പ്രയാസപ്പെടുത്തലിന് ഉദാഹരണമായി നബി ﷺ എടുത്തുപറഞ്ഞ മൂന്ന് കാര്യങ്ങൾ ഏതെല്ലാമാണ്?", "options": [{"ar": "هجرته، ضربته، حبسته", "ml": "ബഹിഷ്കരിച്ചു, അടിച്ചു, തടവിലാക്കി"}, {"ar": "شتمته، لعنته، جلدته", "ml": "ശകാരിച്ചു (ശതംതുഹു), ശപിച്ചു (ലഅൻതുഹു), ചാട്ടവാറടിച്ചു (ജലദ്തുഹു)"}, {"ar": "أبغضته، منعته، طردته", "ml": "വെറുത്തു, തടഞ്ഞു, പുറത്താക്കി"}, {"ar": "نهرته، كرهته، تركته", "ml": "വിരട്ടി, വെറുത്തു, ഉപേക്ഷിച്ചു"}], "ans": 1, "exp": "حديث رقم 2224 (متفق عليه): «فأي المؤمنين آذيته: شتمته لعنته جلدته فاجعلها له صلاة وزكاة وقربة...»."}, {"id": 45, "type": "mcq", "diff": "medium", "topic": "كتاب الدعوات - الفصل الأول", "ar": "في الحديث رقم (2225) عند البخاري، ما الدعوات الثلاث التي نهى النبي ﷺ عن تعليقها بـ «إن شئت»؟", "ml": "ഇമാം ബുഖാരി ഉദ്ധരിച്ച ഹദീസ് നമ്പർ 2225-ൽ 'നീ ഉദ്ദേശിച്ചെങ്കിൽ' (إن شئت) എന്ന് ചേർത്ത് പ്രാർത്ഥിക്കരുതെന്ന് വിലക്കിയ മൂന്ന് പ്രാർത്ഥനകൾ ഏതെല്ലാമാണ്?", "options": [{"ar": "اهدني، وفقني، ثبتني", "ml": "സന്മാർഗ്ഗം നൽകേണമേ, തൗഫീഖ് നൽകേണമേ, ഉറപ്പിച്ചു നിർത്തേണമേ"}, {"ar": "اغفر لي، ارحمني، ارزقني", "ml": "എനിക്ക് പൊറുത്തുതരേണമേ (ഇഗ്ഫിർ ലീ), എന്നോട് കരുണ കാണിക്കേണമേ (ഇർഹംനീ), എനിക്ക് ഉപജീവനം നൽകേണമേ (ഉർസുഖ്നീ)"}, {"ar": "عافني، اشفني، أغنني", "ml": "സൗഖ്യം നൽകേണമേ, ശിഫ നൽകേണമേ, ഐശ്വര്യം നൽകേണമേ"}, {"ar": "انصرني، أكرمني، أدخلني الجنة", "ml": "സഹായിക്കേണമേ, ആദരിക്കേണമേ, സ്വർഗ്ഗത്തിൽ കടത്തേണമേ"}], "ans": 1, "exp": "حديث رقم 2225 (رواه البخاري): «فلا يقل: اللهم اغفر لي إن شئت، ارحمني إن شئت، ارزقني إن شئت، وليعزم مسألته...»."}, {"id": 46, "type": "mcq", "diff": "tight", "topic": "كتاب الدعوات - الفصل الأول", "ar": "في حاشية الحديث (2225) رقم (2)، ما معنى قوله ﷺ: «وليعزم مسألته»؟", "ml": "ഹദീസ് നമ്പർ 2225-ലെ 'വൽ-യഅ്സിം മസ്അലത്തഹു' (وليعزم مسألته) എന്നതിന് അടിക്കുറിപ്പ് (2)-ൽ നൽകിയ അർത്ഥം എന്താണ്?", "options": [{"ar": "يرفع صوته بها", "ml": "ഉറക്കെ ശബ്ദമുയർത്തി ചോദിക്കുക"}, {"ar": "يطلبها جازماً من غير تردد", "ml": "യാതൊരു സംശയവും ചാഞ്ചാട്ടവുമില്ലാതെ ഉറപ്പോടെ ചോദിക്കുക"}, {"ar": "يكتبها في ورقة", "ml": "കടലാസിൽ എഴുതിവെക്കുക"}, {"ar": "يقتصر على كلمة واحدة", "ml": "ഒരൊറ്റ വാക്കിൽ ചുരുക്കുക"}], "ans": 1, "exp": "حاشية (2) على حديث 2225: «أي يطلبها جازماً من غير تردد»."}, {"id": 47, "type": "mcq", "diff": "medium", "topic": "كتاب الدعوات - الفصل الأول", "ar": "في الحديث رقم (2227) عن أبي هريرة: «يستجاب للعبد ما لم يدعُ بـ... أو ... ما لم يستعجل»، ما المانعان الأولان؟", "ml": "ഹദീസ് നമ്പർ 2227 പ്രകാരം ധൃതി കാണിക്കലിന് പുറമെ, പ്രാർത്ഥനയ്ക്ക് ഉത്തരം ലഭിക്കുന്നത് തടയുന്ന മറ്റ് രണ്ട് കാര്യങ്ങൾ ഏതെല്ലാമാണ്?", "options": [{"ar": "بفقر أو مرض", "ml": "ദാരിദ്ര്യത്തിന് അല്ലെങ്കിൽ രോഗത്തിന് വേണ്ടി പ്രാർത്ഥിക്കൽ"}, {"ar": "بإثم أو قطيعة رحم", "ml": "പാപത്തിന് അല്ലെങ്കിൽ കുടുംബബന്ധം മുറിക്കാൻ വേണ്ടി പ്രാർത്ഥിക്കൽ"}, {"ar": "بالمال أو الولد", "ml": "സമ്പത്തിന് അല്ലെങ്കിൽ സന്താനത്തിന് വേണ്ടി പ്രാർത്ഥിക്കൽ"}, {"ar": "في الليل أو السفر", "ml": "രാത്രിയിലോ യാത്രയിലോ പ്രാർത്ഥിക്കൽ"}], "ans": 1, "exp": "حديث رقم 2227 (رواه مسلم): «يستجاب للعبد ما لم يدع بإثم أو قطيعة رحم، ما لم يستعجل»."}, {"id": 48, "type": "mcq", "diff": "tight", "topic": "كتاب الدعوات - الفصل الثاني", "ar": "كم إماماً عزا إليهم التبريزي حديث النعمان بن بشير «الدعاء هو العبادة» (رقم 2230)؟", "ml": "നുഅ്മാൻ ബ്നു ബശീർ (റ) നിവേദനം ചെയ്ത 'പ്രാർത്ഥന തന്നെയാണ് ആരാധന' (ഹദീസ് 2230) എന്ന ഹദീസ് മിശ്കാത്തിൽ എത്ര ഇമാമുമാരിലേക്കാണ് ചേർത്തിട്ടുള്ളത്?", "options": [{"ar": "إمامان فقط (الترمذي وابن ماجه)", "ml": "രണ്ട് ഇമാമുമാർ മാത്രം"}, {"ar": "ثلاثة أئمة", "ml": "മൂന്ന് ഇമാമുമാർ"}, {"ar": "خمسة أئمة (أحمد، والترمذي، وأبو داود، والنسائي، وابن ماجه)", "ml": "അഞ്ച് ഇമാമുമാർ (അഹ്മദ്, തിർമിദി, അബൂദാവൂദ്, നസാഈ, ഇബ്നു മാജ)"}, {"ar": "البخاري ومسلم فقط", "ml": "ബുഖാരിയും മുസ്ലിമും മാത്രം"}], "ans": 2, "exp": "حديث رقم 2230: «رواه أحمد، والترمذي، وأبو داود، والنسائي، وابن ماجه»."}, {"id": 49, "type": "mcq", "diff": "tight", "topic": "كتاب الدعوات - الفصل الثاني", "ar": "في شرح الحديث رقم (2233): «لا يرد القضاء إلا الدعاء»، كيف يجمع العلماء (في شروح المشكاة كالمرقاة) بين رد القضاء بالدعاء وبين الإيمان بأن قدر الله لا يتبدل؟", "ml": "'പ്രാർത്ഥനയല്ലാതെ വിധിയെ (ഖളാഅ്) തടുക്കില്ല' എന്ന ഹദീസും (2233) അല്ലാഹുവിന്റെ വിധി മാറില്ല എന്ന വിശ്വാസവും തമ്മിൽ ശർഹുകളിൽ (മിർഖാത് തുടങ്ങിയവ) എങ്ങനെയാണ് പൊരുത്തപ്പെടുത്തുന്നത്?", "options": [{"ar": "الحديث مجاز محض لا حقيقة له", "ml": "ഈ ഹദീസ് വെറും അലങ്കാരം മാത്രമാണ്, യാഥാർത്ഥ്യമില്ല"}, {"ar": "المراد بالقضاء هنا «القضاء المعلق» (المكتوب في صحف الملائكة)، أما القضاء المبرم في علم الله الأزلي فلا يتبدل، والدعاء نفسه من قدر الله", "ml": "ഇവിടെ ഉദ്ദേശിക്കുന്നത് മലക്കുകളുടെ ഏടുകളിലുള്ള 'ഖളാഅ് മുഅല്ലഖ്' (ഉപാധിയോടെയുള്ള വിധി) ആണ്; അല്ലാഹുവിന്റെ അനാദിയായ അറിവിലുള്ള 'ഖളാഅ് മുബ്റം' മാറില്ല, പ്രാർത്ഥനയും വിധിയുടെ ഭാഗമാണ്"}, {"ar": "الحديث خاص بالأنبياء دون غيرهم", "ml": "ഈ ഹദീസ് പ്രവാചകന്മാർക്ക് മാത്രമുള്ളതാണ്"}, {"ar": "الدعاء يرد القضاء المبرم أيضاً", "ml": "പ്രാർത്ഥന ഖളാഅ് മുബ്റമിനെയും മാറ്റും"}], "ans": 1, "exp": "قرّر الشراح كالملا علي القاري أن القضاء نوعان: مبرم لا يتغير، ومعلق بأسباب كالدعاء والصدقة وصلة الرحم، وهو المراد في الحديث."}, {"id": 50, "type": "mcq", "diff": "medium", "topic": "كتاب الدعوات - الفصل الثاني", "ar": "بماذا ختم النبي ﷺ حديث ابن عمر رقم (2234): «إن الدعاء ينفع مما نزل ومما لم ينزل...»؟", "ml": "ഇബ്നു ഉമർ (റ) നിവേദനം ചെയ്ത ഹദീസ് നമ്പർ 2234 ('പ്രാർത്ഥന ഇറങ്ങിയതിലും ഇറങ്ങാനിരിക്കുന്നതിലും ഉപകരിക്കും...') ഏത് ആഹ്വാനത്തോടെയാണ് അവസാനിക്കുന്നത്?", "options": [{"ar": "فأكثروا من الاستغفار", "ml": "നിങ്ങൾ ഇസ്തിഗ്ഫാർ വർദ്ധിപ്പിക്കുക"}, {"ar": "فعليكم عباد الله بالدعاء", "ml": "അല്ലാഹുവിന്റെ ദാസന്മാരേ, നിങ്ങൾ പ്രാർത്ഥന മുറുകെ പിടിക്കുക (فعليكم عباد الله بالدعاء)"}, {"ar": "فارفعوا أيديكم إلى السماء", "ml": "നിങ്ങൾ ആകാശത്തേക്ക് കൈകൾ ഉയർത്തുക"}, {"ar": "فاسألوا الله العافية", "ml": "നിങ്ങൾ അല്ലാഹുവിനോട് സൗഖ്യം ചോദിക്കുക"}], "ans": 1, "exp": "حديث رقم 2234 (رواه الترمذي): «إن الدعاء ينفع مما نزل ومما لم ينزل، فعليكم عباد الله بالدعاء»."}, {"id": 51, "type": "mcq", "diff": "tight", "topic": "كتاب الدعوات - الفصل الثالث", "ar": "في الحديث رقم (2251): «حتى يسأله شسع نعله إذا انقطع»، ما الاختلاف النسخي الذي نبّه عليه المحقق في الحاشية رقم (2) حول كلمة «يسأله»؟", "ml": "ഹദീസ് നമ്പർ 2251-ന്റെ അടിക്കുറിപ്പ് (2)-ൽ 'യസ്അലഹു' (يسأله) എന്ന പദവുമായി ബന്ധപ്പെട്ട് മൂലപ്രതിയും (അസ്ൽ) മറ്റു പ്രതികളും തമ്മിലുള്ള വ്യത്യാസമായി ചൂണ്ടിക്കാണിച്ചത് എന്ത്?", "options": [{"ar": "في الأصل «يسأل» (بدون الضمير)، خلافاً لبقية النسخ «يسأله»", "ml": "മൂലപ്രതിയിൽ 'യസ്അലു' (يسأل) എന്നും മറ്റു പ്രതികളിൽ 'യസ്അലഹു' (يسأله) എന്നുമാണ്"}, {"ar": "في الأصل «يطلب» بدل «يسأل»", "ml": "മൂലപ്രതിയിൽ 'യത്ലുബു' എന്നാണ്"}, {"ar": "في الأصل «يدعو» بدل «يسأل»", "ml": "മൂലപ്രതിയിൽ 'യദ്ഊ' എന്നാണ്"}, {"ar": "في الأصل حُذفت كلمة «شسع»", "ml": "മൂലപ്രതിയിൽ 'ശിസ്അ്' എന്ന പദം ഒഴിവാക്കി"}], "ans": 0, "exp": "حاشية (2) على حديث 2251: «الشسع: أحد سيور النعل بين الأصبعين، وفي الأصل: يسأل، خلافاً لبقية النسخ»."}, {"id": 52, "type": "mcq", "diff": "medium", "topic": "كتاب الدعوات - الفصل الثالث", "ar": "في الحديث رقم (2253) عن أنس رضي الله عنه، كيف وُصف رفع النبي ﷺ يديه في الدعاء؟", "ml": "അനസ് (റ) റിപ്പോർട്ട് ചെയ്ത ഹദീസ് നമ്പർ 2253-ൽ നബി ﷺ പ്രാർത്ഥനയിൽ കൈകൾ ഉയർത്തിയിരുന്ന രൂപം എങ്ങനെയാണ് വിവരിച്ചിരിക്കുന്നത്?", "options": [{"ar": "حذاء صدره فقط", "ml": "നെഞ്ചിന് നേരെ മാത്രം"}, {"ar": "حتى يُرى بياض إبطيه", "ml": "നബി ﷺ യുടെ കക്ഷങ്ങളുടെ വെളുപ്പ് കാണുമാറ് ഉയർത്തുമായിരുന്നു"}, {"ar": "بأصبع واحدة فقط", "ml": "ഒരു വിരൽ മാത്രം ഉയർത്തുമായിരുന്നു"}, {"ar": "يجعلهما على ركبتيه", "ml": "കാൽമുട്ടുകളിൽ വെക്കുമായിരുന്നു"}], "ans": 1, "exp": "حديث رقم 2253 عن أنس: «كان رسول الله ﷺ يرفع يديه في الدعاء حتى يرى بياض إبطيه» (وهو في الشدائد كالاستسقاء)."}, {"id": 53, "type": "mcq", "diff": "tight", "topic": "كتاب الدعوات - الفصل الثالث", "ar": "الحديث رقم (2255) عن السائب بن يزيد عن أبيه في مسح الوجه باليدين بعد الدعاء رواه البيهقي، ومن الذي رواه أيضاً من أصحاب السنن الأربع وفق الحاشية رقم (4)؟", "ml": "പ്രാർത്ഥനയ്ക്ക് ശേഷം മുഖം തടവുന്നതിനെക്കുറിച്ചുള്ള ഹദീസ് നമ്പർ 2255 ബൈഹഖിക്ക് പുറമെ നാല് സുനൻ കർത്താക്കളിൽ ആരുടെ ഗ്രന്ഥത്തിലാണുള്ളതെന്ന് അടിക്കുറിപ്പ് (4) വ്യക്തമാക്കുന്നു?", "options": [{"ar": "النسائي", "ml": "ഇമാം നസാഈ"}, {"ar": "أبو داود", "ml": "ഇമാം അബൂദാവൂദ്"}, {"ar": "ابن ماجه", "ml": "ഇമാം ഇബ്നു മാജ"}, {"ar": "الترمذي", "ml": "ഇമാം തിർമിദി"}], "ans": 1, "exp": "حاشية (4) على حديث 2255: «والثالث منها عند أبي داود، وإسناده ضعيف...»."}, {"id": 54, "type": "mcq", "diff": "tight", "topic": "كتاب الدعوات - الفصل الثالث", "ar": "في الحديث رقم (2256) عن ابن عباس في بيان هيئات الدعاء الثلاث، من هو التابعي الذي روى هذا الأثر عن ابن عباس؟", "ml": "മസ്അല, ഇസ്തിഗ്ഫാർ, ഇബ്തിഹാൽ എന്നിവയുടെ രൂപം വിവരിക്കുന്ന ഇബ്നു അബ്ബാസ് (റ) വിന്റെ ഹദീസ് (നമ്പർ 2256) അദ്ദേഹത്തിൽ നിന്ന് ഉദ്ധരിച്ച താബിഈ ആരാണ്?", "options": [{"ar": "سعيد بن جبير", "ml": "സഈദ് ബ്നു ജുബൈർ"}, {"ar": "عكرمة", "ml": "ഇക്രിമ (റ)"}, {"ar": "طاوس بن كيسان", "ml": "ത്വാഊസ് ബ്നു കൈസാൻ"}, {"ar": "مجاهد", "ml": "മുജാഹിദ്"}], "ans": 1, "exp": "حديث رقم 2256: «وعن عكرمة، عن ابن عباس رضي الله عنهما، قال: المسألة أن ترفع يديك حذو منكبيك...»."}, {"id": 55, "type": "mcq", "diff": "tight", "topic": "كتاب الدعوات - الفصل الثالث", "ar": "ما الحكم الذي ذكرته الحاشية رقم (3) على حديث أنس/ثابت البناني رقم (2251-2252) في مسألة الله حتى شسع النعل والملح؟", "ml": "ഹദീസ് നമ്പർ 2251-2252-ന് (ചെരിപ്പിന്റെ വാറും ഉപ്പും വരെ അല്ലാഹുവിനോട് ചോദിക്കുക) അടിക്കുറിപ്പ് (3)-ൽ നൽകിയ ഹദീസ് പദവി എന്താണ്?", "options": [{"ar": "حديث موضوع", "ml": "ഹദീസ് മൗളൂഅ്"}, {"ar": "حديث حسن", "ml": "ഹദീസ് ഹസൻ"}, {"ar": "حديث متواتر", "ml": "ഹദീസ് മുതവാതിർ"}, {"ar": "حديث منكر", "ml": "ഹദീസ് മുൻകർ"}], "ans": 1, "exp": "حاشية (3) على حديث 2252: «وهو حديث حسن»."}, {"id": 56, "type": "mcq", "diff": "medium", "topic": "كتاب الدعوات - الفصل الثاني", "ar": "كم عدد الأحاديث المختارة من كتاب الدعوات (الفصول الثلاثة: 2223-2227، 2230-2234، 2251-2256) في المقرر المرفق؟", "ml": "നിങ്ങൾ അയച്ച മിശ്കാത്ത് പി.ഡി.എഫിൽ 'കിതാബുദ്ദഅവാത്തിന്റെ' മൂന്ന് ഫസ്ലുകളിൽ നിന്നായി ആകെ എത്ര ഹദീസുകളാണ് തിരഞ്ഞെടുത്തിരിക്കുന്നത്?", "options": [{"ar": "12 حديثاً", "ml": "12 ഹദീസുകൾ"}, {"ar": "15 حديثاً", "ml": "15 ഹദീസുകൾ"}, {"ar": "16 حديثاً (5 + 5 + 6)", "ml": "16 ഹദീസുകൾ (5 + 5 + 6)"}, {"ar": "18 حديثاً", "ml": "18 ഹദീസുകൾ"}], "ans": 2, "exp": "الفصل الأول: 2223-2227 (5)، الفصل الثاني: 2230-2234 (5)، الفصل الثالث: 2251-2256 (6) = 16 حديثاً."}, {"id": 57, "type": "mcq", "diff": "medium", "topic": "باب ذكر الله - الفصل الأول", "ar": "من الصحابيان اللذان اشتركا في رواية الحديث رقم (2261): «لا يقعد قوم يذكرون الله إلا حفتهم الملائكة...»؟", "ml": "ദിക്ർ സദസ്സുകളുടെ നാല് മഹത്വങ്ങൾ വിവരിക്കുന്ന ഹദീസ് നമ്പർ 2261 സംയുക്തമായി റിപ്പോർട്ട് ചെയ്ത രണ്ട് സ്വഹാബികൾ ആരെല്ലാമാണ്?", "options": [{"ar": "أبو هريرة، وأبو ذر رضي الله عنهما", "ml": "അബൂഹുറൈറയും അബൂദർറും (റ)"}, {"ar": "أبو هريرة، وأبو سعيد رضي الله عنهما", "ml": "അബൂഹുറൈറയും അബൂസഈദുൽ ഖുദ്രിയും (റ)"}, {"ar": "أنس، وابن عمر رضي الله عنهما", "ml": "അനസും ഇബ്നു ഉമറും (റ)"}, {"ar": "أبو موسى، وأبو الدرداء رضي الله عنهما", "ml": "അബൂമൂസയും അബുദ്ദർദാഉം (റ)"}], "ans": 1, "exp": "حديث رقم 2261 (رواه مسلم): «عن أبي هريرة، وأبي سعيد رضي الله عنهما»."}, {"id": 58, "type": "mcq", "diff": "medium", "topic": "باب ذكر الله - الفصل الأول", "ar": "في الحديث رقم (2262) عن أبي هريرة: «سبق المفردون»، كيف فسّر النبي ﷺ كلمة (المفردون)؟", "ml": "ഹദീസ് നമ്പർ 2262-ലെ 'സബഖൽ മുഫർരിദൂൻ' എന്നതിൽ ആരാണ് 'മുഫർരിദൂൻ' എന്ന് നബി ﷺ വിശദീകരിച്ചു?", "options": [{"ar": "المنعزلون في الجبال والكهوف", "ml": "മലകളിലും ഗുഹകളിലും ഏകാന്തവാസം നയിക്കുന്നവർ"}, {"ar": "الذاكرون الله كثيراً والذاكرات", "ml": "അല്ലാഹുവിനെ ധാരാളമായി സ്മരിക്കുന്ന പുരുഷന്മാരും സ്ത്രീകളും"}, {"ar": "المجاهدون الذين يقاتلون وحدهم", "ml": "ഒറ്റയ്ക്ക് പോരാടുന്ന മുജാഹിദുകൾ"}, {"ar": "المسافرون في طلب الحديث", "ml": "ഹദീസ് തേടി യാത്ര ചെയ്യുന്നവർ"}], "ans": 1, "exp": "حديث رقم 2262 (رواه مسلم): «قالوا: وما المفردون يا رسول الله؟ قال: الذاكرون الله كثيراً والذاكرات»."}, {"id": 59, "type": "mcq", "diff": "medium", "topic": "باب ذكر الله - الفصل الأول", "ar": "في الحديث القدسي رقم (2264) عن أبي هريرة: «وإن ذكرني في ملأ...»، ما جزاء من ذكر الله في ملأ من الناس؟", "ml": "ഹദീസ് ഖുദ്സി നമ്പർ 2264 പ്രകാരം ഒരാൾ ഒരു സദസ്സിൽ (മലഅ്) വെച്ച് അല്ലാഹുവിനെ സ്മരിച്ചാൽ അതിനുള്ള പ്രതിഫലം എന്താണ്?", "options": [{"ar": "غفر الله لجميع أهل المجلس فقط", "ml": "ആ സദസ്സിലുള്ള എല്ലാവർക്കും പൊറുത്തുകൊടുക്കും"}, {"ar": "ذكره الله في ملأ خير منهم (أي الملائكة المقربين)", "ml": "അവരേക്കാൾ ഉത്തമമായ ഒരു സദസ്സിൽ (ഉന്നതരായ മലക്കുകൾക്കിടയിൽ) അല്ലാഹു അവനെ സ്മരിക്കും"}, {"ar": "رزقه الله مالاً كثيراً", "ml": "അവന് ധാരാളം സമ്പത്ത് നൽകും"}, {"ar": "أجاب الله دعوته في الحال", "ml": "അവന്റെ പ്രാർത്ഥന ഉടൻ സ്വീകരിക്കും"}], "ans": 1, "exp": "حديث رقم 2264 (متفق عليه): «وإن ذكرني في ملأ، ذكرته في ملأ خير منهم»."}, {"id": 60, "type": "mcq", "diff": "tight", "topic": "باب ذكر الله - الفصل الأول", "ar": "في الحديث القدسي رقم (2265) عن أبي ذر: «ومن أتاني يمشي أتيته هرولة»، كيف يفسر شراح الحديث من أهل السنة (كالنووي والملا علي القاري) معنى «الهرولة» هنا؟", "ml": "ഹദീസ് ഖുദ്സി നമ്പർ 2265-ലെ 'എന്റെ അടുക്കലേക്ക് നടന്നു വന്നാൽ ഞാൻ അവനിലേക്ക് ഓടി (ഹർവല) അടുക്കും' എന്നതിന് അഹ്ലുസ്സുന്നയിലെ വ്യാഖ്യാതാക്കൾ (നവവി, മുല്ലാ അലി അൽ-ഖാരി) നൽകുന്ന ആശയം എന്ത്?", "options": [{"ar": "المشي الجسدي السريع على الحقيقة كالبشر", "ml": "മനുഷ്യരെപ്പോലെ ശാരീരികമായ ഓട്ടം തന്നെയാണ്"}, {"ar": "كناية عن سرعة إقبال الله بالرحمة والقبول ومضاعفة الثواب أضعافاً على قدر عمل العبد، مع تنزيه الله عن مشابهة المخلوقين", "ml": "സൃഷ്ടികളോടുള്ള സാദൃശ്യത്തിൽ നിന്ന് അല്ലാഹുവിനെ പരിശുദ്ധപ്പെടുത്തിക്കൊണ്ട്, ദാസന്റെ കർമ്മത്തേക്കാൾ വേഗത്തിലും അധികമായും അല്ലാഹുവിന്റെ കാരുണ്യവും സ്വീകാര്യതയും പ്രതിഫലവും എത്തുമെന്നതിന്റെ പ്രതീകാത്മക പ്രയോഗം"}, {"ar": "الحديث ضعيف الإسناد لا يُفسر", "ml": "ഈ ഹദീസ് ളഈഫാണ്"}, {"ar": "المراد هرولة الملائكة فقط", "ml": "മലക്കുകളുടെ ഓട്ടം മാത്രമാണ് ഉദ്ദേശ്യം"}], "ans": 1, "exp": "أجمع شراح الصحيح والمشكاة على أن التقرب والهرولة هنا مجاز وتمثيل لسرعة إجابة الله ومضاعفة رحمته وثوابه، تنزيهاً لله عن صفات الحوادث."}, {"id": 61, "type": "mcq", "diff": "medium", "topic": "باب ذكر الله - الفصل الثاني", "ar": "في الحديث رقم (2269) عن أبي الدرداء، فضّل النبي ﷺ «ذكر الله» على أمرين عظيمين من أعظم القربات، ما هما؟", "ml": "അബുദ്ദർദാഅ് (റ) റിപ്പോർട്ട് ചെയ്ത ഹദീസ് നമ്പർ 2269-ൽ നബി ﷺ അല്ലാഹുവിന്റെ ദിക്റിനെ ഏത് രണ്ട് മഹത്തായ പുണ്യകർമ്മങ്ങളെക്കാളും ഉത്തമമായിട്ടാണ് വിശേഷിപ്പിച്ചത്?", "options": [{"ar": "الصيام والحج فقط", "ml": "നോമ്പും ഹജ്ജും മാത്രം"}, {"ar": "إنفاق الذهب والورق، ولقاء العدو في الجهاد (ضرب الأعناق)", "ml": "സ്വർണ്ണവും വെള്ളിയും ചെലവഴിക്കുന്നതിനേക്കാളും, യുദ്ധത്തിൽ ശത്രുക്കളുമായി ഏറ്റുമുട്ടുന്നതിനേക്കാളും"}, {"ar": "بناء المساجد وحفر الآبار", "ml": "പള്ളികൾ നിർമ്മിക്കലും കിണർ കുഴിക്കലും"}, {"ar": "إطعام الطعام وإفشاء السلام", "ml": "ഭക്ഷണം നൽകലും സലാം വ്യാപിപ്പിക്കലും"}], "ans": 1, "exp": "حديث رقم 2269: «وخير لكم من إنفاق الذهب والورق، وخير لكم من أن تلقوا عدوكم فتضربوا أعناقهم ويضربوا أعناقكم»."}, {"id": 62, "type": "mcq", "diff": "tight", "topic": "باب ذكر الله - الفصل الثاني", "ar": "ما الحكم الإسنادي الذي أثبته المحقق في الحاشية رقم (2) على رواية مالك لحديث أبي الدرداء رقم (2269)؟", "ml": "ഹദീസ് നമ്പർ 2269-ലെ (അബുദ്ദർദാഅ് റ) ഇമാം മാലികിന്റെ റിപ്പോർട്ടിന് അടിക്കുറിപ്പ് (2)-ൽ മുഹഖിഖ് നൽകിയ സനദ് പദവി എന്താണ്?", "options": [{"ar": "إسناده ضعيف منقطع", "ml": "ഇസ്നാദ് ളഈഫ് മുൻഖത്വിഅ്"}, {"ar": "وإسناده صحيح موقوف", "ml": "അതിന്റെ ഇസ്നാദ് സ്വഹീഹ് മൗഖൂഫ് ആണ്"}, {"ar": "إسناده موضوع", "ml": "ഇസ്നാദ് മൗളൂഅ്"}, {"ar": "إسناده مرسل", "ml": "ഇസ്നാദ് മുർസൽ"}], "ans": 1, "exp": "حاشية (2) على حديث 2269: «وإسناده صحيح موقوف»."}, {"id": 63, "type": "mcq", "diff": "medium", "topic": "باب ذكر الله - الفصل الثاني والثالث", "ar": "من الصحابي الذي روى كلاً من الحديث رقم (2270) («أن تفارق الدنيا ولسانك رطب من ذكر الله») والحديث رقم (2279) («لا يزال لسانك رطباً من ذكر الله»)؟", "ml": "ഹദീസ് നമ്പർ 2270-ഉം 2279-ഉം (രണ്ടിലും 'നാവ് ദിക്റ് കൊണ്ട് നനഞ്ഞിരിക്കുക' എന്ന ഉപദേശം) നിവേദനം ചെയ്ത സ്വഹാബി ആരാണ്?", "options": [{"ar": "أبو الدرداء رضي الله عنه", "ml": "അബുദ്ദർദാഅ് (റ)"}, {"ar": "عبد الله بن بسر رضي الله عنه", "ml": "അബ്ദുല്ലാഹിബ്നു ബുസ്ർ (റ)"}, {"ar": "معاذ بن جبل رضي الله عنه", "ml": "മുആദ് ബ്നു ജബൽ (റ)"}, {"ar": "أبو موسى الأشعري رضي الله عنه", "ml": "അബൂമൂസൽ അശ്അരി (റ)"}], "ans": 1, "exp": "الحديثان رقم (2270) في الفصل الثاني و(2279) في الفصل الثالث كلاهما عن الصحابي عبد الله بن بسر رضي الله عنه."}, {"id": 64, "type": "mcq", "diff": "medium", "topic": "باب ذكر الله - الفصل الثاني", "ar": "في الحديث رقم (2272) عن أبي هريرة، بالإضافة إلى «من قعد مقعداً لم يذكر الله فيه»، ما الحالة الثانية التي تكون على صاحبها من الله تِرة؟", "ml": "ഹദീസ് നമ്പർ 2272 പ്രകാരം, അല്ലാഹുവിനെ സ്മരിക്കാതെ ഇരിക്കുന്ന ഇരിപ്പിടത്തിന് പുറമെ ഏത് അവസ്ഥയിലാണ് ഒരാൾക്ക് അല്ലാഹുവിങ്കൽ നിന്ന് 'തിറത്ത്' (ഖേദം) ഉണ്ടാവുക?", "options": [{"ar": "من سافر سفراً لم يذكر الله فيه", "ml": "ദിക്റ് ഇല്ലാതെ യാത്ര ചെയ്തവൻ"}, {"ar": "من اضطجع مضجعاً لا يذكر الله فيه", "ml": "അല്ലാഹുവിനെ സ്മരിക്കാതെ കിടന്ന കിടപ്പിടം (ومن اضطجع مضجعاً لا يذكر الله فيه)"}, {"ar": "من أكل طعاماً لم يذكر الله فيه", "ml": "ദിക്റ് ഇല്ലാതെ ഭക്ഷണം കഴിച്ചവൻ"}, {"ar": "من دخل سوقاً لم يذكر الله فيه", "ml": "ദിക്റ് ഇല്ലാതെ അങ്ങാടിയിൽ കടന്നവൻ"}], "ans": 1, "exp": "حديث رقم 2272 (رواه أبو داود): «ومن اضطجع مضجعاً لا يذكر الله فيه كانت عليه من الله ترة»."}, {"id": 65, "type": "mcq", "diff": "tight", "topic": "باب ذكر الله - الفصل الثاني", "ar": "في الحاشية رقم (5) المشتركة على الحديثين (2272 و2273)، ما حكم المحقق عليهما وإلى أي كتاب من كتبه أحال؟", "ml": "ഹദീസ് നമ്പർ 2272, 2273 എന്നിവയുടെ പൊതുവായ അടിക്കുറിപ്പ് (5)-ൽ മുഹഖിഖ് നൽകിയ വിധിയും പരാമർശിച്ച ഗ്രന്ഥവും ഏതാണ്?", "options": [{"ar": "حديث ضعيف — السلسلة الضعيفة", "ml": "ളഈഫ് — അസ്സിൽസിലത്തുള്ള്വഈഫ"}, {"ar": "حديث صحيح — «الأحاديث الصحيحة»", "ml": "സ്വഹീഹ് — 'അൽ-അഹാദീസുസ്സ്വഹീഹ'"}, {"ar": "حديث حسن — «إرواء الغليل»", "ml": "ഹസൻ — 'ഇർവാഉൽ ഗലീൽ'"}, {"ar": "حديث مرسل — «تمام المنة»", "ml": "മുർസൽ — 'തമാമുൽ മിന്ന'"}], "ans": 1, "exp": "حاشية (5) على حديثي 2272 و2273: «حديث صحيح، وقد تكلمت على طرقه وألفاظه في الأحاديث الصحيحة»."}, {"id": 66, "type": "mcq", "diff": "medium", "topic": "باب ذكر الله - الفصل الثالث", "ar": "في الحديث رقم (2280) عن أبي سعيد، سُئل النبي ﷺ: «ومن الغازي في سبيل الله؟»، فكيف أجاب في تفضيل الذاكر الله عليه؟", "ml": "ഹദീസ് നമ്പർ 2280-ൽ അല്ലാഹുവിന്റെ മാർഗ്ഗത്തിൽ യുദ്ധം ചെയ്യുന്നവനെക്കാളും ദിക്റ് ചൊല്ലുന്നവൻ ശ്രേഷ്ഠനാണോ എന്ന് ചോദിച്ചപ്പോൾ നബി ﷺ നൽകിയ മറുപടി എന്തായിരുന്നു?", "options": [{"ar": "لا، الغازي أفضل مطلقاً", "ml": "അല്ല, യുദ്ധം ചെയ്യുന്നവനാണ് ഉത്തമൻ"}, {"ar": "لو ضرب بسيفه في الكفار والمشركين حتى ينكسر ويختضب دماً، فإن الذاكر الله أفضل منه درجة", "ml": "അവന്റെ വാൾ ഒടിയുകയും രക്തം പുരളുകയും ചെയ്യുവോളം ശത്രുക്കളോട് പോരാടിയാലും അല്ലാഹുവിനെ സ്മരിക്കുന്നവനാണ് അവനേക്കാൾ ഉയർന്ന പദവിയുള്ളവൻ"}, {"ar": "كلاهما في درجة واحدة سواء", "ml": "ഇരുവരും ഒരേ പദവിയിലാണ്"}, {"ar": "إنما الغازي أفضل في شهر رمضان فقط", "ml": "റമദാനിൽ മാത്രം പോരാളി ഉത്തമനാണ്"}], "ans": 1, "exp": "حديث رقم 2280 (رواه أحمد والترمذي): «لو ضرب بسيفه في الكفار والمشركين حتى ينكسر ويختضب دماً، فإن الذاكر الله أفضل منه درجة»."}, {"id": 67, "type": "mcq", "diff": "tight", "topic": "باب ذكر الله - الفصل الثالث", "ar": "في الحديث رقم (2282): «بلغني أن رسول الله ﷺ كان يقول: ذاكر الله في الغافلين كالمقاتل خلف الفارين...»، من الإمام الذي روى هذا البلاغ؟", "ml": "'ബലഗനീ അന്ന റസൂലല്ലാഹി ﷺ...' എന്ന് തുടങ്ങുന്ന ഹദീസ് നമ്പർ 2282 ('അശ്രദ്ധർക്കിടയിൽ ദിക്റ് ചൊല്ലുന്നവൻ ഓടിപ്പോകുന്നവരുടെ പിന്നിലെ പോരാളിയെപ്പോലെയാണ്') ഉദ്ധരിച്ച ഇമാം ആരാണ്?", "options": [{"ar": "الإمام أحمد بن حنبل", "ml": "ഇമാം അഹ്മദ്"}, {"ar": "الإمام مالك بن أنس", "ml": "ഇമാം മാലിക് ബ്നു അനസ്"}, {"ar": "الإمام البخاري", "ml": "ഇമാം ബുഖാരി"}, {"ar": "الإمام الترمذي", "ml": "ഇമാം തിർമിദി"}], "ans": 1, "exp": "حديث رقم 2282: «وعن مالك، قال: بلغني أن رسول الله ﷺ كان يقول...» (ويُعد من بلاغات مالك)."}, {"id": 68, "type": "mcq", "diff": "tight", "topic": "باب ذكر الله - الفصل الثالث", "ar": "في الحديث رقم (2284) عن معاذ بن جبل: «ما عمل العبد عملاً أنجى له من عذاب الله من ذكر الله»، ما الأئمة الثلاثة الذين عزا إليهم التبريزي هذا الحديث؟", "ml": "മുആദ് ബ്നു ജബൽ (റ) റിപ്പോർട്ട് ചെയ്ത ഹദീസ് നമ്പർ 2284 ഏതെല്ലാം മൂന്ന് ഇമാമുമാരിലേക്കാണ് മിശ്കാത്തിൽ ചേർത്തിട്ടുള്ളത്?", "options": [{"ar": "أحمد وأبو داود والنسائي", "ml": "അഹ്മദ്, അബൂദാവൂദ്, നസാഈ"}, {"ar": "مالك، والترمذي، وابن ماجه", "ml": "മാലിക്, തിർമിദി, ഇബ്നു മാജ"}, {"ar": "البخاري ومسلم والدارمي", "ml": "ബുഖാരി, മുസ്ലിം, ദാരിമി"}, {"ar": "البيهقي ورزين والبغوي", "ml": "ബൈഹഖി, റസീൻ, ബഗവി"}], "ans": 1, "exp": "حديث رقم 2284: «رواه مالك، والترمذي، وابن ماجه»."}, {"id": 69, "type": "mcq", "diff": "medium", "topic": "باب ذكر الله - الفصل الأول", "ar": "في الحديث القدسي رقم (2265) عن أبي ذر: «من جاء بالحسنة فله عشر أمثالها، وأزيد...»، من الذي أخرج هذا الحديث؟", "ml": "അബൂദർറ് (റ) നിവേദനം ചെയ്ത ഹദീസ് ഖുദ്സി (നമ്പർ 2265) മിശ്കാത്തിൽ ഉദ്ധരിച്ചിരിക്കുന്നത് ആരുടെ ഗ്രന്ഥത്തിൽ നിന്നാണ്?", "options": [{"ar": "البخاري وحده", "ml": "ഇമാം ബുഖാരി മാത്രം"}, {"ar": "مسلم (رواه مسلم)", "ml": "ഇമാം മുസ്ലിം (رواه مسلم)"}, {"ar": "أبو داود", "ml": "ഇമാം അബൂദാവൂദ്"}, {"ar": "النسائي", "ml": "ഇമാം നസാഈ"}], "ans": 1, "exp": "حديث رقم 2265 عن أبي ذر: «رواه مسلم»."}, {"id": 70, "type": "mcq", "diff": "tight", "topic": "باب ذكر الله - الفصل الثالث", "ar": "أي العبارات التالية لم ترد في وصف «ذاكر الله في الغافلين» في الحديثين (2282 و2283)؟", "ml": "ഹദീസ് നമ്പർ 2282, 2283 എന്നിവയിൽ 'അശ്രദ്ധർക്കിടയിൽ അല്ലാഹുവിനെ സ്മരിക്കുന്നവന്റെ' (ذاكر الله في الغافلين) വിശേഷണമായി വന്നിട്ടില്ലാത്തത് ഏതാണ്?", "options": [{"ar": "كالمقاتل خلف الفارين", "ml": "ഓടിപ്പോകുന്നവരുടെ പിന്നിലെ പോരാളിയെപ്പോലെ"}, {"ar": "مثل مصباح في بيت مظلم", "ml": "ഇരുണ്ട വീട്ടിലെ വിളക്ക് പോലെ"}, {"ar": "يُبنى له ألف قصر في الجنة كل ساعة", "ml": "ഓരോ മണിക്കൂറിലും സ്വർഗ്ഗത്തിൽ ആയിരം കൊട്ടാരങ്ങൾ പണിയപ്പെടും"}, {"ar": "يُريه الله مقعده من الجنة وهو حي", "ml": "ജീവിച്ചിരിക്കെ തന്നെ സ്വർഗ്ഗത്തിലെ തന്റെ ഇരിപ്പിടം അല്ലാഹു കാണിച്ചുകൊടുക്കും"}], "ans": 2, "exp": "ورد في 2282-2283: كالمقاتل خلف الفارين، كغصن أخضر/الشجرة الخضراء، مثل مصباح في بيت مظلم، يريه الله مقعده من الجنة وهو حي، ويُغفر له بعدد كل فصيح وأعجم."}, {"id": 71, "type": "mcq", "diff": "medium", "topic": "مقدمة مشكاة المصابيح", "ar": "من هو مؤلف الشرح الموسوعي المعاصر/المتأخر لمشكاة المصابيح المسمى «مرعاة المفاتيح» (بالعين المهملة، بخلاف «مرقاة المفاتيح» بالقاف)؟", "ml": "'മിർഖാത്തുൽ മഫാതീഹി'ൽ നിന്ന് വ്യത്യസ്തമായി 'മിർആത്തുൽ മഫാതീഹ്' (مرعاة المفاتيح) എന്ന മിശ്കാത്ത് വ്യാഖ്യാനം രചിച്ച പണ്ഡിതൻ ആരാണ്?", "options": [{"ar": "الملا علي القاري", "ml": "മുല്ലാ അലി അൽ-ഖാരി"}, {"ar": "الشيخ عبيد الله الرحماني المباركفوري", "ml": "ശൈഖ് ഉബൈദുല്ലാഹ് അർറഹ്മാനി അൽ-മുബാറക്പൂരി"}, {"ar": "الشيخ عبد الحق الدهلوي", "ml": "ശൈഖ് അബ്ദുൽ ഹഖ് ദഹ്‌ലവി"}, {"ar": "الإمام الطيبي", "ml": "ഇമാം ത്വീബി"}], "ans": 1, "exp": "«مرعاة المفاتيح شرح مشكاة المصابيح» للعلامة الشيخ عبيد الله الرحماني المباركفوري (ت 1414هـ)."}, {"id": 72, "type": "mcq", "diff": "tight", "topic": "مقدمة مشكاة المصابيح", "ar": "ما اسم الشرح الفارسي الشهير لمشكاة المصابيح الذي ألفه الشيخ عبد الحق المحدث الدهلوي إلى جانب شرحه العربي «لمعات التنقيح»؟", "ml": "ശൈഖ് അബ്ദുൽ ഹഖ് മുഹദ്ദിസ് ദഹ്‌ലവി തന്റെ അറബി വ്യാഖ്യാനമായ 'ലമആത്തുത്തൻഖീഹി'ന് പുറമെ മിശ്കാത്തിന് രചിച്ച പ്രശസ്ത പേർഷ്യൻ വ്യാഖ്യാനത്തിന്റെ പേരെന്ത്?", "options": [{"ar": "أشعة اللمعات", "ml": "അശിഅത്തുൽ ലമആത്ത്"}, {"ar": "مظاهر حق", "ml": "മളാഹിറെ ഹഖ്"}, {"ar": "التعليق الصبيح", "ml": "അത്തഅ്ലീഖുസ്വബീഹ്"}, {"ar": "فتح الودود", "ml": "ഫത്ഹുൽ വദൂദ്"}], "ans": 0, "exp": "للشيخ عبد الحق الدهلوي شرحان على المشكاة: «لمعات التنقيح» بالعربية، و«أشعة اللمعات» بالفارسية."}, {"id": 73, "type": "mcq", "diff": "tight", "topic": "مقدمة مشكاة المصابيح", "ar": "في مقدمة الشيخ عبد الحق الدهلوي المطبوعة مع مشكاة المصابيح، ما الفرق الأشهر بين مصطلحات «الحديث» و«الخبر» و«الأثر»؟", "ml": "മിശ്കാത്തിന്റെ മുഖദ്ദിമയിൽ 'ഹദീസ്', 'ഖബർ', 'അഥർ' എന്നിവ തമ്മിലുള്ള പ്രസിദ്ധമായ വ്യത്യാസമായി വിവരിക്കുന്നത് എന്താണ്?", "options": [{"ar": "الحديث خاص بما جاء عن النبي ﷺ، والخبر أعم (يشمل ما جاء عنه وعن غيره)، والأثر يُطلق غالباً على الموقوف والمقطوع (عن الصحابة والتابعين)", "ml": "ഹദീസ് നബി ﷺ യിൽ നിന്ന് വന്നത്; ഖബർ അതിനേക്കാൾ വിശാലമാണ് (നബിയിൽ നിന്നും മറ്റുള്ളവരിൽ നിന്നും); അഥർ പ്രധാനമായും സ്വഹാബികളിൽ നിന്നും താബിഉകളിൽ നിന്നും വന്നവയാണ്"}, {"ar": "الحديث خاص بالصحابة والخبر خاص بالتابعين", "ml": "ഹദീസ് സ്വഹാബികൾക്കും ഖബർ താബിഉകൾക്കും മാത്രമുള്ളതാണ്"}, {"ar": "الأثر خاص بالأحاديث القدسية فقط", "ml": "അഥർ ഹദീസ് ഖുദ്സികൾക്ക് മാത്രമുള്ളതാണ്"}, {"ar": "لا يُستخدم مصطلح الخبر في علم الحديث إطلاقاً", "ml": "ഖബർ എന്ന പദം ഹദീസ് ശാസ്ത്രത്തിൽ ഉപയോഗിക്കാറില്ല"}], "ans": 0, "exp": "الحديث: ما أضيف إلى النبي ﷺ، والخبر: أعم منه (أو مرادف له)، والأثر: ما أضيف إلى الصحابي أو التابعي (وقد يطلق على المرفوع أيضاً)."}, {"id": 74, "type": "mcq", "diff": "tight", "topic": "مقدمة مشكاة المصابيح", "ar": "يبلغ عدد أحاديث «مصابيح السنة» للبغوي نحو (4434 - 4719) حديثاً، فكم يبلغ تقريباً مجموع أحاديث «مشكاة المصابيح» في الطبعة المحققة المرقمة بعد زيادات الخطيب التبريزي؟", "ml": "ഇമാം ബഗവിയുടെ 'മസാബീഹുസ്സുന്ന'യിൽ ഏകദേശം 4434–4719 ഹദീസുകളാണുള്ളത്. എന്നാൽ ഖത്വീബ് തബ്രീസി മൂന്നാം ഫസ്ൽ അധികരിപ്പിച്ച ശേഷം അംഗീകൃത പതിപ്പായ 'മിശ്കാത്തുൽ മസാബീഹിൽ' ആകെ എത്ര ഹദീസുകളാണുള്ളത്?", "options": [{"ar": "نحو 2,500 حديث", "ml": "ഏകദേശം 2,500 ഹദീസുകൾ"}, {"ar": "نحو 5,945 حديثاً (قرابة 6,000 حديث)", "ml": "ഏകദേശം 5,945 ഹദീസുകൾ (ഏകദേശം ആറായിരത്തോളം)"}, {"ar": "نحو 15,000 حديث", "ml": "ഏകദേശം 15,000 ഹദീസുകൾ"}, {"ar": "نحو 1,000 حديث فقط", "ml": "ഏകദേശം 1,000 ഹദീസുകൾ മാത്രം"}], "ans": 1, "exp": "في الطبعة المحققة المرقمة (تحقيق الألباني المعتمدة في المنهج) يبلغ مجموع أحاديث المشكاة 5,945 حديثاً (وفي بعض الطبعات نحو 6,294 مع اختلاف الترقيم)."}, {"id": 75, "type": "mcq", "diff": "medium", "topic": "مقدمة مشكاة المصابيح", "ar": "في مقدمة المشكاة، لماذا لم يلتزم الخطيب التبريزي بذكر الأسانيد الكاملة لكل حديث بل اكتفى بذكر الصحابي الراوي واسم الكتاب المخرّج؟", "ml": "മിശ്കാത്തിൽ ഓരോ ഹദീസിന്റെയും പൂർണ്ണമായ സനദ് ഉദ്ധരിക്കാതെ, സ്വഹാബിയുടെ പേരും ഹദീസ് ഉദ്ധരിച്ച ഗ്രന്ഥത്തിന്റെ പേരും മാത്രം നൽകാൻ ഖത്വീബ് തബ്രീസി സ്വീകരിച്ച നിലപാടിന്റെ ലക്ഷ്യമെന്ത്?", "options": [{"ar": "لأنه لم يكن يعرف الأسانيد", "ml": "അദ്ദേഹത്തിന് സനദുകൾ അറിയാത്തതിനാൽ"}, {"ar": "طلباً للاختصار والتسهيل على طلبة العلم، مع الاكتفاء بالعزو إلى دواوين الإسلام المعتمدة كالصحيحين والسنن التي فيها الأسانيد", "ml": "വിദ്യാർത്ഥികൾക്ക് എളുപ്പത്തിനും ചുരുക്കത്തിനും വേണ്ടി; പൂർണ്ണ സനദുകൾ സ്വഹീഹൈനിയും സുനനും പോലെയുള്ള ആധികാരിക ഗ്രന്ഥങ്ങളിലേക്കുള്ള സൂചന (തഖ്രീജ്) വഴി ലഭിക്കുമെന്നതിനാൽ"}, {"ar": "لأن الأسانيد ليست مهمة في الحديث", "ml": "സനദുകൾക്ക് പ്രാധാന്യമില്ലാത്തതിനാൽ"}, {"ar": "لأن البغوي منعه من ذلك", "ml": "ബഗവി അത് തടഞ്ഞതിനാൽ"}], "ans": 1, "exp": "بيّن التبريزي أن عزو الحديث إلى الأئمة المتقنين (كالبخاري ومسلم وأصحاب السنن) يغني عن تطويل الأسانيد ويحقق التوثيق والاختصار."}, {"id": 76, "type": "mcq", "diff": "tight", "topic": "مقدمة مشكاة المصابيح", "ar": "في منهج التبريزي في «مشكاة المصابيح»، ماذا كان يفعل إذا وجد الإمام البغوي قد ذكر حديثاً في «الصحاح» وهو ليس في الصحيحين، أو ذكره في «الحسان» وهو في الصحيحين؟", "ml": "ഇമാം ബഗവി സ്വഹീഹൈനിൽ ഇല്ലാത്ത ഒരു ഹദീസിനെ 'സ്വിഹാഹിലോ' (ഒന്നാം ഫസ്ൽ), സ്വഹീഹൈനിലുള്ളതിനെ 'ഹിസാനിലോ' (രണ്ടാം ഫസ്ൽ) ഉൾപ്പെടുത്തിയതായി ശ്രദ്ധയിൽപ്പെട്ടാൽ ഖത്വീബ് തബ്രീസി എന്ത് ചെയ്യാറുണ്ടായിരുന്നു?", "options": [{"ar": "يحذف الحديث تماماً من الكتاب", "ml": "ആ ഹദീസ് ഗ്രന്ഥത്തിൽ നിന്ന് പൂർണ്ണമായി ഒഴിവാക്കും"}, {"ar": "يُبقيه أو ينبه على الصواب في عزوه وتخريجه أمانةً علميةً دون إخلال بأصل المصابيح", "ml": "മസാബീഹിന്റെ ഘടന തകർക്കാതെ തന്നെ അതിന്റെ ശരിയായ തഖ്രീജ് (ഗ്രന്ഥം) കൃത്യമായി രേഖപ്പെടുത്തി തെറ്റ് തിരുത്തി വ്യക്തമാക്കും"}, {"ar": "لا ينبه عليه أبداً", "ml": "അതൊരിക്കലും ചൂണ്ടിക്കാണിക്കാറില്ല"}, {"ar": "ينقله إلى آخر الكتاب", "ml": "ഗ്രന്ഥത്തിന്റെ അവസാനത്തിലേക്ക് മാറ്റും"}], "ans": 1, "exp": "من مزايا المشكاة استدراك التبريزي على بعض أوهام البغوي في العزو مع المحافظة على هيكل «مصابيح السنة»."}, {"id": 77, "type": "mcq", "diff": "medium", "topic": "مقدمة مشكاة المصابيح", "ar": "إلى أي مذهب فقهي ينتسب الإمام الحسين بن مسعود البغوي (صاحب «مصابيح السنة» و«شرح السنة»)؟", "ml": "'മസാബീഹുസ്സുന്ന'യുടെയും 'ശർഹുസ്സുന്ന'യുടെയും കർത്താവായ ഇമാം ബഗവി (റ) ഏത് ഫിഖ്ഹ് മദ്ഹബിലെ പ്രമുഖ പണ്ഡിതനായിരുന്നു?", "options": [{"ar": "المذهب الحنفي", "ml": "ഹനഫി മദ്ഹബ്"}, {"ar": "المذهب الشافعي", "ml": "ശാഫിഈ മദ്ഹബ്"}, {"ar": "المذهب المالكي", "ml": "മാലികി മദ്ഹബ്"}, {"ar": "المذهب الحنبلي", "ml": "ഹൻബലി മദ്ഹബ്"}], "ans": 1, "exp": "الإمام البغوي (ت 516هـ) من كبار أئمة الشافعية (ولقب بمحيي السنة وركن الدين، وله كتاب التهذيب في الفقه الشافعي وتفسير معالم التنزيل)."}, {"id": 78, "type": "mcq", "diff": "tight", "topic": "مصطلح الحديث ومنهجه", "ar": "ما تعريف «الحديث المسلسل» في مصطلح الحديث (مثل المسلسل بالأولية أو المسلسل بالمحبة)؟", "ml": "മുസ്ത്വലഹുൽ ഹദീസിൽ 'ഹദീസ് മുസൽസൽ' (الحديث المسلسل) എന്നതിന്റെ നിർവ്വചനം എന്താണ്?", "options": [{"ar": "تتابع رجال الإسناد واحداً فواحداً على صفة أو حالة للرواة أو للرواية (كقول كل راوٍ: إني أحبك)", "ml": "സനദിലെ ഓരോ റാവിയും തുടർച്ചയായി ഒരേ ഗുണമോ, ഒരേ അവസ്ഥയോ, ഒരേ നിവേദന ശൈലിയോ (ഉദാ: കൈ പിടിച്ചുകൊണ്ട്, അല്ലെങ്കിൽ 'ഞാൻ നിന്നെ സ്നേഹിക്കുന്നു' എന്ന് പറഞ്ഞുകൊണ്ട്) ആവർത്തിച്ച് ഉദ്ധരിക്കുന്ന ഹദീസ്"}, {"ar": "الحديث الذي رواه الصحابة فقط", "ml": "സ്വഹാബികൾ മാത്രം ഉദ്ധരിച്ച ഹദീസ്"}, {"ar": "الحديث الذي تتسلسل فيه الأحكام الفقهية", "ml": "ഫിഖ്ഹ് വിധികൾ തുടർച്ചയായി വരുന്ന ഹദീസ്"}, {"ar": "الحديث الذي فيه أكثر من عشرة رواة", "ml": "പത്തിലധികം റാവികളുള്ള ഹദീസ്"}], "ans": 0, "exp": "المسلسل: تتابع رجال إسناده على صفة أو حالة للرواة تارة وللرواية تارة أخرى، ولا يلزم من كونه مسلسلاً صحته."}, {"id": 79, "type": "mcq", "diff": "tight", "topic": "مصطلح الحديث ومنهجه", "ar": "ما تعريف «الحديث المضطرب» في أنواع الضعيف بسبب مخالفة الثقات أو الاختلاف؟", "ml": "ളഈഫ് ഹദീസുകളുടെ ഇനങ്ങളിൽ 'മുള്ത്വരിബ്' (الحديث المضطرب) എന്നാലെന്ത്?", "options": [{"ar": "ما سقط من إسناده راوٍ واحد", "ml": "സനദിൽ നിന്ന് ഒരു റാവി വിട്ടുപോയത്"}, {"ar": "ما رُوي على أوجه مختلفة متساوية في القوة ولا يمكن الجمع بينها ولا الترجيح", "ml": "തുല്യശക്തിയുള്ള പരസ്പരവിരുദ്ധമായ പല രൂപങ്ങളിൽ ഉദ്ധരിക്കപ്പെടുകയും, അവ തമ്മിൽ യോജിപ്പിക്കാനോ ഒന്നിന് മുൻഗണന നൽകാനോ കഴിയാതിരിക്കുകയും ചെയ്യുന്ന ഹദീസ്"}, {"ar": "ما رواه راوٍ ضعيف فقط", "ml": "ളഈഫായ റാവി മാത്രം ഉദ്ധരിച്ചത്"}, {"ar": "ما كان فيه لفظ غريب صعب الفهم", "ml": "അർത്ഥം മനസ്സിലാക്കാൻ പ്രയാസമുള്ള പദമുള്ളത്"}], "ans": 1, "exp": "المضطرب: ما رُوي على أوجه مختلفة متساوية في القوة، فيتعذر الجمع والترجيح، وهو ضعيف لإشعاره بعدم ضبط رواته."}, {"id": 80, "type": "mcq", "diff": "tight", "topic": "مصطلح الحديث ومنهجه", "ar": "ما المقصود بـ «الحديث المُدرَج» (المدرج في المتن أو السند) عند علماء المصطلح؟", "ml": "മുസ്ത്വലഹുൽ ഹദീസിൽ 'മുദ്റജ്' (المُدرَج) ഹദീസ് എന്നതുകൊണ്ട് എന്താണ് ഉദ്ദേശിക്കുന്നത്?", "options": [{"ar": "ما أُدخل في متن الحديث من كلام بعض الرواة بلا فصل يوهم أنه من أصل الحديث، أو غُير سياق إسناده", "ml": "ഹദീസിന്റെ ഭാഗമല്ലാത്ത റാവിയുടെ സ്വന്തം വിശദീകരണമോ വാക്കോ വേർതിരിവില്ലാതെ മത്നിൽ കടന്നുകൂടി നബി ﷺ യുടെ വചനമാണെന്ന് തെറ്റിദ്ധരിപ്പിക്കുന്ന ഹദീസ് (അല്ലെങ്കിൽ സനദിൽ ചേർത്തത്)"}, {"ar": "الحديث المرتب حسب الدرجات الفقهية", "ml": "പദവി ക്രമത്തിൽ എഴുതിയ ഹദീസ്"}, {"ar": "الحديث الذي رواه تابعي كبير", "ml": "പ്രമുഖ താബിഈ ഉദ്ധരിച്ച ഹദീസ്"}, {"ar": "الحديث المتفق عليه بين الشيخين", "ml": "ബുഖാരിയും മുസ്ലിമും യോജിച്ച ഹദീസ്"}], "ans": 0, "exp": "المدرج: ما غُير سياق إسناده أو أُدخل في متنه ما ليس منه بلا فصل؛ مثل شرح بعض الرواة لكلمة غريبة فأُدمجت في النص."}, {"id": 81, "type": "mcq", "diff": "medium", "topic": "مصطلح الحديث ومنهجه", "ar": "ما المقصود بـ «الحديث المقلوب» في علم الحديث؟", "ml": "ഹദീസ് ശാസ്ത്രത്തിൽ 'മഖ്‌ലൂബ്' (المقلوب) എന്നാലെന്ത്?", "options": [{"ar": "إبدال لفظ بآخر في سند الحديث أو متنه بتقديم أو تأخير (مثل: كعب بن مرة -> مرة بن كعب)", "ml": "സനദിലോ മത്നിലോ ഒരു പദത്തിന് പകരം മറ്റൊന്ന് മാറിപ്പോവുകയോ മുൻപിൻ തെറ്റുകയോ ചെയ്യൽ (ഉദാ: കഅ്ബ് ബ്നു മുർറ എന്നതിന് മുർറ ബ്നു കഅ്ബ് എന്ന് മാറൽ)"}, {"ar": "الحديث المنسوخ حكمه", "ml": "വിധി ദുർബലപ്പെടുത്തപ്പെട്ട ഹദീസ്"}, {"ar": "الحديث الذي يُحفظ في القلب فقط", "ml": "മനസ്സിൽ മാത്രം സൂക്ഷിച്ച ഹദീസ്"}, {"ar": "الحديث الذي يرويه الأصاغر عن الأكابر", "ml": "ചെറിയവർ വലിയവരിൽ നിന്ന് ഉദ്ധരിക്കുന്നത്"}], "ans": 0, "exp": "المقلوب: إبدال لفظ بآخر في سند الحديث أو متنه بتقديم أو تأخير ونحوه (ومن أمثلة قلب المتن: «حتى لا تعلم يمينه ما تنفق شماله»)."}, {"id": 82, "type": "mcq", "diff": "tight", "topic": "مصطلح الحديث ومنهجه", "ar": "ما الفرق الدقيق بين «الحديث الموضوع» و«الحديث المتروك» من حيث حال الراوي؟", "ml": "റാവിയുടെ അവസ്ഥയെ അടിസ്ഥാനമാക്കി 'മൗളൂഅ്' (الموضوع) ഹദീസും 'മത്റൂക്' (المتروك) ഹദീസും തമ്മിലുള്ള സൂക്ഷ്മമായ വ്യത്യാസമെന്ത്?", "options": [{"ar": "الموضوع سببه «الكذب في الحديث النبوي» (كذاب)، والمتروك سببه «التهمة بالكذب» (يكذب في كلام الناس ولم يثبت كذبه على النبي ﷺ) أو فحش غلطه", "ml": "മൗളൂഅ്: നബി ﷺ യുടെ പേരിൽ കളവ് പറയുന്നവൻ (കദ്ദാബ്) ഉദ്ധരിക്കുന്നത്; മത്റൂക്: സാധാരണ സംസാരത്തിൽ കളവ് പറയുന്നവനായതിനാൽ ഹദീസിലും കളവ് പറയാൻ സാധ്യതയുണ്ടെന്ന് സംശയിക്കപ്പെടുന്നവൻ (മുത്തഹം ബിൽ-കദിബ്) ഉദ്ധരിക്കുന്നത്"}, {"ar": "المتروك أشد ضعفاً من الموضوع", "ml": "മത്റൂക് മൗളൂഇനേക്കാൾ കടുത്ത ദുർബലതയുള്ളതാണ്"}, {"ar": "المتروك حديث صحيح تركه الفقهاء", "ml": "മത്റൂക് ഫിഖ്ഹ് പണ്ഡിതർ ഉപേക്ഷിച്ച സ്വഹീഹായ ഹദീസാണ്"}, {"ar": "لا فرق بينهما أبداً", "ml": "രണ്ടും തമ്മിൽ യാതൊരു വ്യത്യാസവുമില്ല"}], "ans": 0, "exp": "أشد الضعيف: الموضوع (راويه كذاب في الحديث)، ثم المتروك (راويه متهم بالكذب)، ثم المنكر."}, {"id": 83, "type": "mcq", "diff": "medium", "topic": "مصطلح الحديث ومنهجه", "ar": "كم عدد «طرق التحمّل والأداء» المعروفة عند المحدثين، وما أعلى مراتبها عند الجمهور؟", "ml": "മുഹദ്ദിസുകളുടെ അടുക്കൽ ഹദീസ് സ്വീകരിക്കുന്നതിനുള്ള മാർഗ്ഗങ്ങൾ (ത്വുറുഖുത്തഹമ്മുൽ വൽ-അദാഅ്) എത്രയാണ്? അവയിൽ ഏറ്റവും ഉന്നതമായത് ഏതാണ്?", "options": [{"ar": "أربع طرق — أعلاها الإجازة", "ml": "നാല് മാർഗ്ഗങ്ങൾ — ഉന്നതമായത് ഇജാസത്ത്"}, {"ar": "ثماني طرق — وأعلاها «السماع من لفظ الشيخ» (ثم القراءة على الشيخ / العرض)", "ml": "എട്ട് മാർഗ്ഗങ്ങൾ — ഏറ്റവും ഉന്നതമായത് 'ഗുരുവിന്റെ വായിൽ നിന്ന് നേരിട്ട് കേൾക്കൽ' (അസ്സമാഉ മിൻ ലഫ്ളിശ്ശൈഖ്)"}, {"ar": "ثلاث طرق — أعلاها الوجادة", "ml": "മൂന്ന് മാർഗ്ഗങ്ങൾ — ഉന്നതമായത് വിജാദ"}, {"ar": "خمس طرق — أعلاها المكاتبة", "ml": "അഞ്ച് മാർഗ്ഗങ്ങൾ — ഉന്നതമായത് മുകാതബ"}], "ans": 1, "exp": "طرق التحمل ثمانٍ: 1) السماع من لفظ الشيخ، 2) القراءة عليه (العرض)، 3) الإجازة، 4) المناولة، 5) الكتابة، 6) الإعلام، 7) الوصية، 8) الوجادة."}, {"id": 84, "type": "mcq", "diff": "medium", "topic": "مصطلح الحديث ومنهجه", "ar": "ما تعريف «الصحابي» المختار عند الحافظ ابن حجر العسقلاني وجمهور المحدثين؟", "ml": "ഹാഫിള് ഇബ്നു ഹജർ അൽ-അസ്ഖലാനിയുടെയും ഭൂരിപക്ഷം മുഹദ്ദിസുകളുടെയും അടുക്കൽ 'സ്വഹാബി' എന്നതിന്റെ അംഗീകൃത നിർവ്വചനം എന്താണ്?", "options": [{"ar": "من أقام مع النبي ﷺ سنة كاملة وغزا معه غزوة", "ml": "നബി ﷺ യോടൊപ്പം ഒരു വർഷം താമസിക്കുകയും ഒരു യുദ്ധത്തിൽ പങ്കെടുക്കുകയും ചെയ്തവൻ"}, {"ar": "من لقي النبي ﷺ مؤمناً به ومات على الإسلام (ولو تخللت ردة في الأصح)", "ml": "നബി ﷺ യിൽ വിശ്വസിച്ചുകൊണ്ട് അവിടുത്തെ കണ്ടുമുട്ടുകയും ഇസ്ലാമിൽ മരണപ്പെടുകയും ചെയ്ത വ്യക്തി"}, {"ar": "من عاش في زمن النبي ﷺ ولو لم يره", "ml": "നബി ﷺ യെ കണ്ടില്ലെങ്കിലും അവിടുത്തെ കാലത്ത് ജീവിച്ചവൻ"}, {"ar": "من روى عن النبي ﷺ عشرة أحاديث فأكثر", "ml": "നബി ﷺ യിൽ നിന്ന് പത്ത് ഹദീസുകളെങ്കിലും ഉദ്ധരിച്ചവൻ"}], "ans": 1, "exp": "تعريف ابن حجر في النخبة والإصابة: «الصحابي من لقي النبي ﷺ مؤمناً به ومات على الإسلام، ولو تخللت ردة في الأصح»."}, {"id": 85, "type": "mcq", "diff": "tight", "topic": "مصطلح الحديث ومنهجه", "ar": "ماذا يُسمى في علم الحديث الشخص الذي أدرك الجاهلية والإسلام (وأسلم في زمن النبي ﷺ) ولكنه لم يرَ النبي ﷺ (مثل النجاشي والأحنف بن قيس وأبي عثمان النهدي)؟", "ml": "ജാഹിലിയ്യാ കാലത്തും ഇസ്ലാമിക കാലത്തും ജീവിച്ചെങ്കിലും നബി ﷺ യെ നേരിട്ട് കാണാൻ ഭാഗ്യം ലഭിക്കാത്ത വ്യക്തികളെ (ഉദാ: നജാശി, അഹ്നഫ് ബ്നു ഖൈസ്) ഹദീസ് ശാസ്ത്രത്തിൽ എന്ത് വിളിക്കുന്നു?", "options": [{"ar": "المُدَبَّج", "ml": "അൽ-മുദബ്ബജ്"}, {"ar": "المُخَضْرَم (ويُعد من كبار التابعين)", "ml": "അൽ-മുഖള്റം (പ്രമുഖ താബിഉകളിൽ ഉൾപ്പെടുത്തപ്പെടുന്നു)"}, {"ar": "المُعَلَّق", "ml": "അൽ-മുഅല്ലഖ്"}, {"ar": "المُتَابِع", "ml": "അൽ-മുതാബിഅ്"}], "ans": 1, "exp": "المخضرم: من أدرك الجاهلية وزمن النبي ﷺ مسلماً ولم يره؛ وليس بصحابي بل معدود في كبار التابعين (مثل أويس القرني والأحنف)."}, {"id": 86, "type": "mcq", "diff": "tight", "topic": "مصطلح الحديث ومنهجه", "ar": "ما المقصود بمصطلح «المُدَبَّج» في علوم الحديث (مثل رواية عائشة عن أبي هريرة ورواية أبي هريرة عن عائشة)؟", "ml": "ആഇശ (റ) അബൂഹുറൈറ (റ) വിൽ നിന്നും, അബൂഹുറൈറ (റ) ആഇശ (റ) യിൽ നിന്നും പരസ്പരം ഹദീസ് ഉദ്ധരിക്കുന്നത് പോലെ സമപ്രായക്കാരായ/ഒരേ തലമുറയിലുള്ള രണ്ട് റാവികൾ പരസ്പരം ഉദ്ധരിക്കുന്നതിനെ എന്ത് പറയുന്നു?", "options": [{"ar": "رواية الأكابر عن الأصاغر", "ml": "രിവായത്തുൽ അകാബിർ അനിൽ അസ്വാഗിർ"}, {"ar": "المدبج (أن يروي القرينان كل واحد منهما عن الآخر)", "ml": "അൽ-മുദബ്ബജ് (സമതലമുറയിലുള്ള ഇരുവരും അന്യോന്യം ഉദ്ധരിക്കൽ)"}, {"ar": "السابق واللاحق", "ml": "അസ്സാബിഖ് വല്ലാഹിഖ്"}, {"ar": "المؤتلف والمختلف", "ml": "അൽ-മുഅ്തലിഫ് വൽ-മുഖ്തലിഫ്"}], "ans": 1, "exp": "المدبج: أن يروي القرينان (المتقاربان في السن والإسناد) كل منهما عن الآخر؛ أما إذا روى أحدهما فقط عن الآخر فيُسمى «رواية الأقران»."}, {"id": 87, "type": "mcq", "diff": "tight", "topic": "مصطلح الحديث ومنهجه", "ar": "ما الفرق الدقيق بين «تدليس الإسناد» و«المرسل الخفي» عند نقاد الحديث؟", "ml": "'തദ്ലീസുൽ ഇസ്നാദും' 'മുർസൽ ഖഫിയ്യും' (المرسل الخفي) തമ്മിലുള്ള സൂക്ഷ്മമായ വ്യത്യാസം എന്താണ്?", "options": [{"ar": "التدليس: أن يروي عمن «سمع منه» ما لم يسمعه منه؛ والمرسل الخفي: أن يروي عمن «عاصره ولم يلقه (أو لقيه ولم يسمع منه)» بصيغة تحتمل السماع", "ml": "തദ്ലീസ്: താൻ മുമ്പ് കേട്ടിട്ടുള്ള ഗുരുവിൽ നിന്ന് കേൾക്കാത്ത ഹദീസ് ഉദ്ധരിക്കൽ; മുർസൽ ഖഫിയ്യ്: സമകാലികനായിരുന്നിട്ടും നേരിട്ട് കണ്ടുമുട്ടാത്ത/കേൾക്കാത്ത ആളിൽ നിന്ന് കേട്ടുവെന്ന് തോന്നിപ്പിക്കുന്ന പദത്തോടെ ഉദ്ധരിക്കൽ"}, {"ar": "المرسل الخفي لا يقع إلا من الصحابة", "ml": "മുർസൽ ഖഫിയ്യ് സ്വഹാബികളിൽ നിന്ന് മാത്രമേ ഉണ്ടാകൂ"}, {"ar": "تدليس الإسناد مقبول مطلقاً والمرسل الخفي موضوع", "ml": "തദ്ലീസ് എപ്പോഴും സ്വീകാര്യമാണ്"}, {"ar": "كلاهما بمعنى الانقطاع الظاهر", "ml": "രണ്ടും പ്രത്യക്ഷമായ കണ്ണിമുറിയലാണ്"}], "ans": 0, "exp": "الفرق الدقيق (كما قرره ابن حجر): التدليس يختص بمن روى عمن ثبت سماعه منه، والمرسل الخفي يختص بمن روى عمن عاصره ولم يثبت لقيه له أو سماعه منه."}, {"id": 88, "type": "mcq", "diff": "medium", "topic": "مصطلح الحديث ومنهجه", "ar": "ما ترتيب المراتب الثلاث الأولى في «مراتب الحديث الصحيح السبعة» عند أهل الحديث؟", "ml": "സ്വഹീഹായ ഹദീസുകളുടെ ഏഴ് പദവികളിൽ (മറാതിബുസ്സ്വഹീഹ്) ആദ്യ മൂന്ന് പദവികളുടെ ശരിയായ ക്രമം ഏതാണ്?", "options": [{"ar": "1) ما اتفق عليه البخاري ومسلم، 2) ما انفرد به البخاري، 3) ما انفرد به مسلم", "ml": "1) ബുഖാരിയും മുസ്ലിമും യോജിച്ചത്, 2) ബുഖാരി മാത്രം ഉദ്ധരിച്ചത്, 3) മുസ്ലിം മാത്രം ഉദ്ധരിച്ചത്"}, {"ar": "1) ما انفرد به البخاري، 2) ما انفرد به مسلم، 3) ما رواه مالك", "ml": "1) ബുഖാരി, 2) മുസ്ലിം, 3) മാലിക്"}, {"ar": "1) ما رواه الترمذي، 2) ما رواه أبو داود، 3) ما رواه النسائي", "ml": "1) തിർമിദി, 2) അബൂദാവൂദ്, 3) നസാഈ"}, {"ar": "1) ما اتفق عليه الستة، 2) ما رواه أحمد، 3) ما رواه البخاري", "ml": "1) കുതുബുസ്സിത്ത, 2) അഹ്മദ്, 3) ബുഖാരി"}], "ans": 0, "exp": "مراتب الصحيح السبعة: 1) المتفق عليه، 2) منفرد البخاري، 3) منفرد مسلم، 4) على شرطهما، 5) على شرط البخاري، 6) على شرط مسلم، 7) صحيح عند غيرهما."}, {"id": 89, "type": "mcq", "diff": "medium", "topic": "الكتب الستة والمعرفة العامة بالحديث", "ar": "كم سنةً استغرق الإمام البخاري في تصنيف «صحيح البخاري»، وكم سنةً استغرق الإمام مسلم في تصنيف «صحيح مسلم» على الترتيب؟", "ml": "ഇമാം ബുഖാരി 'സ്വഹീഹുൽ ബുഖാരി' ക്രോഡീകരിക്കാനും ഇമാം മുസ്ലിം 'സ്വഹീഹ് മുസ്ലിം' ക്രോഡീകരിക്കാനും എടുത്ത കാലയളവ് ക്രമത്തിൽ എത്ര വർഷമാണ്?", "options": [{"ar": "10 سنوات — 20 سنة", "ml": "10 വർഷം — 20 വർഷം"}, {"ar": "16 سنة — 15 سنة", "ml": "16 വർഷം — 15 വർഷം"}, {"ar": "5 سنوات — 7 سنوات", "ml": "5 വർഷം — 7 വർഷം"}, {"ar": "30 سنة — 12 سنة", "ml": "30 വർഷം — 12 വർഷം"}], "ans": 1, "exp": "صنّف البخاري صحيحه في 16 سنة (انتقاه من 600 ألف حديث)، وصنّف مسلم صحيحه في 15 سنة (انتقاه من 300 ألف حديث)."}, {"id": 90, "type": "mcq", "diff": "medium", "topic": "الكتب الستة والمعرفة العامة بالحديث", "ar": "أي كتاب من الكتب الستة يشتهر بـ «مقدمةٍ منهجيةٍ» عظيمة في أوله خصّصها مؤلفه لبيان قواعد نقد الحديث والرواة والتحذير من الكذابين والضعفاء؟", "ml": "ഹദീസ് വിമർശന തത്വങ്ങളും, റാവികളുടെ നിലവാരവും, കളവുപറയുന്നവരിൽ നിന്നുള്ള മുന്നറിയിപ്പും വിവരിക്കുന്ന അതിപ്രശസ്തമായ ഒരു 'മുഖദ്ദിമ' (ആമുഖം) ആദ്യഭാഗത്തുള്ള കുതുബുസ്സിത്തയിലെ ഗ്രന്ഥം ഏതാണ്?", "options": [{"ar": "صحيح البخاري", "ml": "സ്വഹീഹുൽ ബുഖാരി"}, {"ar": "صحيح مسلم", "ml": "സ്വഹീഹ് മുസ്ലിം"}, {"ar": "سنن النسائي", "ml": "സുനനുന്നസാഈ"}, {"ar": "سنن أبي داود", "ml": "സുനനു അബീദാവൂദ്"}], "ans": 1, "exp": "«مقدمة صحيح مسلم» من أقدم وأجلّ الوثائق المنهجية في علم أصول الحديث ونقد الأسانيد."}, {"id": 91, "type": "mcq", "diff": "medium", "topic": "الكتب الستة والمعرفة العامة بالحديث", "ar": "من هو الإمام من أصحاب الكتب الستة الذي ألف كتاب «الشمائل المحمدية» في وصف خَلق وخُلق النبي ﷺ، كما ألحق بسننه كتاب «العلل الصغير»؟", "ml": "നബി ﷺ യുടെ രൂപഭാവങ്ങളും സ്വഭാവഗുണങ്ങളും വിവരിക്കുന്ന 'അശ്ശമാഇലുൽ മുഹമ്മദിയ്യ' എന്ന പ്രസിദ്ധ ഗ്രന്ഥവും, തന്റെ സുനനിന്റെ അവസാനം 'അൽ-ഇലലുസ്സ്വഗീർ' എന്ന ഭാഗവും രചിച്ച കുതുബുസ്സിത്തയിലെ ഇമാം ആരാണ്?", "options": [{"ar": "الإمام أبو داود", "ml": "ഇമാം അബൂദാവൂദ്"}, {"ar": "الإمام محمد بن عيسى الترمذي (ت 279هـ)", "ml": "ഇമാം മുഹമ്മദ് ബ്നു ഈസാ അത്തിർമിദി (ഹിജ്റ 279)"}, {"ar": "الإمام النسائي", "ml": "ഇമാം നസാഈ"}, {"ar": "الإمام ابن ماجه", "ml": "ഇമാം ഇബ്നു മാജ"}], "ans": 1, "exp": "الإمام الترمذي هو مؤلف «الجامع»، و«الشمائل المحمدية»، و«العلل الصغير» الملحق بآخر جامعه."}, {"id": 92, "type": "mcq", "diff": "tight", "topic": "الكتب الستة والمعرفة العامة بالحديث", "ar": "من بين أصحاب الكتب الستة، من أولهم وفاةً ومن آخرهم وفاةً على الترتيب؟", "ml": "കുതുബുസ്സിത്തയുടെ കർത്താക്കളായ ആറ് ഇമാമുമാരിൽ ഏറ്റവും ആദ്യം വഫാത്തായ ഇമാമും ഏറ്റവും അവസാനം വഫാത്തായ ഇമാമും ക്രമത്തിൽ ആരാണ്?", "options": [{"ar": "أولهم مسلم (261هـ) — وآخرهم الترمذي (279هـ)", "ml": "ആദ്യം മുസ്ലിം (261) — അവസാനം തിർമിദി (279)"}, {"ar": "أولهم البخاري (256هـ) — وآخرهم النسائي (303هـ)", "ml": "ആദ്യം ബുഖാരി (256 ഹി) — അവസാനം നസാഈ (303 ഹി)"}, {"ar": "أولهم ابن ماجه (273هـ) — وآخرهم أبو داود (275هـ)", "ml": "ആദ്യം ഇബ്നു മാജ (273) — അവസാനം അബൂദാവൂദ് (275)"}, {"ar": "أولهم البخاري (256هـ) — وآخرهم ابن ماجه (273هـ)", "ml": "ആദ്യം ബുഖാരി (256) — അവസാനം ഇബ്നു മാജ (273)"}], "ans": 1, "exp": "تواريخ وفيات الأئمة الستة: البخاري (256هـ)، مسلم (261هـ)، ابن ماجه (273هـ)، أبو داود (275هـ)، الترمذي (279هـ)، النسائي (303هـ)."}, {"id": 93, "type": "mcq", "diff": "tight", "topic": "الكتب الستة والمعرفة العامة بالحديث", "ar": "في تصنيف دواوين الحديث، ما الفرق المنهجي بين كتب «الجوامع» (كالبخاري والترمذي) وكتب «السنن» (كأبي داود والنسائي)؟", "ml": "ഹദീസ് ഗ്രന്ഥങ്ങളുടെ വർഗ്ഗീകരണത്തിൽ 'ജവാമിഅ്' (ഉദാ: ബുഖാരി, തിർമിദി) എന്ന ഗ്രന്ഥങ്ങളും 'സുനൻ' (ഉദാ: അബൂദാവൂദ്, നസാഈ) എന്ന ഗ്രന്ഥങ്ങളും തമ്മിലുള്ള പ്രധാന വ്യത്യാസമെന്ത്?", "options": [{"ar": "الجوامع تشمل أبواب الدين الثمانية (العقائد والأحكام والرقاق والآداب والتفسير والسير والفتن والمناقب)، بينما السنن تركز أساساً على أحاديث الأحكام الفقهية المرتبة على أبواب الفقه", "ml": "ജാമിഅ് ഗ്രന്ഥങ്ങൾ ഇസ്ലാമിന്റെ എട്ട് പ്രധാന വിഷയങ്ങളും (അഖീദ, അഹ്കാം, തഫ്സീർ, സീറ, ആദാബ്, ഫിതൻ, മനാഖിബ്, രിഖാഖ്) ഉൾക്കൊള്ളുന്നു; എന്നാൽ സുനൻ ഗ്രന്ഥങ്ങൾ പ്രധാനമായും ഫിഖ്ഹ് വിധികളിലുള്ള ഹദീസുകൾ അധ്യായ ക്രമത്തിൽ സമാഹരിക്കുന്നു"}, {"ar": "السنن لا تحتوي على أي حديث صحيح", "ml": "സുനൻ ഗ്രന്ഥങ്ങളിൽ സ്വഹീഹായ ഹദീസുകളില്ല"}, {"ar": "الجوامع مرتبة على أسماء الصحابة فقط", "ml": "ജാമിഅ് സ്വഹാബികളുടെ പേരിൽ മാത്രം ക്രമീകരിച്ചതാണ്"}, {"ar": "لا يوجد أي فرق بينهما في الموضوعات", "ml": "വിഷയങ്ങളിൽ ഇവ തമ്മിൽ യാതൊരു വ്യത്യാസവുമില്ല"}], "ans": 0, "exp": "الجامع: ما جمع أبواب الدين الثمانية (كصحيح البخاري ومسلم وجامع الترمذي). والسنن: المرتب على أبواب الفقه في الأحكام غالباً."}, {"id": 94, "type": "mcq", "diff": "tight", "topic": "الكتب الستة والمعرفة العامة بالحديث", "ar": "من هو مؤلف كتاب «المستدرك على الصحيحين» الذي جمع فيه الأحاديث التي رأى أنها على شرط البخاري ومسلم أو أحدهما ولم يخرجاها، ومن الذي تعقّبه ولخّصه؟", "ml": "ബുഖാരിയുടെയും മുസ്ലിമിന്റെയും നിബന്ധനകൾ ഒത്തിട്ടും അവർ ഉദ്ധരിക്കാതെ പോയ ഹദീസുകൾ സമാഹരിച്ച 'അൽ-മുസ്തദ്റക് അലസ്സ്വഹീഹൈൻ' രചിച്ചതാര്? അതിനെ സംഗ്രഹിക്കുകയും വിമർശനാത്മകമായി വിലയിരുത്തുകയും ചെയ്തതാര്?", "options": [{"ar": "الحاكم النيسابوري (ت 405هـ) — وتعقبه ولخصه الإمام الذهبي (ت 748هـ)", "ml": "ഇമാം ഹാകിം നൈസാബൂരി (ഹിജ്റ 405) — സംഗ്രഹിച്ച് വിലയിരുത്തിയത് ഇമാം ദഹബി (ഹിജ്റ 748)"}, {"ar": "الدارقطني — ولخصه النووي", "ml": "ദാറഖുത്നി — നവവി"}, {"ar": "ابن خزيمة — ولخصه ابن حجر", "ml": "ഇബ്നു ഖുസൈമ — ഇബ്നു ഹജർ"}, {"ar": "ابن حبان — ولخصه السيوطي", "ml": "ഇബ്നു ഹിബ്ബാൻ — സുയൂത്വി"}], "ans": 0, "exp": "ألف «المستدرك على الصحيحين» الإمام أبو عبد الله الحاكم النيسابوري (ت 405هـ)، وقد تساهل في تصحيح بعض أحاديثه فتعقبه الحافظ الذهبي في «التلخيص»."}, {"id": 95, "type": "mcq", "diff": "tight", "topic": "الكتب الستة والمعرفة العامة بالحديث", "ar": "من هو الحافظ الذي ألّف الموسوعتين المرجعيتين لرجال وأحاديث الكتب الستة: «تهذيب الكمال في أسماء الرجال» و«تحفة الأشراف بمعرفة الأطراف»؟", "ml": "കുതുബുസ്സിത്തയിലെ റാവികളെയും ഹദീസുകളെയും കുറിച്ചുള്ള രണ്ട് മഹാ വിജ്ഞാനകോശങ്ങളായ 'തഹ്ദീബുൽ കമാൽ ഫീ അസ്മാഇർരിജാൽ', 'തുഹ്ഫത്തുൽ അശ്റാഫ്' എന്നിവയുടെ കർത്താവ് ആരാണ്?", "options": [{"ar": "الإمام ابن حجر العسقلاني", "ml": "ഇമാം ഇബ്നു ഹജർ അൽ-അസ്ഖലാനി"}, {"ar": "الحافظ جمال الدين يوسف بن عبد الرحمن المزي (ت 742هـ)", "ml": "ഹാഫിള് ജമാലുദ്ദീൻ യൂസുഫ് അൽ-മിസ്സി (ഹിജ്റ 742)"}, {"ar": "الإمام يحيى بن معين", "ml": "ഇമാം യഹ്‌യ ബ്നു മഈൻ"}, {"ar": "الإمام البخاري", "ml": "ഇമാം ബുഖാരി"}], "ans": 1, "exp": "الحافظ جمال الدين المزي (ت 742هـ) مؤلف «تهذيب الكمال» (الذي اختصره ابن حجر في تهذيب التهذيب والتقريب) و«تحفة الأشراف»."}, {"id": 96, "type": "mcq", "diff": "medium", "topic": "الكتب الستة والمعرفة العامة بالحديث", "ar": "ما اللقب الجليل الذي اشتُهر به الإمام البخاري بين علماء الحديث عبر العصور؟", "ml": "ഹദീസ് പണ്ഡിതർക്കിടയിൽ ഇമാം ബുഖാരി (റ) അറിയപ്പെടുന്ന അത്യുന്നത സ്ഥാനപ്പേര് എന്താണ്?", "options": [{"ar": "سلطان الفقهاء", "ml": "സുൽത്വാൻ അൽ-ഫുഖഹാഅ്"}, {"ar": "أمير المؤمنين في الحديث", "ml": "അമീറുൽ മുഅ്മിനീൻ ഫിൽ ഹദീസ്"}, {"ar": "حجة الإسلام", "ml": "ഹുജ്ജത്തുൽ ഇസ്ലാം"}, {"ar": "إمام دار الهجرة", "ml": "ഇമാമു ദാരിൽ ഹിജ്റ"}], "ans": 1, "exp": "لُقّب الإمام البخاري بـ «أمير المؤمنين في الحديث» (بينما «إمام دار الهجرة» للإمام مالك، و«حجة الإسلام» للغزالي)."}, {"id": 97, "type": "written", "diff": "medium", "topic": "كتاب الإيمان (كتابة / എഴുത്ത്)", "ar": "أكمل الحديث رقم (5) عن أبي هريرة رضي الله عنه: «الإيمان بضع وسبعون شعبة...»، وبيّن لماذا خُصّ «الحياء» بالذكر من بين الشعب.", "ml": "അബൂഹുറൈറ (റ) നിവേദനം ചെയ്ത ഹദീസ് നമ്പർ 5 ('അൽ-ഈമാനു ബിള്ഉൻ വസബ്ഊന ശുഅബതൻ...') പൂർണ്ണമായി എഴുതുക; ഈമാനിന്റെ ശാഖകളിൽ നിന്ന് 'ലജ്ജ'യെ (الحياء) പ്രത്യേകം എടുത്തുപറയാനുള്ള കാരണം വിവരിക്കുക.", "model_ar": "«الإيمان بضع وسبعون شعبة، فأفضلها: قول لا إله إلا الله، وأدناها: إماطة الأذى عن الطريق، والحياء شعبة من الإيمان». متفق عليه. وخُصّ الحياء بالذكر لأنه خُلق يبعث على فعل الحسنات وترك القبيح، فهو كالداعي الجامع لبقية شعب الإيمان.", "model_ml": "'ഈമാൻ എഴുപതിലധികം ശാഖകളാണ്; അവയിൽ ഏറ്റവും ശ്രേഷ്ഠമായത് ലാ ഇലാഹ ഇല്ലല്ലാഹ് എന്ന് പറയലും, ഏറ്റവും താഴ്ന്നത് വഴിയിൽ നിന്ന് ഉപദ്രവം നീക്കലുമാണ്; ലജ്ജയും ഈമാനിന്റെ ഒരു ശാഖയാണ്.' (മുത്തഫഖുൻ അലൈഹി). തിന്മകളിൽ നിന്ന് തടയുകയും നന്മകളിലേക്ക് പ്രേരിപ്പിക്കുകയും ചെയ്യുന്ന അടിസ്ഥാന സ്വഭാവമായതിനാലാണ് ലജ്ജയെ പ്രത്യേകം എടുത്തുപറഞ്ഞത്.", "keywords": ["لا إله إلا الله", "إماطة الأذى", "الحياء", "متفق عليه", "ലാ ഇലാഹ", "ഉപദ്രവം", "ലജ്ജ", "തിന്മ"]}, {"id": 98, "type": "written", "diff": "medium", "topic": "كتاب الإيمان (كتابة / എഴുത്ത്)", "ar": "اكتب نص الحديث رقم (4) عن ابن عمر رضي الله عنهما («بني الإسلام على خمس...») كاملاً بالترتيب الوارد في مشكاة المصابيح مع ذكر تخريجه.", "ml": "ഇബ്നു ഉമർ (റ) റിപ്പോർട്ട് ചെയ്ത ഹദീസ് നമ്പർ 4 ('ബുനിയൽ ഇസ്ലാമു അലാ ഖംസിൻ...') മിശ്കാത്തുൽ മസാബീഹിലെ കൃത്യമായ ക്രമത്തിൽ പൂർണ്ണമായി എഴുതി തഖ്രീജ് രേഖപ്പെടുത്തുക.", "model_ar": "عن ابن عمر قال: قال رسول الله ﷺ: «بني الإسلام على خمس: شهادة أن لا إله إلا الله وأن محمداً عبده ورسوله، وإقام الصلاة، وإيتاء الزكاة، والحج، وصوم رمضان». متفق عليه.", "model_ml": "ഇസ്ലാം അഞ്ച് കാര്യങ്ങളിന്മേൽ സ്ഥാപിതമാണ്: 1) അല്ലാഹുവല്ലാതെ ആരാധ്യനില്ലെന്നും മുഹമ്മദ് (സ) അവന്റെ ദാസനും ദൂതനുമാണെന്ന് സാക്ഷ്യം വഹിക്കൽ, 2) നിസ്കാരം നിലനിർത്തൽ, 3) സകാത്ത് നൽകൽ, 4) ഹജ്ജ്, 5) റമദാൻ നോമ്പ്. (തഖ്രീജ്: മുത്തഫഖുൻ അലൈഹി — ശ്രദ്ധിക്കുക: ഹജ്ജ് നോമ്പിന് മുമ്പാണ് വന്നിരിക്കുന്നത്).", "keywords": ["شهادة", "الصلاة", "الزكاة", "الحج", "رمضان", "متفق عليه", "ശഹാദത്ത്", "നിസ്കാരം", "സകാത്ത്", "ഹജ്ജ്", "നോമ്പ്"]}, {"id": 99, "type": "written", "diff": "tight", "topic": "كتاب الإيمان (كتابة / എഴുത്ത്)", "ar": "قارن بين تعريف «المسلم» و«المؤمن» و«المجاهد» و«المهاجر» كما وردت في الأحاديث رقم (6) و(33) و(34) من مشكاة المصابيح.", "ml": "മിശ്കാത്തിലെ 6, 33, 34 എന്നീ ഹദീസുകളിൽ 'മുസ്ലിം', 'മുഅ്മിൻ', 'മുജാഹിദ്', 'മുഹാജിർ' എന്നിവയ്ക്ക് നൽകിയ നിർവ്വചനങ്ങൾ താരതമ്യം ചെയ്ത് എഴുതുക.", "model_ar": "1) المسلم (6 و33): من سلم المسلمون من لسانه ويده. 2) المؤمن (33 - الترمذي والنسائي): من أمنه الناس على دمائهم وأموالهم. 3) المجاهد (34 - البيهقي عن فضالة): من جاهد نفسه في طاعة الله. 4) المهاجر: في (6 - البخاري) من هجر ما نهى الله عنه، وفي (34 - البيهقي) من هجر الخطايا والذنوب.", "model_ml": "1) മുസ്ലിം (6, 33): തന്റെ നാവും കയ്യും കൊണ്ട് മറ്റു മുസ്ലിംകൾ രക്ഷപ്പെടുന്നവൻ. 2) മുഅ്മിൻ (33): ജനങ്ങൾക്ക് തങ്ങളുടെ രക്തത്തിലും സമ്പത്തിലും നിർഭയത്വം ലഭിക്കുന്നവൻ. 3) മുജാഹിദ് (34 - ബൈഹഖി): അല്ലാഹുവിന് വഴിപ്പെടുന്നതിൽ സ്വന്തം ശരീരത്തോട് ജിഹാദ് ചെയ്യുന്നവൻ. 4) മുഹാജിർ: ഹദീസ് 6-ൽ 'അല്ലാഹു വിരോധിച്ചത് വെടിഞ്ഞവൻ', ഹദീസ് 34-ൽ 'പാപങ്ങളും തെറ്റുകളും വെടിഞ്ഞവൻ'.", "keywords": ["لسانه ويده", "دمائهم وأموالهم", "جاهد نفسه", "هجر", "നാവും കയ്യും", "രക്തത്തിലും സമ്പത്തിലും", "ജിഹാദ്", "വെടിഞ്ഞ"]}, {"id": 100, "type": "written", "diff": "tight", "topic": "كتاب الإيمان (كتابة / എഴുത്ത്)", "ar": "اذكر الأعمال الأربعة التي بها يستكمل العبد الإيمان في حديث أبي أمامة رقم (30)، مع بيان الفرق بين رواية أبي داود (30) ورواية الترمذي (31).", "ml": "അബൂ ഉമാമ (റ) വിന്റെ ഹദീസ് നമ്പർ 30 പ്രകാരം ഈമാൻ പൂർണ്ണമാകാനുള്ള നാല് കാര്യങ്ങൾ ഏവ? അബൂദാവൂദിന്റെ റിപ്പോർട്ടും (30) തിർമിദിയുടെ റിപ്പോർട്ടും (31) തമ്മിലുള്ള വ്യത്യാസമെന്ത്?", "model_ar": "الأعمال الأربعة: 1) الحب لله، 2) البغض لله، 3) الإعطاء لله، 4) المنع لله («فقد استكمل الإيمان»). الفرق: حديث (30) رواه أبو داود عن أبي أمامة بلفظ «فقد استكمل الإيمان»، أما (31) فرواه الترمذي عن «معاذ بن أنس» مع تقديم وتأخير وبلفظ «فقد استكمل إيمانه».", "model_ml": "നാല് കാര്യങ്ങൾ: 1) അല്ലാഹുവിന് വേണ്ടി സ്നേഹിക്കുക, 2) അല്ലാഹുവിന് വേണ്ടി വെറുക്കുക, 3) അല്ലാഹുവിന് വേണ്ടി നൽകുക, 4) അല്ലാഹുവിന് വേണ്ടി തടയുക. വ്യത്യാസം: ഹദീസ് 30 അബൂദാവൂദ് അബൂ ഉമാമയിൽ നിന്ന് 'ഫഖദിസ്തക്മലൽ ഈമാൻ' എന്നും, ഹദീസ് 31 തിർമിദി 'മുആദ് ബ്നു അനസി'ൽ നിന്ന് മുൻപിൻ വ്യത്യാസത്തോടെ 'ഫഖദിസ്തക്മല ഈമാനഹു' എന്നുമാണ് ഉദ്ധരിച്ചത്.", "keywords": ["أحب لله", "أبغض لله", "أعطى لله", "منع لله", "معاذ بن أنس", "സ്നേഹ", "വെറു", "നൽക", "തടയ", "മുആദ്"]}, {"id": 101, "type": "written", "diff": "tight", "topic": "باب الكبائر (كتابة / എഴുത്ത്)", "ar": "اذكر الذنوب الثلاثة العظمى في حديث ابن مسعود رقم (49) بالترتيب، والآية القرآنية التي نزلت تصديقاً لها مع اسم السورة.", "ml": "ഇബ്നു മസ്ഊദ് (റ) നിവേദനം ചെയ്ത ഹദീസ് നമ്പർ 49-ലെ ഏറ്റവും വലിയ മൂന്ന് പാപങ്ങൾ ക്രമത്തിൽ എഴുതുക; ഇതിനെ സ്ഥിരീകരിച്ച് അവതരിച്ച ആയത്തും സൂറത്തും ഏതാണെന്ന് വ്യക്തമാക്കുക.", "model_ar": "1) أن تجعل لله نداً وهو خلقك، 2) أن تقتل ولدك خشية أن يطعم معك، 3) أن تزاني حليلة جارك. والآية من سورة الفرقان (68-70): ﴿والذين لا يدعون مع الله إلهاً آخر ولا يقتلون النفس التي حرم الله إلا بالحق ولا يزنون...﴾ (متفق عليه).", "model_ml": "1) അല്ലാഹു നിന്നെ സൃഷ്ടിച്ചിരിക്കെ അവന് പങ്കാളിയെ നിശ്ചയിക്കൽ, 2) നിന്നോടൊപ്പം ഭക്ഷിക്കുമെന്ന് ഭയന്ന് സ്വന്തം കുഞ്ഞിനെ കൊല്ലൽ, 3) അയൽവാസിയുടെ ഭാര്യയുമായി വ്യഭിചരിക്കൽ. ആയത്ത്: സൂറത്തുൽ ഫുർഖാൻ (68-70) — 'വല്ലദീന ലാ യദ്ഊന മഅല്ലാഹി ഇലാഹൻ ആഖറ വലാ യഖ്തുലൂനന്നഫ്സ...' (മുത്തഫഖുൻ അലൈഹി).", "keywords": ["نداً", "ولدك", "حليلة جارك", "الفرقان", "പങ്കാളി", "കുഞ്ഞിനെ", "അയൽവാസി", "ഫുർഖാൻ"]}, {"id": 102, "type": "written", "diff": "medium", "topic": "كتاب فضائل القرآن (كتابة / എഴുത്ത്)", "ar": "لخّص مضمون حديث عقبة بن عامر رقم (2110) عن «بطحان والعقيق»، واشرح معنى الكلمات: «الصفة»، و«ناقتين كوماوين».", "ml": "ഉഖ്ബ ബ്നു ആമിർ (റ) റിപ്പോർട്ട് ചെയ്ത ഹദീസ് നമ്പർ 2110-ന്റെ ('ബുത്ഹാൻ, അഖീഖ്') ആശയം സംഗ്രഹിക്കുക; 'അസ്സുഫ്ഫ', 'നാഖത്തൈനി കൗമാവൈനി' എന്നിവയുടെ അർത്ഥം എഴുതുക.", "model_ar": "سأل النبي ﷺ أهل الصفة إن كانوا يحبون الذهاب إلى بطحان أو العقيق ليأتوا بناقتين عظيمتي السنام حلالاً بلا إثم ولا قطيعة رحم، فلما قالوا نعم، أخبرهم أن الغدو إلى المسجد لتعلم أو قراءة آيتين من القرآن خير من ناقتين، وثلاث من ثلاث، وأربع من أربع. الصفة: مكان في مؤخر المسجد لنزول الغرباء والفقراء. كوماوين: عظيمتي السنام (أجود الإبل).", "model_ml": "പാപമോ കുടുംബബന്ധ വിച്ഛേദനമോ ഇല്ലാതെ ബുത്ഹാനിലോ അഖീഖിലോ പോയി വലിയ പൂഞ്ഞയുള്ള രണ്ട് ഒട്ടകങ്ങളെ കൊണ്ടുവരാൻ നിങ്ങൾ ഇഷ്ടപ്പെടുമോ എന്ന് സുഫ്ഫയിലുള്ളവരോട് നബി ﷺ ചോദിച്ചു. അതെയെന്ന് പറഞ്ഞപ്പോൾ, പള്ളിയിൽ പോയി രണ്ട് ആയത്ത് പഠിക്കുകയോ ഓതുകയോ ചെയ്യുന്നത് രണ്ട് ഒട്ടകങ്ങളെക്കാൾ ഉത്തമമാണെന്ന് അവിടുന്ന് പഠിപ്പിച്ചു. സുഫ്ഫ: വീടില്ലാത്തവർക്കായി പള്ളിയുടെ പിൻഭാഗത്ത് ഒരുക്കിയ സ്ഥലം. കൗമാവൈനി: വലിയ പൂഞ്ഞയുള്ള രണ്ട് പെൺഒട്ടകങ്ങൾ.", "keywords": ["بطحان", "العقيق", "عظيمتي السنام", "مؤخر المسجد", "ബുത്ഹാൻ", "അഖീഖ്", "പൂഞ്ഞ", "ഒട്ടകം", "പള്ളി"]}, {"id": 103, "type": "written", "diff": "tight", "topic": "كتاب فضائل القرآن (كتابة / എഴുത്ത്)", "ar": "اشرح حديث عبد الله بن عمرو (رقم 2134): «يقال لصاحب القرآن: اقرأ وارتق ورتل...»، ومن هو «صاحب القرآن» المقصود عند الشراح؟", "ml": "ഹദീസ് നമ്പർ 2134 ('യുഖാലു ലിസ്വാഹിബിൽ ഖുർആൻ: ഇഖ്റഅ് വർതഖി...') വിശദീകരിക്കുക; ഇവിടെ 'സ്വാഹിബുൽ ഖുർആൻ' (ഖുർആനിന്റെ ആൾ) എന്നതുകൊണ്ട് ശർഹുകളിൽ ആരെയാണ് ഉദ്ദേശിക്കുന്നത്?", "model_ar": "يبشر الحديث بأن حافظ القرآن والعامل به يرتقي في درجات الجنة يوم القيامة بقدر ما يقرأه مرتلاً كما كان يرتله في الدنيا، حتى يبلغ منزلته عند آخر آية يقرؤها. والمراد بـ «صاحب القرآن» عند الشراح: الملازم له حفظاً وتلاوةً وتدبراً وعملاً بأحكامه، لا مجرد الحافظ بلا عمل.", "model_ml": "ഖുർആൻ മനഃപാഠമാക്കുകയും അതിനനുസരിച്ച് പ്രവർത്തിക്കുകയും ചെയ്തവനോട് സ്വർഗ്ഗത്തിൽ വെച്ച് ദുനിയാവിൽ ഓതിയത് പോലെ സാവകാശം (തർത്തീൽ) ഓതാനും, ഓരോ ആയത്തിനുമൊപ്പം ഉയർന്ന പദവികളിലേക്ക് കയറാനും പറയപ്പെടും; അവൻ ഓതുന്ന അവസാന ആയത്തിനടുത്തായിരിക്കും അവന്റെ പദവി. വെറും മനഃപാഠമുള്ളവനല്ല, ഖുർആൻ പാരായണം ചെയ്യുകയും അതിന്റെ വിധിവിലക്കുകൾ അനുസരിച്ച് ജീവിക്കുകയും ചെയ്യുന്നവനാണ് 'സ്വാഹിബുൽ ഖുർആൻ'.", "keywords": ["درجات", "العامل", "آخر آية", "ترتيل", "പദവി", "പ്രവർത്തി", "അവസാന ആയത്ത്", "തർത്തീൽ", "സ്വർഗ്ഗ"]}, {"id": 104, "type": "written", "diff": "medium", "topic": "كتاب الدعوات (كتابة / എഴുത്ത്)", "ar": "لماذا نهى النبي ﷺ الداعي عن قول «اللهم اغفر لي إن شئت» في الحديثين رقم (2225 و2226)؟ اذكر التعليلين الواردين في روايتي البخاري ومسلم.", "ml": "പ്രാർത്ഥനയിൽ 'അല്ലാഹുവേ, നീ ഉദ്ദേശിച്ചെങ്കിൽ എനിക്ക് പൊറുത്തുതരേണമേ' എന്ന് പറയുന്നത് നബി ﷺ വിലക്കിയത് (ഹദീസ് 2225, 2226) എന്തുകൊണ്ടാണ്? ബുഖാരിയുടെയും മുസ്ലിമിന്റെയും റിപ്പോർട്ടുകളിലെ രണ്ട് കാരണങ്ങളും എഴുതുക.", "model_ar": "لأن قول «إن شئت» يشعر بالاستغناء أو ضعف الرغبة، أو يوهم أن الله قد يُكره على شيء! وقد ورد تعليلان: 1) في رواية البخاري (2225): «وليعزم مسألته، إنه يفعل ما يشاء ولا مكره له». 2) في رواية مسلم (2226): «ولكن ليعزم وليعظم الرغبة، فإن الله لا يتعاظمه شيء أعطاه».", "model_ml": "'നീ ഉദ്ദേശിച്ചെങ്കിൽ' എന്ന് പറയുന്നത് ആവശ്യമില്ലായ്മയോ, അല്ലാഹുവിനെ ആരോ നിർബന്ധിക്കുന്നു എന്ന തെറ്റിദ്ധാരണയോ ഉണ്ടാക്കുന്നു. രണ്ട് കാരണങ്ങൾ: 1) ബുഖാരി (2225): അവൻ ഉദ്ദേശിക്കുന്നത് ചെയ്യുന്നു, അവനെ നിർബന്ധിക്കാൻ ആരുമില്ല (لا مكره له). 2) മുസ്ലിം (2226): ആഗ്രഹം വലുതാക്കി ഉറപ്പോടെ ചോദിക്കുക, കാരണം താൻ നൽകുന്ന യാതൊന്നും അല്ലാഹുവിന് വലിയ കാര്യമല്ല (لا يتعاظمه شيء أعطاه).", "keywords": ["لا مكره له", "لا يتعاظمه", "يعزم", "الرغبة", "നിർബന്ധിക്കാൻ", "വലിയ കാര്യമല്ല", "ഉറപ്പോടെ"]}, {"id": 105, "type": "written", "diff": "tight", "topic": "كتاب الدعوات (كتابة / എഴുത്ത്)", "ar": "اذكر هيئات الدعاء الثلاث الواردة في أثر ابن عباس رقم (2256)، ثم اذكر خلاصة تحقيق المحقق حول «مسح الوجه باليدين بعد الدعاء» في حاشية الحديث (2255).", "ml": "ഇബ്നു അബ്ബാസ് (റ) വിന്റെ ഹദീസ് നമ്പർ 2256-ൽ പറഞ്ഞ പ്രാർത്ഥനയുടെ മൂന്ന് രൂപങ്ങൾ എഴുതുക; തുടർന്ന് പ്രാർത്ഥനയ്ക്ക് ശേഷം മുഖം തടവുന്നതിനെക്കുറിച്ച് ഹദീസ് 2255-ന്റെ അടിക്കുറിപ്പിലുള്ള മുഹഖിഖിന്റെ വിധി ചുരുക്കി എഴുതുക.", "model_ar": "في أثر ابن عباس (2256): 1) المسألة: رفع اليدين حذو المنكبين أو نحوهما، 2) الاستغفار: الإشارة بأصبع واحدة، 3) الابتهال: مدّ اليدين جميعاً. وفي حاشية (2255): ذكر المحقق أن حديث السائب بن يزيد عند أبي داود والبيهقي «إسناده ضعيف، ولا يصح حديث في مسح الوجه باليدين بعد الدعاء» وأحال إلى «إرواء الغليل» (426-427).", "model_ml": "ഹദീസ് 2256 പ്രകാരം: 1) മസ്അല (ചോദ്യം): രണ്ട് കൈകളും തോൾക്കൊപ്പം ഉയർത്തൽ, 2) ഇസ്തിഗ്ഫാർ: ഒരു വിരൽ കൊണ്ട് ആംഗ്യം കാണിക്കൽ, 3) ഇബ്തിഹാൽ (കേണപേക്ഷിക്കൽ): രണ്ട് കൈകളും പൂർണ്ണമായി നീട്ടൽ. ഹദീസ് 2255-ന്റെ അടിക്കുറിപ്പ്: മുഖം തടവുന്നതിനെക്കുറിച്ചുള്ള സനദ് ളഈഫാണെന്നും അതിൽ സ്വഹീഹായ ഹദീസില്ലെന്നും മുഹഖിഖ് 'ഇർവാഉൽ ഗലീൽ' (426, 427) ഉദ്ധരിച്ച് പറയുന്നു.", "keywords": ["حذو منكبيك", "أصبع واحدة", "تمد يديك", "ضعيف", "إرواء الغليل", "തോൾ", "വിരൽ", "നീട്ടൽ", "ളഈഫ്"]}, {"id": 106, "type": "written", "diff": "medium", "topic": "باب ذكر الله (كتابة / എഴുത്ത്)", "ar": "ما الفضائل الأربع لمجالس الذكر في حديث رقم (2261)؟ وما دلالة التشبيه في حديث أبي موسى رقم (2263): «مثل الذي يذكر ربه والذي لا يذكر مثل الحي والميت»؟", "ml": "ഹദീസ് നമ്പർ 2261 പ്രകാരം ദിക്ർ സദസ്സുകൾക്ക് ലഭിക്കുന്ന നാല് മഹത്വങ്ങൾ ഏവ? അബൂമൂസൽ അശ്അരി (റ) വിന്റെ ഹദീസിലെ (2263) 'ജീവിച്ചിരിക്കുന്നവനും മരിച്ചവനും' എന്ന ഉപമയുടെ ആശയം എഴുതുക.", "model_ar": "الفضائل الأربع (2261 - مسلم): 1) حفتهم الملائكة، 2) غشيتهم الرحمة، 3) نزلت عليهم السكينة، 4) ذكرهم الله فيمن عنده. ودلالة حديث (2263 - متفق عليه): أن الذكر هو حياة القلب والروح، فمن يذكر ربه فقلبه حي نافع مضيء، والغافل عن الذكر قلبه ميت وإن كان جسده يتحرك.", "model_ml": "നാല് മഹത്വങ്ങൾ (2261): 1) മലക്കുകൾ അവരെ വലയം ചെയ്യും, 2) കാരുണ്യം അവരെ പൊതിയും, 3) ശാന്തി (സകീന) ഇറങ്ങും, 4) അല്ലാഹു തന്റെ അടുക്കലുള്ളവരിൽ അവരെ സ്മരിക്കും. ഹദീസ് 2263 ആശയം: ദിക്റാണ് ഹൃദയത്തിന്റെ ജീവൻ; ദിക്റ് ചൊല്ലുന്നവന്റെ ഹൃദയം ജീവനുള്ളതും, അശ്രദ്ധന്റെ ഹൃദയം ശരീരം ജീവിച്ചിരിക്കെ തന്നെ മരിച്ചതുപോലെയുമാണ്.", "keywords": ["الملائكة", "الرحمة", "السكينة", "حياة القلب", "മലക്കുകൾ", "കാരുണ്യം", "ശാന്തി", "ഹൃദയ"]}, {"id": 107, "type": "written", "diff": "medium", "topic": "مقدمة مشكاة المصابيح (كتابة / എഴുത്ത്)", "ar": "اكتب نبذة تعريفية موجزة عن كل من: الإمام البغوي (صاحب الأصل) والإمام الخطيب التبريزي (صاحب المشكاة).", "ml": "മൂലഗ്രന്ഥത്തിന്റെ കർത്താവായ ഇമാം ബഗവി (റ), മിശ്കാത്തിന്റെ കർത്താവായ ഇമാം ഖത്വീബ് തബ്രീസി (റ) എന്നിവരെക്കുറിച്ച് ചുരുങ്ങിയ പരിചയക്കുറിപ്പ് എഴുതുക.", "model_ar": "الإمام البغوي: أبو محمد الحسين بن مسعود الفراء البغوي (436 - 516هـ)، محدث ومفسر وفقيه شافعي كبير، لُقّب بـ «محيي السنة»، من أشهر كتبه «مصابيح السنة» و«شرح السنة» وتفسير «معالم التنزيل». الخطيب التبريزي: ولي الدين محمد بن عبد الله الخطيب التبريزي (ت نحو 741هـ)، تلميذ الإمام الطيبي، أخرج وكمّل المصابيح في كتابه «مشكاة المصابيح» الذي فرغ منه سنة 737هـ.", "model_ml": "ഇമാം ബഗവി: അബൂമുഹമ്മദ് ഹുസൈൻ ബ്നു മസ്ഊദ് അൽ-ബഗവി (ഹിജ്റ 436–516). 'മുഹ്‌യിസ്സുന്ന' എന്ന് അറിയപ്പെടുന്ന പ്രമുഖ ശാഫിഈ പണ്ഡിതനും മുഹദ്ദിസും മുഫസ്സിറുമാണ്. മസാബീഹുസ്സുന്ന, ശർഹുസ്സുന്ന, മആലിമുത്തൻസീൽ എന്നിവ പ്രമുഖ കൃതികൾ. ഖത്വീബ് തബ്രീസി: വലിയ്യുദ്ദീൻ മുഹമ്മദ് ബ്നു അബ്ദില്ലാഹ് അത്തബ്രീസി (വഫാത്ത് ഹി. 741). ഇമാം ത്വീബിയുടെ ശിഷ്യൻ. ഹിജ്റ 737-ൽ മിശ്കാത്തുൽ മസാബീഹ് പൂർത്തിയാക്കി.", "keywords": ["الحسين بن مسعود", "516", "محيي السنة", "ولي الدين", "741", "737", "മുഹ്‌യിസ്സുന്ന", "516", "737", "741", "ത്വീബി"]}, {"id": 108, "type": "written", "diff": "tight", "topic": "مقدمة مشكاة المصابيح (كتابة / എഴുത്ത്)", "ar": "اذكر ثلاثة فروق أو إضافات منهجية رئيسية تميز بها «مشكاة المصابيح» عن أصله «مصابيح السنة».", "ml": "'മസാബീഹുസ്സുന്ന'യിൽ നിന്ന് 'മിശ്കാത്തുൽ മസാബീഹി'നെ വേറിട്ടുനിർത്തുന്ന മൂന്ന് പ്രധാന മെത്തഡോളജിക്കൽ വ്യത്യാസങ്ങൾ / അധികപ്പെടുത്തലുകൾ എഴുതുക.", "model_ar": "1) عزو الأحاديث وتخريجها إلى مصادرها المعتمدة (البخاري ومسلم والسنن والمسند وغيرها) بعدما تركها البغوي بلا عزو. 2) إضافة «الفصل الثالث» إلى كل باب من الأحاديث والآثار المناسبة للموضوع (فزاد نحو 1500 حديث). 3) ذكر أسماء الصحابة الرواة بانتظام وتصحيح بعض الأوهام في العزو وتوضيح درجات بعض الأحاديث نقلاً عن الترمذي وغيره.", "model_ml": "1) ബഗവി ഒഴിവാക്കിയിരുന്ന തഖ്രീജ് (ഏത് ഹദീസ് ഗ്രന്ഥത്തിൽ നിന്നാണെന്ന സൂചന) ഓരോ ഹദീസിനും ചേർത്തു. 2) ഓരോ ബാബിലും വിഷയാനുസൃതമായി 'മൂന്നാം ഫസ്ൽ' അധികരിപ്പിച്ചു (ഏകദേശം 1500-ഓളം ഹദീസുകൾ കൂട്ടിച്ചേർത്തു). 3) സ്വഹാബികളുടെ പേരുകൾ കൃത്യമായി രേഖപ്പെടുത്തുകയും ബഗവിക്ക് വന്ന ചില തഖ്രീജ് പിഴവുകൾ തിരുത്തി വ്യക്തമാക്കുകയും ചെയ്തു.", "keywords": ["تخريج", "عزو", "الفصل الثالث", "الصحابة", "തഖ്രീജ്", "മൂന്നാം ഫസ്ൽ", "തിരുത്തി", "സ്വഹാബി"]}, {"id": 109, "type": "written", "diff": "medium", "topic": "مقدمة مشكاة المصابيح (كتابة / എഴുത്ത്)", "ar": "وضّح المقصود بكل من الرموز والعبارات التالية عند قراءة «مشكاة المصابيح»: «متفق عليه»، «رواه البخاري تعليقاً»، «رواه رزين»، «رواه في شرح السنة».", "ml": "മിശ്കാത്തുൽ മസാബീഹിൽ വരുന്ന 'മുത്തഫഖുൻ അലൈഹി', 'റവാഹുൽ ബുഖാരി തഅ്ലീഖൻ', 'റവാഹു റസീൻ', 'റവാഹു ഫീ ശർഹിസ്സുന്ന' എന്നീ പ്രയോഗങ്ങളുടെ അർത്ഥം വ്യക്തമാക്കുക.", "model_ar": "1) متفق عليه: أخرجه البخاري ومسلم. 2) رواه البخاري تعليقاً: ذكره البخاري بحذف مبدأ إسناده (كالآثار في تراجم الأبواب). 3) رواه رزين: أخرجه الإمام رزين بن معاوية في كتابه «تجريد الصحاح الستة». 4) رواه في شرح السنة: أخرجه الإمام البغوي بإسناده في كتابه «شرح السنة».", "model_ml": "1) മുത്തഫഖുൻ അലൈഹി: ബുഖാരിയും മുസ്ലിമും ഒരുമിച്ച് ഉദ്ധരിച്ചത്. 2) റവാഹുൽ ബുഖാരി തഅ്ലീഖൻ: സനദിന്റെ തുടക്കം ഒഴിവാക്കി ബുഖാരി ഉദ്ധരിച്ചത് (മുഅല്ലഖ്). 3) റവാഹു റസീൻ: ഇമാം റസീൻ ബ്നു മുആവിയ തന്റെ 'തജ്‌രീദുസ്സ്വിഹാഹിസ്സിത്ത'യിൽ ഉദ്ധരിച്ചത്. 4) റവാഹു ഫീ ശർഹിസ്സുന്ന: ഇമാം ബഗവി തന്റെ 'ശർഹുസ്സുന്ന'യിൽ ഉദ്ധരിച്ചത്.", "keywords": ["البخاري ومسلم", "مبدأ إسناده", "رزين", "البغوي", "ബുഖാരി", "മുഅല്ലഖ്", "റസീൻ", "ബഗവി"]}, {"id": 110, "type": "written", "diff": "tight", "topic": "مقدمة مشكاة المصابيح (كتابة / എഴുത്ത്)", "ar": "ما أهمية «مقدمة الشيخ عبد الحق الدهلوي» التي تُدرّس وتُطبع في أول مشكاة المصابيح، وما أسماء أبرز مؤلفاته في خدمة المشكاة؟", "ml": "മിശ്കാത്തുൽ മസാബീഹിന്റെ തുടക്കത്തിൽ പഠിപ്പിക്കപ്പെടുന്ന 'ശൈഖ് അബ്ദുൽ ഹഖ് ദഹ്‌ലവിയുടെ മുഖദ്ദിമ'യുടെ പ്രാധാന്യമെന്ത്? മിശ്കാത്തിനെ സേവിച്ചുകൊണ്ട് അദ്ദേഹം രചിച്ച രണ്ട് ഗ്രന്ഥങ്ങളുടെ പേരെഴുതുക.", "model_ar": "أهميتها: أنها رسالة موجزة جامعة في علم «مصطلح الحديث» تُمهّد لطالب العلم فهم أنواع الحديث (الصحيح والحسن والضعيف والمتواتر والآحاد والمرسل والموقوف...) واصطلاحات الأئمة الستة قبل الشروع في دراسة نصوص المشكاة. ومن مؤلفاته على المشكاة: 1) لمعات التنقيح (بالعربية)، 2) أشعة اللمعات (بالفارسية).", "model_ml": "പ്രാധാന്യം: മിശ്കാത്തിലെ ഹദീസുകൾ പഠിക്കുന്നതിന് മുമ്പ് വിദ്യാർത്ഥിക്ക് ഹദീസ് നിദാനശാസ്ത്രത്തിലെ (മുസ്ത്വലഹുൽ ഹദീസ്) അടിസ്ഥാന സാങ്കേതിക പദങ്ങളും (സ്വഹീഹ്, ഹസൻ, ളഈഫ്, മുതവാതിർ, മുർസൽ...) ആറ് ഇമാമുമാരുടെ ശൈലിയും പരിചയപ്പെടുത്തുന്ന സംക്ഷിപ്ത ആമുഖമാണത്. കൃതികൾ: 1) ലമആത്തുത്തൻഖീഹ് (അറബി), 2) അശിഅത്തുൽ ലമആത്ത് (പേർഷ്യൻ).", "keywords": ["مصطلح الحديث", "لمعات التنقيح", "أشعة اللمعات", "മുസ്ത്വലഹ്", "ലമആത്തുത്തൻഖീഹ്", "അശിഅത്തുൽ ലമആത്ത്"]}, {"id": 111, "type": "written", "diff": "medium", "topic": "مصطلح الحديث (كتابة / എഴുത്ത്)", "ar": "اذكر الشروط الخمسة للحديث «الصحيح لذاته»، واشرح باختصار شرطي «انتفاء الشذوذ» و«انتفاء العلة القادحة».", "ml": "'സ്വഹീഹ് ലിദാതിഹി' ഹദീസിന്റെ അഞ്ച് നിബന്ധനകൾ എഴുതുക; അതിൽ 'ശുദൂദ് ഇല്ലാതിരിക്കൽ', 'ഇല്ലത്ത് ഖാദിഹ ഇല്ലാതിരിക്കൽ' എന്നിവ ചുരുക്കി വിശദീകരിക്കുക.", "model_ar": "الشروط الخمسة: 1) اتصال السند، 2) عدالة الرواة، 3) تمام الضبط، 4) انتفاء الشذوذ، 5) انتفاء العلة القادحة. انتفاء الشذوذ: ألا يخالف الراوي الثقة من هو أوثق منه أو أكثر عدداً. انتفاء العلة القادحة: خلوّ الحديث من سبب خفي غامض يقدح في صحته مع أن ظاهره السلامة.", "model_ml": "അഞ്ച് നിബന്ധനകൾ: 1) സനദിന്റെ തുടർച്ച, 2) റാവികളുടെ അദാലത്ത്, 3) പൂർണ്ണ ള്വബ്ത്, 4) ശുദൂദ് ഇല്ലാതിരിക്കൽ, 5) ഇല്ലത്ത് ഇല്ലാതിരിക്കൽ. ശുദൂദ് ഇല്ലാതിരിക്കൽ: ഥിഖത്തായ റാവി തന്നേക്കാൾ വലിയ ഥിഖത്തിനോടോ കൂടുതൽ പേരോടോ എതിരാകാതിരിക്കൽ. ഇല്ലത്ത് ഇല്ലാതിരിക്കൽ: പ്രത്യക്ഷത്തിൽ കുറ്റമറ്റതാണെങ്കിലും സൂക്ഷ്മ പരിശോധനയിൽ പ്രാബല്യത്തെ ബാധിക്കുന്ന ഗൂഢ ന്യൂനത ഇല്ലാതിരിക്കൽ.", "keywords": ["اتصال", "عدالة", "ضبط", "أوثق", "خفي", "തുടർച്ച", "അദാലത്ത്", "ള്വബ്ത്", "എതിരാക", "ഗൂഢ"]}, {"id": 112, "type": "written", "diff": "tight", "topic": "مصطلح الحديث (كتابة / എഴുത്ത്)", "ar": "فرّق بوضوح بين الأنواع الأربعة للسقط الظاهر في الإسناد: «المعلق»، و«المرسل»، و«المعضل»، و«المنقطع».", "ml": "സനദിലെ പ്രത്യക്ഷമായ കണ്ണിമുറിയലിന്റെ (സഖ്ത് ളാഹിർ) നാല് ഇനങ്ങളായ 'മുഅല്ലഖ്', 'മുർസൽ', 'മുഅ്ളൽ', 'മുൻഖത്വിഅ്' എന്നിവ തമ്മിലുള്ള വ്യത്യാസം വ്യക്തമാക്കുക.", "model_ar": "1) المعلق: ما حُذف من مبتدأ إسناده (من جهة المصنف) راوٍ فأكثر على التوالي. 2) المرسل: ما سقط من آخر إسناده من بعد التابعي (قول التابعي: قال رسول الله ﷺ). 3) المعضل: ما سقط من إسناده راويان فأكثر على التوالي. 4) المنقطع: ما لم يتصل إسناده بسقوط راوٍ واحد (أو أكثر لا على التوالي) في أثناء السند.", "model_ml": "1) മുഅല്ലഖ്: സനദിന്റെ തുടക്കത്തിൽ നിന്ന് (മുസ്വന്നിഫിന്റെ ഭാഗത്ത് നിന്ന്) ഒന്നോ അതിലധികമോ റാവികളെ ഒഴിവാക്കിയത്. 2) മുർസൽ: സനദിന്റെ അവസാനത്തിൽ നിന്ന് സ്വഹാബിയെ ഒഴിവാക്കി താബിഈ നേരിട്ട് നബി ﷺ യിലേക്ക് ചേർത്തത്. 3) മുഅ്ളൽ: സനദിൽ രണ്ടോ അതിലധികമോ റാവികൾ തുടർച്ചയായി വിട്ടുപോയത്. 4) മുൻഖത്വിഅ്: സനദിന്റെ മധ്യത്തിൽ ഒരു റാവി (അല്ലെങ്കിൽ തുടർച്ചയല്ലാതെ ഒന്നിലധികം പേർ) വിട്ടുപോയത്.", "keywords": ["مبتدأ", "آخر", "التابعي", "راويان", "على التوالي", "തുടക്കത്തിൽ", "സ്വഹാബി", "താബിഈ", "രണ്ടോ", "തുടർച്ചയായി"]}, {"id": 113, "type": "written", "diff": "medium", "topic": "مصطلح الحديث (كتابة / എഴുത്ത്)", "ar": "ما الفرق بين «المتواتر اللفظي» و«المتواتر المعنوي»؟ اذكر مثالاً واحداً لكل منهما.", "ml": "'മുതവാതിർ ലഫ്ളി'യും (المتواتر اللفظي) 'മുതവാതിർ മഅ്നവി'യും (المتواتر المعنوي) തമ്മിലുള്ള വ്യത്യാസം ഓരോ ഉദാഹരണം സഹിതം വിവരിക്കുക.", "model_ar": "المتواتر اللفظي: ما تواتر لفظه ومعناه معاً؛ مثاله: حديث «من كذب عليّ متعمداً فليتبوأ مقعده من النار» (رواه أكثر من سبعين صحابياً). المتواتر المعنوي: ما تواتر معناه المشترك دون لفظه بعينه (من خلال وقائع متعددة)؛ مثاله: أحاديث رفع اليدين في الدعاء، أو أحاديث الحوض والشفاعة.", "model_ml": "മുതവാതിർ ലഫ്ളി: പദവും ആശയവും ഒരുപോലെ മുതവാതിറായി വന്നത്. ഉദാ: 'എന്റെ പേരിൽ ആരെങ്കിലും മനഃപൂർവ്വം കളവ് പറഞ്ഞാൽ അവൻ നരകത്തിൽ ഇരിപ്പിടം ഒരുക്കിക്കൊള്ളട്ടെ' (70-ലധികം സ്വഹാബികൾ ഉദ്ധരിച്ചത്). മുതവാതിർ മഅ്നവി: വ്യത്യസ്ത സന്ദർഭങ്ങളിലൂടെ ഒരേ ആശയം മാത്രം മുതവാതിറായി വന്നത്. ഉദാ: പ്രാർത്ഥനയിൽ കൈ ഉയർത്തുന്നതിനെക്കുറിച്ചുള്ള ഹദീസുകൾ (അല്ലെങ്കിൽ ഹൗളുൽ കൗഥർ, ശഫാഅത്ത്).", "keywords": ["لفظه ومعناه", "من كذب علي", "معناه", "رفع اليدين", "പദവും ആശയവും", "കളവ്", "ആശയം മാത്രം", "കൈ ഉയർത്ത"]}, {"id": 114, "type": "written", "diff": "tight", "topic": "مصطلح الحديث (كتابة / എഴുത്ത്)", "ar": "اشرح الفرق بين «الحديث الشاذ» و«الحديث المنكر»، واذكر المصطلح المقابل لكل منهما.", "ml": "'ശാദ്ദ്' (الشاذ) ഹദീസും 'മുൻകർ' (المنكر) ഹദീസും തമ്മിലുള്ള വ്യത്യാസം വിവരിക്കുക; ഇവ ഓരോന്നിന്റെയും എതിർ സാങ്കേതിക പദം (മഖാബിൽ) ഏതാണെന്ന് എഴുതുക.", "model_ar": "الشاذ: ما رواه المقبول (الثقة أو الصدوق) مخالفاً لمن هو أولى منه (أوثق أو أكثر عدداً)، ومقابله يُسمى «المحفوظ». المنكر: ما رواه الضعيف مخالفاً للثقة، ومقابله يُسمى «المعروف».", "model_ml": "ശാദ്ദ്: സ്വീകാര്യനായ (മഖ്ബൂൽ) റാവി തന്നെക്കാൾ പ്രബലനായ റാവിയോട് എതിരായി ഉദ്ധരിക്കുന്ന ഹദീസ്; ഇതിന്റെ എതിർപദം 'മഹ്ഫൂള്' (المحفوظ). മുൻകർ: ളഈഫായ റാവി ഥിഖത്തായ റാവിയോട് എതിരായി ഉദ്ധരിക്കുന്ന ഹദീസ്; ഇതിന്റെ എതിർപദം 'മഅ്റൂഫ്' (المعروف).", "keywords": ["المقبول", "المحفوظ", "الضعيف", "المعروف", "മഖ്ബൂൽ", "മഹ്ഫൂള്", "ളഈഫ്", "മഅ്റൂഫ്"]}, {"id": 115, "type": "written", "diff": "tight", "topic": "مصطلح الحديث (كتابة / എഴുത്ത്)", "ar": "اذكر ثلاثة فروق بين «القرآن الكريم» و«الحديث القدسي» و«الحديث النبوي»، مع ذكر مثال لحديث قدسي من مقرر المشكاة.", "ml": "വിശുദ്ധ ഖുർആൻ, ഹദീസ് ഖുദ്സി, ഹദീസ് നബവി എന്നിവ തമ്മിലുള്ള മൂന്ന് പ്രധാന വ്യത്യാസങ്ങൾ എഴുതുക; നിശ്ചിത മിശ്കാത്ത് ഭാഗത്ത് നിന്ന് ഒരു ഹദീസ് ഖുദ്സി ഉദാഹരണമായി എഴുതുക.", "model_ar": "1) القرآن: لفظه ومعناه من الله، معجز ومتواتر ومتعبد بتلاوته ويُقرأ في الصلاة. 2) الحديث القدسي: معناه من الله ويُروى بلفظ «يقول الله تعالى»، غير معجز ولا يُتلى في الصلاة، وفيه الصحيح والضعيف. 3) الحديث النبوي: يُنسب إلى النبي ﷺ قولاً أو فعلاً أو تقريراً. مثال قدسي من المقرر: حديث 2264 («يقول الله تعالى: أنا عند ظن عبدي بي...») أو 2265 عن أبي ذر.", "model_ml": "1) ഖുർആൻ: പദവും ആശയവും അല്ലാഹുവിൽ നിന്ന്, മുഅ്ജിസത്ത്, മുതവാതിർ, നിസ്കാരത്തിൽ ഓതാം. 2) ഹദീസ് ഖുദ്സി: നബി ﷺ അല്ലാഹുവിലേക്ക് ചേർത്ത് ('യഖൂലുല്ലാഹു തആലാ') ഉദ്ധരിക്കുന്നത്, മുഅ്ജിസത്തല്ല, നിസ്കാരത്തിൽ ഓതാൻ പാടില്ല, സ്വഹീഹും ളഈഫും ഉണ്ടാകാം. 3) ഹദീസ് നബവി: നബി ﷺ യുടെ വാക്കും പ്രവൃത്തിയും അംഗീകാരവും. ഉദാഹരണം: ഹദീസ് 2264 ('അന ഇൻദ ളന്നി അബ്ദീ ബീ...') അല്ലെങ്കിൽ 2265.", "keywords": ["معجز", "الصلاة", "يقول الله", "أنا عند ظن", "മുഅ്ജിസത്ത്", "നിസ്കാരത്തിൽ", "ഖുദ്സി", "2264", "2265"]}, {"id": 116, "type": "written", "diff": "medium", "topic": "المعرفة العامة بالحديث (كتابة / എഴുത്ത്)", "ar": "اذكر بإيجاز المراحل الرئيسية لـ «تدوين الحديث النبوي» من عصر النبوة حتى القرن الثالث الهجري.", "ml": "നബി ﷺ യുടെ കാലം മുതൽ ഹിജ്റ മൂന്നാം നൂറ്റാണ്ട് വരെയുള്ള 'ഹദീസ് ക്രോഡീകരണത്തിന്റെ' (തദ്‌വീനുൽ ഹദീസ്) പ്രധാന ഘട്ടങ്ങൾ ചുരുക്കി വിവരിക്കുക.", "model_ar": "1) عصر النبوة والصحابة (القرن الأول): الحفظ في الصدور مع صحف فردية كالصحيفة الصادقة لعبد الله بن عمرو. 2) التدوين الرسمي العام (رأس المائة الأولى): بأمر الخليفة عمر بن عبد العزيز وتنفيذ الإمام الزهري. 3) التصنيف المرتب على الأبواب (القرن الثاني): الموطآت والمصنفات كموطأ مالك ومصنف عبد الرزاق. 4) العصر الذهبي (القرن الثالث): إفراد الصحيح وظهور الكتب الستة والمسانيد كمسند أحمد وصحيحي البخاري ومسلم والسنن الأربع.", "model_ml": "1) പ്രവാചക-സ്വഹാബീ കാലം (ഒന്നാം നൂറ്റാണ്ട്): മനഃപാഠമാക്കലും വ്യക്തിഗത കുറിപ്പുകളും (ഉദാ: അസ്സ്വഹീഫത്തുസ്സ്വാദിഖ). 2) ഔദ്യോഗിക ക്രോഡീകരണം (ഹി. 100): ഖലീഫ ഉമർ ബ്നു അബ്ദിൽ അസീസിന്റെ കല്പനയും ഇമാം സുഹ്‌രിയുടെ നേതൃത്വവും. 3) അധ്യായ ക്രമത്തിലുള്ള രചനകൾ (രണ്ടാം നൂറ്റാണ്ട്): ഇമാം മാലികിന്റെ മുവത്വ തുടങ്ങിയവ. 4) സുവർണ്ണ കാലഘട്ടം (മൂന്നാം നൂറ്റാണ്ട്): സ്വഹീഹുകൾ വേർതിരിക്കലും കുതുബുസ്സിത്തയും മുസ്നദ് അഹ്മദും രചിക്കപ്പെടലും.", "keywords": ["عمر بن عبد العزيز", "الزهري", "الموطأ", "الكتب الستة", "ഉമർ ബ്നു അബ്ദിൽ അസീസ്", "സുഹ്‌രി", "മുവത്വ", "കുതുബുസ്സിത്ത"]}, {"id": 117, "type": "written", "diff": "tight", "topic": "الكتب الستة (كتابة / എഴുത്ത്)", "ar": "لماذا يُفضّل جمهور المحدثين «صحيح البخاري» من حيث الصحة والفقه، بينما يُفضّل بعض المغاربة «صحيح مسلم» من حيث الترتيب وحسن السياق؟", "ml": "ഭൂരിപക്ഷം മുഹദ്ദിസുകളും പ്രബലതയിലും ഫിഖ്ഹിലും 'സ്വഹീഹുൽ ബുഖാരി'ക്ക് മുൻഗണന നൽകുമ്പോഴും, ക്രമീകരണ ഭംഗിയിൽ 'സ്വഹീഹ് മുസ്ലിമി'നെ പ്രശംസിക്കാനുള്ള കാരണങ്ങൾ വ്യക്തമാക്കുക.", "model_ar": "يُرجّح صحيح البخاري لصحة شروطه الأشد (اشتراط ثبوت اللقاء في المعنعن، وقوة رجاله وقلة المنتقد منهم، واستنباطاته الفقهية الدقيقة في تراجم الأبواب). ويُمتدح صحيح مسلم لحسن ترتيبه، وجمعه طرق الحديث الواحد وألفاظه في موضع واحد دون تقطيع، وخلوّه من المعلقات الكثيرة.", "model_ml": "ബുഖാരിയുടെ മുൻഗണന: മുഅൻഅൻ സനദിൽ നേരിട്ടുള്ള കൂടിക്കാഴ്ച (ലുഖിയ്യ്) തെളിയണമെന്ന കർശന നിബന്ധന, റാവികളുടെ ഉയർന്ന പ്രാമാണികത, അധ്യായ തലക്കെട്ടുകളിലെ (തറാജിം) അഗാധമായ ഫിഖ്ഹ്. മുസ്ലിമിന്റെ സവിശേഷത: ഒരു ഹദീസിന്റെ എല്ലാ വഴികളും പദവ്യത്യാസങ്ങളും മുറിക്കാതെ ഒരൊറ്റ സ്ഥലത്ത് ഒരുമിച്ച് ചേർക്കുന്ന മികച്ച ക്രമീകരണ ഭംഗി.", "keywords": ["اللقاء", "تراجم", "تقطيع", "موضع واحد", "കൂടിക്കാഴ്ച", "ലുഖിയ്യ്", "മുറിക്കാതെ", "ഒരൊറ്റ സ്ഥലത്ത്"]}, {"id": 118, "type": "written", "diff": "medium", "topic": "الكتب الستة (كتابة / എഴുത്ത്)", "ar": "اكتب نبذة موجزة عن «سنن أبي داود» و«جامع الترمذي» مع ذكر ميزة منهجية واحدة لكل كتاب.", "ml": "'സുനനു അബീദാവൂദ്', 'ജാമിഉത്തിർമിദി' എന്നിവയെക്കുറിച്ച് ഓരോ സവിശേഷത സഹിതം ചുരുങ്ങിയ കുറിപ്പ് എഴുതുക.", "model_ar": "1) سنن أبي داود (سليمان بن الأشعث السجستاني ت 275هـ): يضم نحو 4800 حديث منتقاة من 500 ألف حديث في أحاديث الأحكام، ومن ميزاته أنه يبيّن ما فيه وهن شديد ويسكت عما يصلح للاحتجاج كما أوضح في رسالته لأهل مكة. 2) جامع الترمذي (محمد بن عيسى ت 279هـ): يتميز بالحكم على كل حديث (صحيح/حسن/غريب)، وذكر مذاهب الفقهاء، وعبارته الشهيرة «وفي الباب عن فلان».", "model_ml": "1) സുനനു അബീദാവൂദ് (ഹി. 275): ഫിഖ്ഹ് വിധികളിൽ അഞ്ച് ലക്ഷം ഹദീസുകളിൽ നിന്ന് തിരഞ്ഞെടുത്ത 4800 ഹദീസുകൾ; കടുത്ത ദുർബലതയുള്ളവ വ്യക്തമാക്കുകയും തെളിവിന് കൊള്ളുന്നവയിൽ മൗനം പാലിക്കുകയും ചെയ്യുന്ന ശൈലി (മക്കക്കാർക്കുള്ള കത്ത്). 2) ജാമിഉത്തിർമിദി (ഹി. 279): ഓരോ ഹദീസിന്റെയും പദവി വ്യക്തമാക്കൽ, ഫിഖ്ഹ് മദ്ഹബുകൾ വിവരിക്കൽ, 'വഫിൽ ബാബ്' എന്ന് സൂചിപ്പിക്കൽ.", "keywords": ["4800", "أهل مكة", "الأحكام", "مذاهب", "وفي الباب", "4800", "മക്ക", "മദ്ഹബ്", "പദവി"]}, {"id": 119, "type": "written", "diff": "tight", "topic": "الكتب الستة (كتابة / എഴുത്ത്)", "ar": "بيّن سبب تسمية سنن النسائي بـ «المجتبى» ودرجة شرطه في الرجال، واذكر سبب إدراج «سنن ابن ماجه» سادساً للكتب الستة مع كثرة الضعيف فيه.", "ml": "ഇമാം നസാഈയുടെ സുനന് 'അൽ-മുജ്തബ' എന്ന് പേര് വരാൻ കാരണവും അദ്ദേഹത്തിന്റെ റാവി നിബന്ധനകളുടെ കാഠിന്യവും വ്യക്തമാക്കുക; ളഈഫുകൾ ഉണ്ടായിരുന്നിട്ടും 'സുനനു ഇബ്നു മാജ'യെ കുതുബുസ്സിത്തയിൽ ആറാമതായി ഉൾപ്പെടുത്താൻ കാരണമെന്ത്?", "model_ar": "سُميت سنن النسائي الصغرى بـ «المجتبى» (المختار) لأن الإمام النسائي انتقاها واختار أصحها من كتابه «السنن الكبرى»، ويُعد شرطه في الرجال من أشد شروط أصحاب السنن الأربع وأقلهم ضعفاً. وأُدرج «سنن ابن ماجه» سادساً (أول من ضمه ابن طاهر المقدسي) بسبب حسن ترتيبه الفقهي وكثرة «زوائده» على الكتب الخمسة (أكثر من 1300 حديث زائد)، بينما أغلب أحاديث الموطأ موجودة في الخمسة.", "model_ml": "ഇമാം നസാഈ തന്റെ 'അസ്സുനനുൽ കുബ്റ'യിൽ നിന്ന് കൂടുതൽ പ്രബലമായവ തിരഞ്ഞെടുത്തതിനാലാണ് 'അൽ-മുജ്തബ' എന്ന് പേര് വന്നത്; നാല് സുനനുകളിൽ ഏറ്റവും കർശന നിബന്ധനയും കുറവ് ളഈഫുമുള്ളത് നസാഈയിലാണ്. ആദ്യ അഞ്ച് ഗ്രന്ഥങ്ങളിൽ ഇല്ലാത്ത 1300-ലധികം അധിക ഹദീസുകളുടെ (സവാഇദ്) സമൃദ്ധിയും മികച്ച അധ്യായ ക്രമീകരണവും പരിഗണിച്ചാണ് ഇബ്നു ത്വാഹിർ മഖ്ദിസി ഇബ്നു മാജയെ ആറാമതായി ചേർത്തത്.", "keywords": ["السنن الكبرى", "انتقاها", "زوائده", "ابن طاهر", "കുബ്റ", "തിരഞ്ഞെടു", "സവാഇദ്", "അധിക"]}, {"id": 120, "type": "written", "diff": "medium", "topic": "المعرفة العامة بالحديث (كتابة / എഴുത്ത്)", "ar": "عدّد «المكثرين السبعة» من الصحابة في رواية الحديث النبوي، واذكر سببين لكثرة رواية أبي هريرة رضي الله عنه رغم تأخر إسلامه (سنة 7 هـ).", "ml": "ഹദീസ് നിവേദനത്തിൽ 'അൽ-മുക്ഥിറൂനസ്സബ്അ' (ഏറ്റവും കൂടുതൽ ഹദീസ് ഉദ്ധരിച്ച ഏഴ് സ്വഹാബികൾ) ആരെല്ലാമെന്ന് എഴുതുക; ഹിജ്റ 7-ൽ മാത്രം ഇസ്ലാം സ്വീകരിച്ചിട്ടും അബൂഹുറൈറ (റ) ഒന്നാമനായതിന് രണ്ട് കാരണങ്ങൾ വ്യക്തമാക്കുക.", "model_ar": "المكثرون السبعة: 1) أبو هريرة، 2) عبد الله بن عمر، 3) أنس بن مالك، 4) عائشة، 5) عبد الله بن عباس، 6) جابر بن عبد الله، 7) أبو سعيد الخدري رضي الله عنهم. أسباب كثرة رواية أبي هريرة: 1) ملازمته الدائمة للنبي ﷺ في الصفة وتفرغه للعلم دون انشغال بتجارة أو زراعة، 2) دعاء النبي ﷺ له بالحفظ وعدم النسيان (وبسط ردائه)، 3) طول عمره بعد النبي ﷺ وكثرة تلاميذه (نحو 800 راوٍ).", "model_ml": "ഏഴ് പേർ: 1) അബൂഹുറൈറ, 2) ഇബ്നു ഉമർ, 3) അനസ് ബ്നു മാലിക്, 4) ആഇശ, 5) ഇബ്നു അബ്ബാസ്, 6) ജാബിർ, 7) അബൂസഈദുൽ ഖുദ്രി (റ). കാരണങ്ങൾ: 1) കച്ചവടത്തിലോ കൃഷിയിലോ ഏർപ്പെടാതെ സുഫ്ഫയിൽ താമസിച്ച് നബി ﷺ യുമായി നിരന്തര സഹവാസം പുലർത്തി, 2) മറവിയില്ലാത്ത ഓർമ്മശക്തിക്ക് വേണ്ടിയുള്ള നബി ﷺ യുടെ പ്രത്യേക പ്രാർത്ഥന, 3) നബി ﷺ ക്ക് ശേഷം ദീർഘകാലം ജീവിച്ച് ധാരാളം ശിഷ്യന്മാർക്ക് പഠിപ്പിച്ചു.", "keywords": ["أبو هريرة", "ابن عمر", "أنس", "عائشة", "ابن عباس", "جابر", "أبو سعيد", "ملازمته", "دعاء", "അബൂഹുറൈറ", "ഇബ്നു ഉമർ", "അനസ്", "ആഇശ", "സഹവാസം", "പ്രാർത്ഥന"]}];
+
+    // =========================================================================
+    //  STATE
+    // =========================================================================
+    let examActive = false;
+    let examSubmitted = false;
+    let antiCheatArmed = false;
+    let remainingSeconds = EXAM_DURATION_SECONDS;
+    let timerInterval = null;
+    let startTimestamp = null;
+
+    let currentSection = "mcq"; // "mcq" | "written"
+    let currentPage = 1;
+    let pageSize = 10;
+
+    // Student Answers: { [questionId]: number (0-3 for mcq) | string (for written) }
+    const studentAnswers = {};
+    let candidate = { name: "", chest: "", inst: "", email: "" };
+    let lastReportSummary = null;
+
+    function getTeacherEmail() {
+      return localStorage.getItem("tws3_teacher_email") || DEFAULT_TEACHER_EMAIL;
+    }
+
+    function getGasUrl() {
+      return localStorage.getItem("tws3_gas_url") || DEFAULT_GOOGLE_SCRIPT_URL;
+    }
+
+    function isAdminMode() {
+      return new URLSearchParams(window.location.search).get("admin") === "1";
+    }
+
+    function updateEmailPreview() {
+      const em = getTeacherEmail();
+      const box = document.getElementById("emailConfigPreview");
+      const setupBtn = document.getElementById("teacherSetupBtn");
+      const isConfigured = em && em !== "YOUR_EMAIL@gmail.com";
+
+      if (setupBtn) {
+        // Hide setup button from students once teacher email is hardcoded in index.html (accessible via ?admin=1)
+        if (DEFAULT_TEACHER_EMAIL !== "YOUR_EMAIL@gmail.com" && !isAdminMode()) {
+          setupBtn.style.display = "none";
+        } else {
+          setupBtn.style.display = "inline-block";
+        }
+      }
+
+      if (isConfigured) {
+        box.innerHTML = `📧 <strong>ഓട്ടോ-ഇമെയിൽ സജ്ജമാണ്:</strong> പരീക്ഷ സബ്മിറ്റ് ചെയ്യുമ്പോൾ നിങ്ങളുടെ ഉത്തരങ്ങൾ അധ്യാപകന്റെ ഇമെയിലിലേക്ക് ഓട്ടോമാറ്റിക്കായി അയക്കപ്പെടുന്നതാണ്.`;
+      } else {
+        box.innerHTML = `⚙️ <strong>അധ്യാപകരുടെ ശ്രദ്ധയ്ക്ക്:</strong> Vercel-ൽ അപ്‌ലോഡ് ചെയ്യുന്നതിന് മുമ്പ് <code>index.html</code> ഫയലിലെ <code>DEFAULT_TEACHER_EMAIL</code> എന്ന ഭാഗത്ത് നിങ്ങളുടെ ഇമെയിൽ നൽകുക.`;
+      }
+    }
+
+    function openTeacherModal() {
+      document.getElementById("teacherEmailInput").value = getTeacherEmail() === "YOUR_EMAIL@gmail.com" ? "" : getTeacherEmail();
+      document.getElementById("gasUrlInput").value = getGasUrl();
+      document.getElementById("teacherModal").classList.add("show");
+    }
+
+    function closeTeacherModal() {
+      document.getElementById("teacherModal").classList.remove("show");
+    }
+
+    function saveTeacherConfig() {
+      const em = document.getElementById("teacherEmailInput").value.trim();
+      const gas = document.getElementById("gasUrlInput").value.trim();
+      if (em) localStorage.setItem("tws3_teacher_email", em);
+      else localStorage.removeItem("tws3_teacher_email");
+      if (gas) localStorage.setItem("tws3_gas_url", gas);
+      else localStorage.removeItem("tws3_gas_url");
+      updateEmailPreview();
+      closeTeacherModal();
+    }
+
+    function escapeHtml(str) {
+      if (str === null || str === undefined) return "";
+      return String(str)
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;")
+        .replace(/'/g, "&#39;");
+    }
+
+    function setLangMode(mode, btnEl) {
+      document.body.classList.remove("lang-ar", "lang-ml");
+      if (mode === "ar") document.body.classList.add("lang-ar");
+      if (mode === "ml") document.body.classList.add("lang-ml");
+      document.querySelectorAll(".lang-switcher").forEach(sw => {
+        sw.querySelectorAll(".lang-btn").forEach((b, idx) => {
+          b.classList.toggle("active",
+            (mode === "both" && idx === 0) ||
+            (mode === "ar" && idx === 1) ||
+            (mode === "ml" && idx === 2)
+          );
+        });
+      });
+    }
+
+    // =========================================================================
+    //  START EXAM & ANTI-CHEAT ENGINE
+    // =========================================================================
+    function startExam() {
+      const name = document.getElementById("candName").value.trim();
+      const chest = document.getElementById("candChest").value.trim();
+      const inst = document.getElementById("candInst").value.trim();
+      const email = document.getElementById("candEmail").value.trim();
+      const agreed = document.getElementById("agreeRules").checked;
+
+      if (!name || !chest || !inst) {
+        alert("ദയവായി പേര്, ചെസ്റ്റ്/റോൾ നമ്പർ, സ്ഥാപനം എന്നിവ നിർബന്ധമായും പൂരിപ്പിക്കുക.");
+        return;
+      }
+      if (!agreed) {
+        alert("ദയവായി പരീക്ഷാ നിബന്ധനകൾ വായിച്ച് സമ്മതബോക്സ് ടിക്ക് ചെയ്യുക.");
+        return;
+      }
+
+      candidate = { name, chest, inst, email };
+      examActive = true;
+      examSubmitted = false;
+      startTimestamp = new Date();
+
+      document.getElementById("startScreen").classList.add("hidden");
+      document.getElementById("examTopbar").classList.remove("hidden");
+      document.getElementById("examScreen").classList.remove("hidden");
+
+      buildPalette();
+      renderCurrentPage();
+      updateProgress();
+      startTimer();
+
+      // Request fullscreen softly (ignore if blocked)
+      try {
+        if (document.documentElement.requestFullscreen) {
+          document.documentElement.requestFullscreen().catch(() => {});
+        }
+      } catch (e) {}
+
+      // Arm anti-cheat after 1.5s grace period (avoids fullscreen/button blur glitch)
+      setTimeout(() => {
+        if (examActive && !examSubmitted) {
+          antiCheatArmed = true;
+        }
+      }, 1500);
+    }
+
+    // Anti-Cheat: Tab switch / minimize / app switch
+    document.addEventListener("visibilitychange", () => {
+      if (examActive && !examSubmitted && antiCheatArmed && document.hidden) {
+        submitExam("TAB_SWITCH");
+      }
+    });
+
+    // Anti-Cheat: Window blur (clicking another app / split screen / Alt+Tab / Minimize)
+    window.addEventListener("blur", () => {
+      if (examActive && !examSubmitted && antiCheatArmed) {
+        submitExam("WINDOW_MINIMIZE_OR_SWITCH");
+      }
+    });
+
+    // Disable right-click & inspect/copy shortcuts during exam (allow typing inside textareas)
+    document.addEventListener("contextmenu", (e) => {
+      if (examActive && !examSubmitted) e.preventDefault();
+    });
+
+    document.addEventListener("keydown", (e) => {
+      if (!examActive || examSubmitted) return;
+      const inTextarea = e.target && e.target.tagName === "TEXTAREA";
+      if (e.key === "F12") { e.preventDefault(); return; }
+      if ((e.ctrlKey || e.metaKey) && !inTextarea && ["c", "u", "s", "p"].includes(e.key.toLowerCase())) {
+        e.preventDefault();
+      }
+      if ((e.ctrlKey || e.metaKey) && e.shiftKey && ["i", "j", "c"].includes(e.key.toLowerCase())) {
+        e.preventDefault();
+      }
+    });
+
+    // =========================================================================
+    //  COUNTDOWN TIMER (90 MINUTES)
+    // =========================================================================
+    function startTimer() {
+      updateTimerDisplay();
+      timerInterval = setInterval(() => {
+        remainingSeconds--;
+        updateTimerDisplay();
+        if (remainingSeconds <= 0) {
+          clearInterval(timerInterval);
+          submitExam("TIME_UP");
+        }
+      }, 1000);
+    }
+
+    function updateTimerDisplay() {
+      const m = Math.floor(Math.max(0, remainingSeconds) / 60);
+      const s = Math.max(0, remainingSeconds) % 60;
+      document.getElementById("timerDisplay").textContent =
+        `${String(m).padStart(2, "0")}:${String(s).padStart(2, "0")}`;
+      const box = document.getElementById("timerBox");
+      box.classList.remove("warn", "critical");
+      if (remainingSeconds <= 120) box.classList.add("critical");
+      else if (remainingSeconds <= 600) box.classList.add("warn");
+    }
+
+    // =========================================================================
+    //  QUESTION RENDERING & NAVIGATION
+    // =========================================================================
+    function getSectionQuestions() {
+      return QUESTIONS.filter(q => q.type === currentSection);
+    }
+
+    function switchSection(sec) {
+      currentSection = sec;
+      currentPage = 1;
+      document.getElementById("tabMCQ").classList.toggle("active", sec === "mcq");
+      document.getElementById("tabWritten").classList.toggle("active", sec === "written");
+      renderCurrentPage();
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+
+    function changePageSize(val) {
+      pageSize = parseInt(val, 10);
+      currentPage = 1;
+      renderCurrentPage();
+    }
+
+    function prevPage() {
+      if (currentPage > 1) {
+        currentPage--;
+        renderCurrentPage();
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      }
+    }
+
+    function nextPage() {
+      const list = getSectionQuestions();
+      const totalPages = Math.ceil(list.length / pageSize);
+      if (currentPage < totalPages) {
+        currentPage++;
+        renderCurrentPage();
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      } else if (currentSection === "mcq") {
+        switchSection("written");
+      }
+    }
+
+    function renderCurrentPage() {
+      const list = getSectionQuestions();
+      const totalPages = Math.max(1, Math.ceil(list.length / pageSize));
+      if (currentPage > totalPages) currentPage = totalPages;
+
+      const startIdx = (currentPage - 1) * pageSize;
+      const slice = list.slice(startIdx, startIdx + pageSize);
+
+      document.getElementById("pageInfo").textContent =
+        `പേജ് ${currentPage} / ${totalPages}`;
+      document.getElementById("pageNumbersInfo").textContent =
+        `${currentSection === "mcq" ? "MCQ" : "Written"} • Q${slice[0].id} – Q${slice[slice.length - 1].id}`;
+      document.getElementById("prevPageBtn").disabled = currentPage === 1;
+      document.getElementById("nextPageBtn").textContent =
+        (currentPage === totalPages && currentSection === "mcq")
+          ? "Section B (Written) ➡️"
+          : "അടുത്ത പേജ് (Next) ➡️";
+      document.getElementById("nextPageBtn").disabled =
+        (currentPage === totalPages && currentSection === "written");
+
+      const container = document.getElementById("questionsContainer");
+      const letters = ["A", "B", "C", "D"];
+
+      container.innerHTML = slice.map(q => {
+        const isAns = isAnswered(q);
+        const diffLabel = q.diff === "tight"
+          ? `<span class="tag tag-tight">🔥 Tight / ടൈറ്റ്</span>`
+          : `<span class="tag tag-medium">⚡ Medium / മീഡിയം</span>`;
+        const typeLabel = q.type === "mcq"
+          ? `<span class="tag tag-mcq">MCQ</span>`
+          : `<span class="tag tag-written">✍️ എഴുത്ത് / Written</span>`;
+
+        let bodyHtml = "";
+        if (q.type === "mcq") {
+          bodyHtml = `<div class="options-list">` + q.options.map((opt, idx) => {
+            const sel = studentAnswers[q.id] === idx ? "selected" : "";
+            return `
+              <div class="opt-item ${sel}" onclick="selectMcq(${q.id}, ${idx}, this)">
+                <div class="opt-letter">${letters[idx]}</div>
+                <div class="opt-content">
+                  <div class="ar-text">${escapeHtml(opt.ar)}</div>
+                  <div class="ml-text">${escapeHtml(opt.ml)}</div>
+                </div>
+              </div>`;
+          }).join("") + `</div>`;
+        } else {
+          const val = studentAnswers[q.id] || "";
+          bodyHtml = `
+            <textarea class="written-input" dir="auto"
+              placeholder="നിങ്ങളുടെ ഉത്തരം അറബിയിലോ മലയാളത്തിലോ ഇവിടെ ടൈപ്പ് ചെയ്യുക... / اكتب إجابتك هنا بالعربية أو المليبارية..."
+              oninput="saveWritten(${q.id}, this.value)">${escapeHtml(val)}</textarea>
+            <div class="written-hint">💡 അറബിയിലോ മലയാളത്തിലോ വ്യക്തമായി ഉത്തരം എഴുതാം. സബ്മിറ്റ് ചെയ്ത ശേഷം മാതൃകാ ഉത്തരം (Model Answer) കാണാം.</div>`;
+        }
+
+        return `
+          <div class="q-card ${isAns ? "answered" : ""}" id="qcard-${q.id}">
+            <div class="q-meta">
+              <span class="q-num-badge">Q${q.id} / 120</span>
+              <div class="q-tags">
+                <span class="tag tag-topic">${escapeHtml(q.topic)}</span>
+                ${diffLabel}
+                ${typeLabel}
+              </div>
+            </div>
+            <div class="q-prompt-box">
+              <div class="ar-text">${escapeHtml(q.ar)}</div>
+              <div class="ml-text">${escapeHtml(q.ml)}</div>
+            </div>
+            ${bodyHtml}
+          </div>`;
+      }).join("");
+    }
+
+    function selectMcq(qid, optIdx, el) {
+      studentAnswers[qid] = optIdx;
+      const card = document.getElementById(`qcard-${qid}`);
+      card.classList.add("answered");
+      card.querySelectorAll(".opt-item").forEach((item, i) => {
+        item.classList.toggle("selected", i === optIdx);
+      });
+      updateProgress();
+      updatePaletteButton(qid);
+    }
+
+    function saveWritten(qid, val) {
+      studentAnswers[qid] = val;
+      const card = document.getElementById(`qcard-${qid}`);
+      if (card) card.classList.toggle("answered", val.trim().length > 0);
+      updateProgress();
+      updatePaletteButton(qid);
+    }
+
+    function isAnswered(q) {
+      const v = studentAnswers[q.id];
+      if (q.type === "mcq") return v !== undefined && v !== null;
+      return typeof v === "string" && v.trim().length > 0;
+    }
+
+    function updateProgress() {
+      const answeredCount = QUESTIONS.filter(isAnswered).length;
+      document.getElementById("progressPill").textContent = `${answeredCount} / 120`;
+    }
+
+    function togglePalette() {
+      document.getElementById("palettePanel").classList.toggle("hidden");
+    }
+
+    function buildPalette() {
+      const grid = document.getElementById("paletteGrid");
+      grid.innerHTML = QUESTIONS.map(q => {
+        const cls = q.type === "written" ? "pal-btn written-slot" : "pal-btn";
+        return `<button type="button" id="pal-${q.id}" class="${cls}" onclick="jumpToQuestion(${q.id})">${q.id}</button>`;
+      }).join("");
+    }
+
+    function updatePaletteButton(qid) {
+      const q = QUESTIONS.find(x => x.id === qid);
+      const btn = document.getElementById(`pal-${qid}`);
+      if (btn && q) btn.classList.toggle("done", isAnswered(q));
+    }
+
+    function jumpToQuestion(qid) {
+      const q = QUESTIONS.find(x => x.id === qid);
+      if (!q) return;
+      currentSection = q.type;
+      document.getElementById("tabMCQ").classList.toggle("active", currentSection === "mcq");
+      document.getElementById("tabWritten").classList.toggle("active", currentSection === "written");
+      const list = getSectionQuestions();
+      const idx = list.findIndex(x => x.id === qid);
+      currentPage = Math.floor(idx / pageSize) + 1;
+      renderCurrentPage();
+      setTimeout(() => {
+        const card = document.getElementById(`qcard-${qid}`);
+        if (card) card.scrollIntoView({ behavior: "smooth", block: "center" });
+      }, 60);
+    }
+
+    // =========================================================================
+    //  SUBMIT MODAL & SUBMISSION LOGIC
+    // =========================================================================
+    function openSubmitModal() {
+      const mcqDone = QUESTIONS.filter(q => q.type === "mcq" && isAnswered(q)).length;
+      const wrDone = QUESTIONS.filter(q => q.type === "written" && isAnswered(q)).length;
+      document.getElementById("submitModalSummary").innerHTML =
+        `നിങ്ങൾ ഇതുവരെ <strong>${mcqDone} / 96 MCQ</strong> ചോദ്യങ്ങൾക്കും <strong>${wrDone} / 24 Written</strong> ചോദ്യങ്ങൾക്കും ഉത്തരം നൽകിയിട്ടുണ്ട് (ആകെ ${mcqDone + wrDone} / 120). പരീക്ഷ ഇപ്പോൾ സബ്മിറ്റ് ചെയ്യട്ടെ?`;
+      document.getElementById("submitModal").classList.add("show");
+    }
+
+    function closeSubmitModal() {
+      document.getElementById("submitModal").classList.remove("show");
+    }
+
+    function confirmManualSubmit() {
+      closeSubmitModal();
+      submitExam("MANUAL");
+    }
+
+    function evaluateWrittenKeywordMatch(q, text) {
+      if (!text || !text.trim()) return { status: "unanswered", matched: 0, total: q.keywords.length };
+      const normalized = text.toLowerCase().replace(/[ًٌٍَُِّْ]/g, "");
+      let matched = 0;
+      q.keywords.forEach(kw => {
+        const nkw = kw.toLowerCase().replace(/[ًٌٍَُِّْ]/g, "");
+        if (normalized.includes(nkw)) matched++;
+      });
+      return {
+        status: matched >= 2 ? "good" : "review",
+        matched,
+        total: q.keywords.length
+      };
+    }
+
+    function submitExam(reason) {
+      if (examSubmitted) return;
+      examSubmitted = true;
+      examActive = false;
+      antiCheatArmed = false;
+      if (timerInterval) clearInterval(timerInterval);
+      closeSubmitModal();
+
+      // Exit fullscreen softly
+      try {
+        if (document.fullscreenElement && document.exitFullscreen) {
+          document.exitFullscreen().catch(() => {});
+        }
+      } catch (e) {}
+
+      const endTime = new Date();
+      const timeTakenSec = EXAM_DURATION_SECONDS - Math.max(0, remainingSeconds);
+      const minsTaken = Math.floor(timeTakenSec / 60);
+      const secsTaken = timeTakenSec % 60;
+      const timeTakenStr = `${String(minsTaken).padStart(2, "0")}m ${String(secsTaken).padStart(2, "0")}s`;
+
+      // Evaluate MCQs
+      let correct = 0, wrong = 0, unanswered = 0;
+      let medCorrect = 0, medTotal = 0, tightCorrect = 0, tightTotal = 0;
+      const wrongList = [];
+      const correctList = [];
+
+      QUESTIONS.filter(q => q.type === "mcq").forEach(q => {
+        if (q.diff === "medium") medTotal++;
+        else tightTotal++;
+
+        const chosen = studentAnswers[q.id];
+        if (chosen === undefined || chosen === null) {
+          unanswered++;
+        } else if (chosen === q.ans) {
+          correct++;
+          correctList.push(q.id);
+          if (q.diff === "medium") medCorrect++;
+          else tightCorrect++;
+        } else {
+          wrong++;
+          wrongList.push({ id: q.id, chosen, correct: q.ans });
+        }
+      });
+
+      // Evaluate Written
+      let writtenAttempted = 0;
+      let writtenKeywordHits = 0;
+      const writtenEntries = [];
+      QUESTIONS.filter(q => q.type === "written").forEach(q => {
+        const ansText = (studentAnswers[q.id] || "").trim();
+        const check = evaluateWrittenKeywordMatch(q, ansText);
+        if (ansText.length > 0) writtenAttempted++;
+        if (check.status === "good") writtenKeywordHits++;
+        writtenEntries.push({
+          id: q.id,
+          q_ml: q.ml,
+          answer: ansText || "(ഉത്തരം നൽകിയില്ല)",
+          autoMatch: check.status
+        });
+      });
+
+      const accuracy = Math.round((correct / 96) * 1000) / 10;
+
+      let reasonTitle = "✅ പരീക്ഷ വിജയകരമായി സബ്മിറ്റ് ചെയ്തു!";
+      let reasonSub = "നിങ്ങളുടെ ഉത്തരങ്ങളുടെ പൂർണ്ണമായ ശരി-തെറ്റ് വിശകലനം താഴെ കാണാവുന്നതാണ്.";
+      let reasonCode = "Manual Submission";
+      let bannerCls = "normal";
+
+      if (reason === "TAB_SWITCH" || reason === "WINDOW_MINIMIZE_OR_SWITCH") {
+        reasonTitle = "⚠️ ഓട്ടോ-സബ്മിറ്റ്: വേറെ ടാബ് തുറക്കുകയോ വിൻഡോ മിനിമൈസ് ചെയ്യുകയോ ചെയ്തു!";
+        reasonSub = "പരീക്ഷാ നിബന്ധന പ്രകാരം ടാബ് മാറ്റുകയോ മിനിമൈസ് ചെയ്യുകയോ ചെയ്തതിനാൽ പരീക്ഷ ഓട്ടോമാറ്റിക്കായി സബ്മിറ്റ് ചെയ്യപ്പെട്ടു.";
+        reasonCode = reason === "TAB_SWITCH" ? "AUTO-SUBMIT: Tab Switched / Minimized" : "AUTO-SUBMIT: Window Focus Lost / Switched App";
+        bannerCls = "violation";
+      } else if (reason === "TIME_UP") {
+        reasonTitle = "⏱️ ഓട്ടോ-സബ്മിറ്റ്: 90 മിനിറ്റ് സമയം അവസാനിച്ചു!";
+        reasonSub = "അനുവദിച്ച സമയം പൂർത്തിയായതിനാൽ നിങ്ങൾ ഇതുവരെ രേഖപ്പെടുത്തിയ ഉത്തരങ്ങൾ ഓട്ടോമാറ്റിക്കായി സബ്മിറ്റ് ചെയ്തു.";
+        reasonCode = "AUTO-SUBMIT: 90-Minute Timer Expired";
+        bannerCls = "timeout";
+      }
+
+      lastReportSummary = {
+        candidate,
+        reasonCode,
+        timestamp: endTime.toLocaleString("en-IN"),
+        timeTakenStr,
+        correct,
+        wrong,
+        unanswered,
+        accuracy,
+        medCorrect,
+        medTotal,
+        tightCorrect,
+        tightTotal,
+        writtenAttempted,
+        writtenKeywordHits,
+        wrongList,
+        correctList,
+        writtenEntries
+      };
+
+      // Switch screens
+      document.getElementById("examTopbar").classList.add("hidden");
+      document.getElementById("examScreen").classList.add("hidden");
+      document.getElementById("resultScreen").classList.remove("hidden");
+
+      const banner = document.getElementById("resultBanner");
+      banner.className = `result-banner ${bannerCls}`;
+      document.getElementById("resultHeading").textContent = reasonTitle;
+      document.getElementById("resultSubheading").textContent = reasonSub;
+      document.getElementById("resultMetaLine").textContent =
+        `👤 ${candidate.name} (${candidate.chest}) • 🏫 ${candidate.inst} • ⏱️ സമയം: ${timeTakenStr} • 📅 ${lastReportSummary.timestamp}`;
+
+      document.getElementById("resMcqScore").textContent = `${correct} / 96`;
+      document.getElementById("resCorrect").textContent = correct;
+      document.getElementById("resWrong").textContent = wrong;
+      document.getElementById("resUnans").textContent = unanswered;
+      document.getElementById("resWritten").textContent = `${writtenAttempted} / 24`;
+      document.getElementById("resAccuracy").textContent = `${accuracy}%`;
+      document.getElementById("diffBreakdownText").innerHTML =
+        `Medium MCQ: <strong>${medCorrect}/${medTotal}</strong> (${Math.round(medCorrect / medTotal * 100)}%) &nbsp;|&nbsp; Tight MCQ: <strong>${tightCorrect}/${tightTotal}</strong> (${Math.round(tightCorrect / tightTotal * 100)}%) &nbsp;|&nbsp; Written Key-Concept Match: <strong>${writtenKeywordHits}/24</strong>`;
+
+      renderReview("all");
+      window.scrollTo({ top: 0, behavior: "smooth" });
+
+      // Automatically send results to teacher's email
+      sendAutoEmail(lastReportSummary);
+    }
+
+    // =========================================================================
+    //  DETAILED RIGHT/WRONG REVIEW RENDERER
+    // =========================================================================
+    function renderReview(filter, tabBtn) {
+      if (tabBtn) {
+        document.querySelectorAll("#reviewFilterTabs .sec-tab").forEach(b => b.classList.remove("active"));
+        tabBtn.classList.add("active");
+      }
+
+      const letters = ["A", "B", "C", "D"];
+      const filtered = QUESTIONS.filter(q => {
+        if (filter === "all") return true;
+        if (filter === "written") return q.type === "written";
+        if (q.type !== "mcq") return false;
+        const chosen = studentAnswers[q.id];
+        if (filter === "correct") return chosen === q.ans;
+        if (filter === "wrong") return chosen !== undefined && chosen !== null && chosen !== q.ans;
+        if (filter === "unanswered") return chosen === undefined || chosen === null;
+        return true;
+      });
+
+      const container = document.getElementById("reviewContainer");
+      if (filtered.length === 0) {
+        container.innerHTML = `<div class="card" style="text-align:center;color:var(--muted);">ഈ വിഭാഗത്തിൽ ചോദ്യങ്ങളൊന്നുമില്ല.</div>`;
+        return;
+      }
+
+      container.innerHTML = filtered.map(q => {
+        const diffLabel = q.diff === "tight"
+          ? `<span class="tag tag-tight">🔥 Tight</span>`
+          : `<span class="tag tag-medium">⚡ Medium</span>`;
+
+        if (q.type === "mcq") {
+          const chosen = studentAnswers[q.id];
+          let statusBadge = "";
+          if (chosen === undefined || chosen === null) {
+            statusBadge = `<span class="tag" style="background:#e2e8f0;color:#475569;">⚪ ഉത്തരം നൽകിയില്ല (Skipped)</span>`;
+          } else if (chosen === q.ans) {
+            statusBadge = `<span class="tag" style="background:#dcfce7;color:#166534;">✅ ശരിയാണ് (Correct)</span>`;
+          } else {
+            statusBadge = `<span class="tag" style="background:#fee2e2;color:#991b1b;">❌ തെറ്റാണ് (Wrong)</span>`;
+          }
+
+          const optsHtml = q.options.map((opt, idx) => {
+            let cls = "rev-opt";
+            let marker = "";
+            if (idx === q.ans) {
+              cls += " correct-opt";
+              marker = " ✅ (ശരിയുത്തരം)";
+            } else if (chosen === idx && chosen !== q.ans) {
+              cls += " wrong-opt";
+              marker = " ❌ (നിങ്ങളുടെ ഉത്തരം)";
+            }
+            return `
+              <div class="${cls}">
+                <div class="opt-letter" style="background:${idx===q.ans?'var(--success)':(chosen===idx?'var(--danger)':'#eef3f1')};color:${(idx===q.ans||chosen===idx)?'#fff':'var(--text)'};">${letters[idx]}</div>
+                <div class="opt-content">
+                  <div class="ar-text">${escapeHtml(opt.ar)}</div>
+                  <div class="ml-text">${escapeHtml(opt.ml)} <strong>${marker}</strong></div>
+                </div>
+              </div>`;
+          }).join("");
+
+          return `
+            <div class="q-card">
+              <div class="q-meta">
+                <span class="q-num-badge">Q${q.id}</span>
+                <div class="q-tags">
+                  <span class="tag tag-topic">${escapeHtml(q.topic)}</span>
+                  ${diffLabel}
+                  ${statusBadge}
+                </div>
+              </div>
+              <div class="q-prompt-box">
+                <div class="ar-text">${escapeHtml(q.ar)}</div>
+                <div class="ml-text">${escapeHtml(q.ml)}</div>
+              </div>
+              ${optsHtml}
+              <div class="exp-box">
+                <strong>📚 റഫറൻസ് / വിശദീകരണം:</strong> ${escapeHtml(q.exp)}
+              </div>
+            </div>`;
+        } else {
+          const ansText = (studentAnswers[q.id] || "").trim();
+          const check = evaluateWrittenKeywordMatch(q, ansText);
+          let badge = `<span class="tag" style="background:#e2e8f0;color:#475569;">⚪ ഉത്തരം എഴുതിയില്ല</span>`;
+          if (ansText) {
+            badge = check.status === "good"
+              ? `<span class="tag" style="background:#dcfce7;color:#166534;">✍️ പ്രധാന ആശയങ്ങൾ ഉൾപ്പെട്ടിട്ടുണ്ട് (Evaluator Verify)</span>`
+              : `<span class="tag" style="background:#fef3c7;color:#92400e;">✍️ അധ്യാപക പരിശോധനയ്ക്ക് (Compare with Model Answer)</span>`;
+          }
+
+          return `
+            <div class="q-card">
+              <div class="q-meta">
+                <span class="q-num-badge" style="background:#6d28d9;">Q${q.id} (Written)</span>
+                <div class="q-tags">
+                  <span class="tag tag-topic">${escapeHtml(q.topic)}</span>
+                  ${diffLabel}
+                  ${badge}
+                </div>
+              </div>
+              <div class="q-prompt-box">
+                <div class="ar-text">${escapeHtml(q.ar)}</div>
+                <div class="ml-text">${escapeHtml(q.ml)}</div>
+              </div>
+              <div class="student-ans-box">
+                <strong style="color:var(--primary-dark);">📝 നിങ്ങൾ എഴുതിയ ഉത്തരം:</strong><br/>
+                ${ansText ? escapeHtml(ansText) : "<em style='color:#64748b;'>ഉത്തരം രേഖപ്പെടുത്തിയിട്ടില്ല.</em>"}
+              </div>
+              <div class="model-ans-box">
+                <strong style="color:var(--success);">✅ മാതൃകാ ഉത്തരം (Official Model Answer):</strong>
+                <div class="ar-text" style="margin-top:6px;">${escapeHtml(q.model_ar)}</div>
+                <div class="ml-text" style="margin-top:6px;padding-top:6px;border-top:1px dashed #bbf7d0;">${escapeHtml(q.model_ml)}</div>
+              </div>
+            </div>`;
+        }
+      }).join("");
+    }
+
+    // =========================================================================
+    //  AUTOMATIC EMAIL DELIVERY (FormSubmit AJAX + Optional Google Apps Script)
+    // =========================================================================
+    function buildPlainTextReport(r) {
+      const letters = ["A", "B", "C", "D"];
+      let txt = `=====================================================\n`;
+      txt += `DARUL HUDA SIBAQ '26 — TWS3 HADITH MUSABAQAH SET 2 (120 Qs)\n`;
+      txt += `=====================================================\n`;
+      txt += `Candidate Name : ${r.candidate.name}\n`;
+      txt += `Chest/Roll No  : ${r.candidate.chest}\n`;
+      txt += `Institution    : ${r.candidate.inst}\n`;
+      txt += `Student Email  : ${r.candidate.email || "N/A"}\n`;
+      txt += `Submission Type: ${r.reasonCode}\n`;
+      txt += `Submitted At   : ${r.timestamp}\n`;
+      txt += `Time Taken     : ${r.timeTakenStr}\n`;
+      txt += `-----------------------------------------------------\n`;
+      txt += `MCQ SCORE      : ${r.correct} / 96 (${r.accuracy}%)\n`;
+      txt += `  - Correct    : ${r.correct}\n`;
+      txt += `  - Wrong      : ${r.wrong}\n`;
+      txt += `  - Unanswered : ${r.unanswered}\n`;
+      txt += `  - Medium MCQ : ${r.medCorrect} / ${r.medTotal}\n`;
+      txt += `  - Tight MCQ  : ${r.tightCorrect} / ${r.tightTotal}\n`;
+      txt += `WRITTEN ATTEMPT: ${r.writtenAttempted} / 24 (Auto Keyword Hits: ${r.writtenKeywordHits}/24)\n`;
+      txt += `-----------------------------------------------------\n\n`;
+
+      txt += `WRONG MCQs (${r.wrongList.length}):\n`;
+      if (r.wrongList.length === 0) {
+        txt += `  None!\n`;
+      } else {
+        r.wrongList.forEach(w => {
+          txt += `  Q${w.id}: Selected [${letters[w.chosen]}] | Correct [${letters[w.correct]}]\n`;
+        });
+      }
+
+      txt += `\nCORRECT MCQ IDs (${r.correctList.length}):\n  ${r.correctList.join(", ") || "None"}\n\n`;
+
+      txt += `-----------------------------------------------------\n`;
+      txt += `SECTION B — WRITTEN ANSWERS (Q97 - Q120):\n`;
+      txt += `-----------------------------------------------------\n`;
+      r.writtenEntries.forEach(w => {
+        txt += `Q${w.id}: ${w.answer}\n\n`;
+      });
+      return txt;
+    }
+
+    async function sendAutoEmail(r) {
+      const statusBar = document.getElementById("emailStatusBar");
+      const statusText = document.getElementById("emailStatusText");
+      const teacherEmail = getTeacherEmail();
+      const gasUrl = getGasUrl();
+      const reportText = buildPlainTextReport(r);
+
+      const letters = ["A", "B", "C", "D"];
+      const wrongSummary = r.wrongList.length
+        ? r.wrongList.map(w => `Q${w.id}(Sel:${letters[w.chosen]}/Ans:${letters[w.correct]})`).join(", ")
+        : "None";
+
+      const writtenSummary = r.writtenEntries
+        .map(w => `Q${w.id}: ${w.answer}`)
+        .join("\n---\n");
+
+      let sentAny = false;
+
+      // 1) Optional Google Apps Script Webhook
+      if (gasUrl) {
+        try {
+          await fetch(gasUrl, {
+            method: "POST",
+            mode: "no-cors",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ ...r, full_report: reportText })
+          });
+          sentAny = true;
+        } catch (err) {
+          console.error("GAS error:", err);
+        }
+      }
+
+      // 2) FormSubmit.co AJAX Email Delivery
+      if (teacherEmail && teacherEmail !== "YOUR_EMAIL@gmail.com") {
+        try {
+          const resp = await fetch(`https://formsubmit.co/ajax/${encodeURIComponent(teacherEmail)}`, {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+              "Accept": "application/json"
+            },
+            body: JSON.stringify({
+              _subject: `[TWS3 Hadith Exam - SET 2] ${r.candidate.name} (${r.candidate.chest}) — MCQ: ${r.correct}/96 | ${r.reasonCode}`,
+              _template: "table",
+              _captcha: "false",
+              Candidate_Name: r.candidate.name,
+              Chest_Roll_No: r.candidate.chest,
+              Institution: r.candidate.inst,
+              Student_Email: r.candidate.email || "N/A",
+              Submission_Status: r.reasonCode,
+              Submitted_At: r.timestamp,
+              Time_Taken: r.timeTakenStr,
+              MCQ_Score: `${r.correct} / 96 (${r.accuracy}%)`,
+              MCQ_Breakdown: `Correct: ${r.correct} | Wrong: ${r.wrong} | Skipped: ${r.unanswered}`,
+              Difficulty_Breakdown: `Medium: ${r.medCorrect}/${r.medTotal} | Tight: ${r.tightCorrect}/${r.tightTotal}`,
+              Written_Attempted: `${r.writtenAttempted} / 24`,
+              Wrong_MCQ_Details: wrongSummary,
+              Written_Answers_Q97_to_Q120: writtenSummary
+            })
+          });
+          if (resp.ok) {
+            sentAny = true;
+          }
+        } catch (err) {
+          console.error("FormSubmit error:", err);
+        }
+      }
+
+      if (sentAny) {
+        statusBar.className = "email-status-bar email-ok no-print";
+        statusText.innerHTML = `✅ നിങ്ങളുടെ പരീക്ഷാ ഫലവും ഉത്തരങ്ങളും അധ്യാപകന്റെ ഇമെയിലിലേക്ക് ഓട്ടോമാറ്റിക്കായി അയച്ചിട്ടുണ്ട്!`;
+      } else if (!teacherEmail || teacherEmail === "YOUR_EMAIL@gmail.com") {
+        statusBar.className = "email-status-bar email-warn no-print";
+        statusText.innerHTML = `⚠️ ഓട്ടോ-ഇമെയിൽ അയക്കാൻ അധ്യാപകന്റെ ഇമെയിൽ സെറ്റ് ചെയ്തിട്ടില്ല. "Download Report" അല്ലെങ്കിൽ "Print/PDF" ഉപയോഗിക്കാം.`;
+      } else {
+        statusBar.className = "email-status-bar email-warn no-print";
+        statusText.innerHTML = `⚠️ ഇന്റർനെറ്റ്/നെറ്റ്‌വർക്ക് തടസ്സം കാരണം ഓട്ടോ-ഇമെയിൽ അയക്കാനായില്ല. "Mail App" അല്ലെങ്കിൽ "Download Report" വഴി അയക്കുക.`;
+      }
+    }
+
+    function sendViaMailtoFallback() {
+      if (!lastReportSummary) return;
+      const teacherEmail = getTeacherEmail() === "YOUR_EMAIL@gmail.com" ? "" : getTeacherEmail();
+      const subj = `[TWS3 Hadith Exam - SET 2] ${lastReportSummary.candidate.name} (${lastReportSummary.candidate.chest}) - ${lastReportSummary.correct}/96`;
+      const body = buildPlainTextReport(lastReportSummary).slice(0, 1800) + "\n\n(Full 24 written answers included in downloaded report.)";
+      window.location.href = `mailto:${encodeURIComponent(teacherEmail)}?subject=${encodeURIComponent(subj)}&body=${encodeURIComponent(body)}`;
+    }
+
+    function downloadReport() {
+      if (!lastReportSummary) return;
+      const txt = buildPlainTextReport(lastReportSummary);
+      const blob = new Blob([txt], { type: "text/plain;charset=utf-8" });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement("a");
+      a.href = url;
+      const safeName = (lastReportSummary.candidate.chest || "Student").replace(/[^a-zA-Z0-9_-]/g, "_");
+      a.download = `TWS3_Hadith_Set2_Report_${safeName}.txt`;
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+      URL.revokeObjectURL(url);
+    }
+
+    // Init
+    updateEmailPreview();
+  </script>
+</body>
+</html>
